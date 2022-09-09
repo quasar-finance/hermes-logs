@@ -1,0 +1,250 @@
+2022-09-09T07:15:29.899243Z  INFO ThreadId(01) using default configuration from '/home/laurens/.hermes/config.toml'
+2022-09-09T07:15:29.905239Z DEBUG ThreadId(01) do_chan_open_handshake with channel end states: UNINITIALIZED, UNINITIALIZED
+2022-09-09T07:15:29.906919Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenInit}:send_tx_with_account_sequence_retry{id=quasar}: max fee, for use in tx simulation: Fee { amount: "3001uqsr", gas_limit: 3000000 }
+2022-09-09T07:15:29.908620Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenInit}:send_tx_with_account_sequence_retry{id=quasar}:estimate_gas: tx simulation successful, gas amount used: 113769
+2022-09-09T07:15:29.908667Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenInit}:send_tx_with_account_sequence_retry{id=quasar}: send_tx: using 113769 gas, fee Fee { amount: "126uqsr", gas_limit: 125145 } id=quasar
+2022-09-09T07:15:29.910272Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenInit}:send_tx_with_account_sequence_retry{id=quasar}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(40E501611A6681E902EBD352FE96284AFFA2372CB4FA5B8344DB13C8BC976C06) }
+2022-09-09T07:15:29.910328Z  INFO ThreadId(10) send_tx_commit{id=ChannelOpenInit}: wait_for_block_commits: waiting for commit of tx hashes(s) 40E501611A6681E902EBD352FE96284AFFA2372CB4FA5B8344DB13C8BC976C06 id=quasar
+2022-09-09T07:15:32.315238Z  INFO ThreadId(01) 🎊  quasar => IbcEventWithHeight {
+    event: OpenInitChannel(
+        OpenInit {
+            port_id: PortId(
+                "transfer",
+            ),
+            channel_id: Some(
+                ChannelId(
+                    "channel-3",
+                ),
+            ),
+            connection_id: ConnectionId(
+                "connection-1",
+            ),
+            counterparty_port_id: PortId(
+                "transfer",
+            ),
+            counterparty_channel_id: None,
+        },
+    ),
+    height: Height {
+        revision: 0,
+        height: 33,
+    },
+}
+
+2022-09-09T07:15:33.316038Z DEBUG ThreadId(01) do_chan_open_handshake with channel end states: INIT, UNINITIALIZED
+2022-09-09T07:15:37.372041Z DEBUG ThreadId(01) [quasar -> osmosis:07-tendermint-0] MsgUpdateAnyClient from trusted height 0-17 to target height 0-34
+2022-09-09T07:15:37.373451Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:15:37.375775Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: tx simulation successful, gas amount used: 179988
+2022-09-09T07:15:37.375829Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: send_tx: using 179988 gas, fee Fee { amount: "198uosmo", gas_limit: 197986 } id=osmosis
+2022-09-09T07:15:37.377887Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(0816930ECF15D98D91C42715A4E444463AB7BFE262DD6F5B2F54AFFB0BFB88E2) }
+2022-09-09T07:15:37.377931Z  INFO ThreadId(27) send_tx_commit{id=ChannelOpenTry}: wait_for_block_commits: waiting for commit of tx hashes(s) 0816930ECF15D98D91C42715A4E444463AB7BFE262DD6F5B2F54AFFB0BFB88E2 id=osmosis
+2022-09-09T07:15:39.182959Z  INFO ThreadId(01) 🎊  osmosis => IbcEventWithHeight {
+    event: OpenTryChannel(
+        OpenTry {
+            port_id: PortId(
+                "transfer",
+            ),
+            channel_id: Some(
+                ChannelId(
+                    "channel-1",
+                ),
+            ),
+            connection_id: ConnectionId(
+                "connection-0",
+            ),
+            counterparty_port_id: PortId(
+                "transfer",
+            ),
+            counterparty_channel_id: Some(
+                ChannelId(
+                    "channel-3",
+                ),
+            ),
+        },
+    ),
+    height: Height {
+        revision: 0,
+        height: 85,
+    },
+}
+
+2022-09-09T07:15:40.184381Z DEBUG ThreadId(01) do_chan_open_handshake with channel end states: INIT, TRYOPEN
+2022-09-09T07:15:41.105636Z DEBUG ThreadId(01) [osmosis -> quasar:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-37 to target height 0-86
+2022-09-09T07:15:41.106238Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: max fee, for use in tx simulation: Fee { amount: "3001uqsr", gas_limit: 3000000 }
+2022-09-09T07:15:41.108569Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}:estimate_gas: tx simulation successful, gas amount used: 140613
+2022-09-09T07:15:41.108614Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: send_tx: using 140613 gas, fee Fee { amount: "155uqsr", gas_limit: 154674 } id=quasar
+2022-09-09T07:15:41.109912Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(F7B15641C311D0C37BBA06878AC5AF4AC470EB19E7A0AA52671492113287DACD) }
+2022-09-09T07:15:41.109947Z  INFO ThreadId(10) send_tx_commit{id=ChannelOpenAck}: wait_for_block_commits: waiting for commit of tx hashes(s) F7B15641C311D0C37BBA06878AC5AF4AC470EB19E7A0AA52671492113287DACD id=quasar
+2022-09-09T07:15:42.614231Z  INFO ThreadId(01) 🎊  quasar => IbcEventWithHeight {
+    event: OpenAckChannel(
+        OpenAck {
+            port_id: PortId(
+                "transfer",
+            ),
+            channel_id: Some(
+                ChannelId(
+                    "channel-3",
+                ),
+            ),
+            counterparty_channel_id: Some(
+                ChannelId(
+                    "channel-1",
+                ),
+            ),
+            connection_id: ConnectionId(
+                "connection-1",
+            ),
+            counterparty_port_id: PortId(
+                "transfer",
+            ),
+        },
+    ),
+    height: Height {
+        revision: 0,
+        height: 35,
+    },
+}
+
+2022-09-09T07:15:43.615672Z DEBUG ThreadId(01) do_chan_open_handshake with channel end states: OPEN, TRYOPEN
+2022-09-09T07:15:47.368865Z DEBUG ThreadId(01) [quasar -> osmosis:07-tendermint-0] MsgUpdateAnyClient from trusted height 0-34 to target height 0-36
+2022-09-09T07:15:47.369455Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenConfirm}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:15:47.371748Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenConfirm}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: tx simulation successful, gas amount used: 130997
+2022-09-09T07:15:47.371793Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenConfirm}:send_tx_with_account_sequence_retry{id=osmosis}: send_tx: using 130997 gas, fee Fee { amount: "145uosmo", gas_limit: 144096 } id=osmosis
+2022-09-09T07:15:47.373477Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenConfirm}:send_tx_with_account_sequence_retry{id=osmosis}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(A7F90F933652E59E25373D7F69F892527FADB9401F302D4A233751B23412063C) }
+2022-09-09T07:15:47.373513Z  INFO ThreadId(27) send_tx_commit{id=ChannelOpenConfirm}: wait_for_block_commits: waiting for commit of tx hashes(s) A7F90F933652E59E25373D7F69F892527FADB9401F302D4A233751B23412063C id=osmosis
+2022-09-09T07:15:49.478647Z  INFO ThreadId(01) 🎊  osmosis => IbcEventWithHeight {
+    event: OpenConfirmChannel(
+        OpenConfirm {
+            port_id: PortId(
+                "transfer",
+            ),
+            channel_id: Some(
+                ChannelId(
+                    "channel-1",
+                ),
+            ),
+            connection_id: ConnectionId(
+                "connection-0",
+            ),
+            counterparty_port_id: PortId(
+                "transfer",
+            ),
+            counterparty_channel_id: Some(
+                ChannelId(
+                    "channel-3",
+                ),
+            ),
+        },
+    ),
+    height: Height {
+        revision: 0,
+        height: 90,
+    },
+}
+
+2022-09-09T07:15:50.480326Z DEBUG ThreadId(01) do_chan_open_handshake with channel end states: OPEN, OPEN
+2022-09-09T07:15:50.480354Z  INFO ThreadId(01) channel handshake already finished for Channel {
+    ordering: Unordered,
+    a_side: ChannelSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "quasar",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-1",
+        ),
+        connection_id: ConnectionId(
+            "connection-1",
+        ),
+        port_id: PortId(
+            "transfer",
+        ),
+        channel_id: Some(
+            ChannelId(
+                "channel-3",
+            ),
+        ),
+        version: None,
+    },
+    b_side: ChannelSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "osmosis",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-0",
+        ),
+        connection_id: ConnectionId(
+            "connection-0",
+        ),
+        port_id: PortId(
+            "transfer",
+        ),
+        channel_id: Some(
+            ChannelId(
+                "channel-1",
+            ),
+        ),
+        version: None,
+    },
+    connection_delay: 0ns,
+}
+
+SUCCESS Channel {
+    ordering: Unordered,
+    a_side: ChannelSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "quasar",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-1",
+        ),
+        connection_id: ConnectionId(
+            "connection-1",
+        ),
+        port_id: PortId(
+            "transfer",
+        ),
+        channel_id: Some(
+            ChannelId(
+                "channel-3",
+            ),
+        ),
+        version: None,
+    },
+    b_side: ChannelSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "osmosis",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-0",
+        ),
+        connection_id: ConnectionId(
+            "connection-0",
+        ),
+        port_id: PortId(
+            "transfer",
+        ),
+        channel_id: Some(
+            ChannelId(
+                "channel-1",
+            ),
+        ),
+        version: None,
+    },
+    connection_delay: 0ns,
+}

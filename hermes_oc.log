@@ -1,0 +1,531 @@
+2022-09-09T07:14:14.929311Z  INFO ThreadId(01) using default configuration from '/home/laurens/.hermes/config.toml'
+2022-09-09T07:14:14.932096Z  INFO ThreadId(01) Creating new clients hosted on chains osmosis and cosmos
+2022-09-09T07:14:14.938024Z DEBUG ThreadId(10) send_tx_commit{id=create client}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:14:14.939857Z DEBUG ThreadId(10) send_tx_commit{id=create client}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: tx simulation successful, gas amount used: 93341
+2022-09-09T07:14:14.939905Z DEBUG ThreadId(10) send_tx_commit{id=create client}:send_tx_with_account_sequence_retry{id=osmosis}: send_tx: using 93341 gas, fee Fee { amount: "103uosmo", gas_limit: 102675 } id=osmosis
+2022-09-09T07:14:14.941369Z DEBUG ThreadId(10) send_tx_commit{id=create client}:send_tx_with_account_sequence_retry{id=osmosis}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(6EBF1C3C7FDBE2774EB614871FEB9A2B2F76DABA6B6CC6B8142F49BA5231890B) }
+2022-09-09T07:14:14.941428Z  INFO ThreadId(10) send_tx_commit{id=create client}: wait_for_block_commits: waiting for commit of tx hashes(s) 6EBF1C3C7FDBE2774EB614871FEB9A2B2F76DABA6B6CC6B8142F49BA5231890B id=osmosis
+2022-09-09T07:14:15.843678Z  INFO ThreadId(01) 🍭 [cosmos -> osmosis:07-tendermint-1]  => IbcEventWithHeight {
+    event: CreateClient(
+        CreateClient(
+            Attributes {
+                client_id: ClientId(
+                    "07-tendermint-1",
+                ),
+                client_type: Tendermint,
+                consensus_height: Height {
+                    revision: 0,
+                    height: 17,
+                },
+            },
+        ),
+    ),
+    height: Height {
+        revision: 0,
+        height: 44,
+    },
+}
+
+2022-09-09T07:14:15.848501Z DEBUG ThreadId(19) send_tx_commit{id=create client}:send_tx_with_account_sequence_retry{id=cosmos}: max fee, for use in tx simulation: Fee { amount: "3001uatom", gas_limit: 3000000 }
+2022-09-09T07:14:15.850059Z DEBUG ThreadId(19) send_tx_commit{id=create client}:send_tx_with_account_sequence_retry{id=cosmos}:estimate_gas: tx simulation successful, gas amount used: 89413
+2022-09-09T07:14:15.850109Z DEBUG ThreadId(19) send_tx_commit{id=create client}:send_tx_with_account_sequence_retry{id=cosmos}: send_tx: using 89413 gas, fee Fee { amount: "99uatom", gas_limit: 98354 } id=cosmos
+2022-09-09T07:14:15.851510Z DEBUG ThreadId(19) send_tx_commit{id=create client}:send_tx_with_account_sequence_retry{id=cosmos}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(5FF3CED8ED23301FC9B61B5F4FB323A0AC97325E6AC2FC735D637791D2E9C031) }
+2022-09-09T07:14:15.851555Z  INFO ThreadId(19) send_tx_commit{id=create client}: wait_for_block_commits: waiting for commit of tx hashes(s) 5FF3CED8ED23301FC9B61B5F4FB323A0AC97325E6AC2FC735D637791D2E9C031 id=cosmos
+2022-09-09T07:14:16.753788Z  INFO ThreadId(01) 🍭 [osmosis -> cosmos:07-tendermint-1]  => IbcEventWithHeight {
+    event: CreateClient(
+        CreateClient(
+            Attributes {
+                client_id: ClientId(
+                    "07-tendermint-1",
+                ),
+                client_type: Tendermint,
+                consensus_height: Height {
+                    revision: 0,
+                    height: 44,
+                },
+            },
+        ),
+    ),
+    height: Height {
+        revision: 0,
+        height: 18,
+    },
+}
+
+2022-09-09T07:14:16.753907Z DEBUG ThreadId(01) do_conn_open_handshake with connection end states: UNINITIALIZED, UNINITIALIZED
+2022-09-09T07:14:16.754557Z DEBUG ThreadId(10) send_tx_commit{id=ConnectionOpenInit}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:14:16.756161Z DEBUG ThreadId(10) send_tx_commit{id=ConnectionOpenInit}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: tx simulation successful, gas amount used: 73701
+2022-09-09T07:14:16.756212Z DEBUG ThreadId(10) send_tx_commit{id=ConnectionOpenInit}:send_tx_with_account_sequence_retry{id=osmosis}: send_tx: using 73701 gas, fee Fee { amount: "82uosmo", gas_limit: 81071 } id=osmosis
+2022-09-09T07:14:16.757202Z DEBUG ThreadId(10) send_tx_commit{id=ConnectionOpenInit}:send_tx_with_account_sequence_retry{id=osmosis}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(3383A8E5F6D3ADB397568CDE4E28F858DEC98D1DB5AB29AF5FFCA429FCF5529C) }
+2022-09-09T07:14:16.757232Z  INFO ThreadId(10) send_tx_commit{id=ConnectionOpenInit}: wait_for_block_commits: waiting for commit of tx hashes(s) 3383A8E5F6D3ADB397568CDE4E28F858DEC98D1DB5AB29AF5FFCA429FCF5529C id=osmosis
+2022-09-09T07:14:17.960239Z  INFO ThreadId(01) 🥂 osmosis => IbcEventWithHeight {
+    event: OpenInitConnection(
+        OpenInit(
+            Attributes {
+                connection_id: Some(
+                    ConnectionId(
+                        "connection-1",
+                    ),
+                ),
+                client_id: ClientId(
+                    "07-tendermint-1",
+                ),
+                counterparty_connection_id: None,
+                counterparty_client_id: ClientId(
+                    "07-tendermint-1",
+                ),
+            },
+        ),
+    ),
+    height: Height {
+        revision: 0,
+        height: 45,
+    },
+}
+
+2022-09-09T07:14:18.961828Z DEBUG ThreadId(01) do_conn_open_handshake with connection end states: INIT, UNINITIALIZED
+2022-09-09T07:14:18.971695Z DEBUG ThreadId(01) [cosmos -> osmosis:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-17 to target height 0-18
+2022-09-09T07:14:18.972039Z DEBUG ThreadId(10) send_tx_commit{id=update client on source for ConnectionOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:14:18.974173Z DEBUG ThreadId(10) send_tx_commit{id=update client on source for ConnectionOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: tx simulation successful, gas amount used: 104935
+2022-09-09T07:14:18.974216Z DEBUG ThreadId(10) send_tx_commit{id=update client on source for ConnectionOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: send_tx: using 104935 gas, fee Fee { amount: "116uosmo", gas_limit: 115428 } id=osmosis
+2022-09-09T07:14:18.975762Z DEBUG ThreadId(10) send_tx_commit{id=update client on source for ConnectionOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(A7BB2260C4087EEF860D3181E914ED9D38488EB7FD49A400C6EEFAF0B9AEAF03) }
+2022-09-09T07:14:18.975792Z  INFO ThreadId(10) send_tx_commit{id=update client on source for ConnectionOpenTry}: wait_for_block_commits: waiting for commit of tx hashes(s) A7BB2260C4087EEF860D3181E914ED9D38488EB7FD49A400C6EEFAF0B9AEAF03 id=osmosis
+2022-09-09T07:14:21.912220Z DEBUG ThreadId(01) [osmosis -> cosmos:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-44 to target height 0-47
+2022-09-09T07:14:21.913527Z DEBUG ThreadId(19) send_tx_commit{id=ConnectionOpenTry}:send_tx_with_account_sequence_retry{id=cosmos}: max fee, for use in tx simulation: Fee { amount: "3001uatom", gas_limit: 3000000 }
+2022-09-09T07:14:21.916121Z DEBUG ThreadId(19) send_tx_commit{id=ConnectionOpenTry}:send_tx_with_account_sequence_retry{id=cosmos}:estimate_gas: tx simulation successful, gas amount used: 159483
+2022-09-09T07:14:21.916181Z DEBUG ThreadId(19) send_tx_commit{id=ConnectionOpenTry}:send_tx_with_account_sequence_retry{id=cosmos}: send_tx: using 159483 gas, fee Fee { amount: "176uatom", gas_limit: 175431 } id=cosmos
+2022-09-09T07:14:21.918382Z DEBUG ThreadId(19) send_tx_commit{id=ConnectionOpenTry}:send_tx_with_account_sequence_retry{id=cosmos}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(26A45EE31BFEFFC70E47C0358168229C609752B9F3F55E68D388320C03EF9B53) }
+2022-09-09T07:14:21.918426Z  INFO ThreadId(19) send_tx_commit{id=ConnectionOpenTry}: wait_for_block_commits: waiting for commit of tx hashes(s) 26A45EE31BFEFFC70E47C0358168229C609752B9F3F55E68D388320C03EF9B53 id=cosmos
+2022-09-09T07:14:26.730889Z  INFO ThreadId(01) 🥂 cosmos => IbcEventWithHeight {
+    event: OpenTryConnection(
+        OpenTry(
+            Attributes {
+                connection_id: Some(
+                    ConnectionId(
+                        "connection-1",
+                    ),
+                ),
+                client_id: ClientId(
+                    "07-tendermint-1",
+                ),
+                counterparty_connection_id: Some(
+                    ConnectionId(
+                        "connection-1",
+                    ),
+                ),
+                counterparty_client_id: ClientId(
+                    "07-tendermint-1",
+                ),
+            },
+        ),
+    ),
+    height: Height {
+        revision: 0,
+        height: 20,
+    },
+}
+
+2022-09-09T07:14:27.733292Z DEBUG ThreadId(01) do_conn_open_handshake with connection end states: INIT, TRYOPEN
+2022-09-09T07:14:27.743421Z DEBUG ThreadId(01) [osmosis -> cosmos:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-47 to target height 0-49
+2022-09-09T07:14:27.743769Z DEBUG ThreadId(19) send_tx_commit{id=update client on source for ConnectionOpenAck}:send_tx_with_account_sequence_retry{id=cosmos}: max fee, for use in tx simulation: Fee { amount: "3001uatom", gas_limit: 3000000 }
+2022-09-09T07:14:27.745699Z DEBUG ThreadId(19) send_tx_commit{id=update client on source for ConnectionOpenAck}:send_tx_with_account_sequence_retry{id=cosmos}:estimate_gas: tx simulation successful, gas amount used: 101013
+2022-09-09T07:14:27.745752Z DEBUG ThreadId(19) send_tx_commit{id=update client on source for ConnectionOpenAck}:send_tx_with_account_sequence_retry{id=cosmos}: send_tx: using 101013 gas, fee Fee { amount: "112uatom", gas_limit: 111114 } id=cosmos
+2022-09-09T07:14:27.747302Z DEBUG ThreadId(19) send_tx_commit{id=update client on source for ConnectionOpenAck}:send_tx_with_account_sequence_retry{id=cosmos}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(AFA2D0B8B27771309371AA457302683DF988BD5CA8B5B74CD9EF9ACE8CDA0FC8) }
+2022-09-09T07:14:27.747331Z  INFO ThreadId(19) send_tx_commit{id=update client on source for ConnectionOpenAck}: wait_for_block_commits: waiting for commit of tx hashes(s) AFA2D0B8B27771309371AA457302683DF988BD5CA8B5B74CD9EF9ACE8CDA0FC8 id=cosmos
+2022-09-09T07:14:36.725548Z DEBUG ThreadId(01) [cosmos -> osmosis:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-18 to target height 0-22
+2022-09-09T07:14:36.726751Z DEBUG ThreadId(10) send_tx_commit{id=ConnectionOpenAck}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:14:36.729245Z DEBUG ThreadId(10) send_tx_commit{id=ConnectionOpenAck}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: tx simulation successful, gas amount used: 153958
+2022-09-09T07:14:36.729293Z DEBUG ThreadId(10) send_tx_commit{id=ConnectionOpenAck}:send_tx_with_account_sequence_retry{id=osmosis}: send_tx: using 153958 gas, fee Fee { amount: "170uosmo", gas_limit: 169353 } id=osmosis
+2022-09-09T07:14:36.731717Z DEBUG ThreadId(10) send_tx_commit{id=ConnectionOpenAck}:send_tx_with_account_sequence_retry{id=osmosis}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(B4FEF8457CAF07CCE0E63370E21B587BAC03BB649C7B68852AA3B164A2CBD4F2) }
+2022-09-09T07:14:36.731752Z  INFO ThreadId(10) send_tx_commit{id=ConnectionOpenAck}: wait_for_block_commits: waiting for commit of tx hashes(s) B4FEF8457CAF07CCE0E63370E21B587BAC03BB649C7B68852AA3B164A2CBD4F2 id=osmosis
+2022-09-09T07:14:38.235825Z  INFO ThreadId(01) 🥂 osmosis => IbcEventWithHeight {
+    event: OpenAckConnection(
+        OpenAck(
+            Attributes {
+                connection_id: Some(
+                    ConnectionId(
+                        "connection-1",
+                    ),
+                ),
+                client_id: ClientId(
+                    "07-tendermint-1",
+                ),
+                counterparty_connection_id: Some(
+                    ConnectionId(
+                        "connection-1",
+                    ),
+                ),
+                counterparty_client_id: ClientId(
+                    "07-tendermint-1",
+                ),
+            },
+        ),
+    ),
+    height: Height {
+        revision: 0,
+        height: 55,
+    },
+}
+
+2022-09-09T07:14:39.237857Z DEBUG ThreadId(01) do_conn_open_handshake with connection end states: OPEN, TRYOPEN
+2022-09-09T07:14:40.159205Z DEBUG ThreadId(01) [osmosis -> cosmos:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-49 to target height 0-56
+2022-09-09T07:14:40.159804Z DEBUG ThreadId(19) send_tx_commit{id=ConnectionOpenConfirm}:send_tx_with_account_sequence_retry{id=cosmos}: max fee, for use in tx simulation: Fee { amount: "3001uatom", gas_limit: 3000000 }
+2022-09-09T07:14:40.161826Z DEBUG ThreadId(19) send_tx_commit{id=ConnectionOpenConfirm}:send_tx_with_account_sequence_retry{id=cosmos}:estimate_gas: tx simulation successful, gas amount used: 120007
+2022-09-09T07:14:40.161869Z DEBUG ThreadId(19) send_tx_commit{id=ConnectionOpenConfirm}:send_tx_with_account_sequence_retry{id=cosmos}: send_tx: using 120007 gas, fee Fee { amount: "133uatom", gas_limit: 132007 } id=cosmos
+2022-09-09T07:14:40.164024Z DEBUG ThreadId(19) send_tx_commit{id=ConnectionOpenConfirm}:send_tx_with_account_sequence_retry{id=cosmos}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(F2B72A1AD0C12E9EDB3F69A8959C414AE674C3D26B052F7C48981FC73755E342) }
+2022-09-09T07:14:40.164057Z  INFO ThreadId(19) send_tx_commit{id=ConnectionOpenConfirm}: wait_for_block_commits: waiting for commit of tx hashes(s) F2B72A1AD0C12E9EDB3F69A8959C414AE674C3D26B052F7C48981FC73755E342 id=cosmos
+2022-09-09T07:14:41.968380Z  INFO ThreadId(01) 🥂 cosmos => IbcEventWithHeight {
+    event: OpenConfirmConnection(
+        OpenConfirm(
+            Attributes {
+                connection_id: Some(
+                    ConnectionId(
+                        "connection-1",
+                    ),
+                ),
+                client_id: ClientId(
+                    "07-tendermint-1",
+                ),
+                counterparty_connection_id: Some(
+                    ConnectionId(
+                        "connection-1",
+                    ),
+                ),
+                counterparty_client_id: ClientId(
+                    "07-tendermint-1",
+                ),
+            },
+        ),
+    ),
+    height: Height {
+        revision: 0,
+        height: 23,
+    },
+}
+
+2022-09-09T07:14:42.970347Z DEBUG ThreadId(01) do_conn_open_handshake with connection end states: OPEN, OPEN
+2022-09-09T07:14:42.970382Z  INFO ThreadId(01) connection handshake already finished for Connection {
+    delay_period: 0ns,
+    a_side: ConnectionSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "osmosis",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-1",
+        ),
+        connection_id: Some(
+            ConnectionId(
+                "connection-1",
+            ),
+        ),
+    },
+    b_side: ConnectionSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "cosmos",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-1",
+        ),
+        connection_id: Some(
+            ConnectionId(
+                "connection-1",
+            ),
+        ),
+    },
+}
+
+SUCCESS Connection {
+    delay_period: 0ns,
+    a_side: ConnectionSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "osmosis",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-1",
+        ),
+        connection_id: Some(
+            ConnectionId(
+                "connection-1",
+            ),
+        ),
+    },
+    b_side: ConnectionSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "cosmos",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-1",
+        ),
+        connection_id: Some(
+            ConnectionId(
+                "connection-1",
+            ),
+        ),
+    },
+}
+2022-09-09T07:15:08.201411Z  INFO ThreadId(01) using default configuration from '/home/laurens/.hermes/config.toml'
+2022-09-09T07:15:08.208094Z DEBUG ThreadId(01) do_chan_open_handshake with channel end states: UNINITIALIZED, UNINITIALIZED
+2022-09-09T07:15:08.209834Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenInit}:send_tx_with_account_sequence_retry{id=cosmos}: max fee, for use in tx simulation: Fee { amount: "3001uatom", gas_limit: 3000000 }
+2022-09-09T07:15:08.211619Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenInit}:send_tx_with_account_sequence_retry{id=cosmos}:estimate_gas: tx simulation successful, gas amount used: 113944
+2022-09-09T07:15:08.211668Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenInit}:send_tx_with_account_sequence_retry{id=cosmos}: send_tx: using 113944 gas, fee Fee { amount: "126uatom", gas_limit: 125338 } id=cosmos
+2022-09-09T07:15:08.213090Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenInit}:send_tx_with_account_sequence_retry{id=cosmos}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(163A044D95FEBD77F12B207B88626DA2EB6D6E54D708893513378ED628452B35) }
+2022-09-09T07:15:08.213129Z  INFO ThreadId(10) send_tx_commit{id=ChannelOpenInit}: wait_for_block_commits: waiting for commit of tx hashes(s) 163A044D95FEBD77F12B207B88626DA2EB6D6E54D708893513378ED628452B35 id=cosmos
+2022-09-09T07:15:12.122315Z  INFO ThreadId(01) 🎊  cosmos => IbcEventWithHeight {
+    event: OpenInitChannel(
+        OpenInit {
+            port_id: PortId(
+                "transfer",
+            ),
+            channel_id: Some(
+                ChannelId(
+                    "channel-1",
+                ),
+            ),
+            connection_id: ConnectionId(
+                "connection-1",
+            ),
+            counterparty_port_id: PortId(
+                "transfer",
+            ),
+            counterparty_channel_id: None,
+        },
+    ),
+    height: Height {
+        revision: 0,
+        height: 29,
+    },
+}
+
+2022-09-09T07:15:13.123100Z DEBUG ThreadId(01) do_chan_open_handshake with channel end states: INIT, UNINITIALIZED
+2022-09-09T07:15:16.979527Z DEBUG ThreadId(01) [cosmos -> osmosis:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-22 to target height 0-30
+2022-09-09T07:15:16.981286Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:15:16.984967Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: tx simulation successful, gas amount used: 180064
+2022-09-09T07:15:16.985022Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: send_tx: using 180064 gas, fee Fee { amount: "199uosmo", gas_limit: 198070 } id=osmosis
+2022-09-09T07:15:16.987074Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(CAE760F7CE542AD664A4868763E9D5746E7B84774704BD89C45BD64E9FFF137E) }
+2022-09-09T07:15:16.987111Z  INFO ThreadId(27) send_tx_commit{id=ChannelOpenTry}: wait_for_block_commits: waiting for commit of tx hashes(s) CAE760F7CE542AD664A4868763E9D5746E7B84774704BD89C45BD64E9FFF137E id=osmosis
+2022-09-09T07:15:18.791607Z  INFO ThreadId(01) 🎊  osmosis => IbcEventWithHeight {
+    event: OpenTryChannel(
+        OpenTry {
+            port_id: PortId(
+                "transfer",
+            ),
+            channel_id: Some(
+                ChannelId(
+                    "channel-0",
+                ),
+            ),
+            connection_id: ConnectionId(
+                "connection-1",
+            ),
+            counterparty_port_id: PortId(
+                "transfer",
+            ),
+            counterparty_channel_id: Some(
+                ChannelId(
+                    "channel-1",
+                ),
+            ),
+        },
+    ),
+    height: Height {
+        revision: 0,
+        height: 75,
+    },
+}
+
+2022-09-09T07:15:19.792907Z DEBUG ThreadId(01) do_chan_open_handshake with channel end states: INIT, TRYOPEN
+2022-09-09T07:15:20.715272Z DEBUG ThreadId(01) [osmosis -> cosmos:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-56 to target height 0-76
+2022-09-09T07:15:20.715864Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=cosmos}: max fee, for use in tx simulation: Fee { amount: "3001uatom", gas_limit: 3000000 }
+2022-09-09T07:15:20.718967Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=cosmos}:estimate_gas: tx simulation successful, gas amount used: 127315
+2022-09-09T07:15:20.719028Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=cosmos}: send_tx: using 127315 gas, fee Fee { amount: "141uatom", gas_limit: 140046 } id=cosmos
+2022-09-09T07:15:20.720695Z DEBUG ThreadId(10) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=cosmos}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(6F3538618562F3269E1DE51E072B133E144677E3C1425103069F25CB2DD2D40B) }
+2022-09-09T07:15:20.720727Z  INFO ThreadId(10) send_tx_commit{id=ChannelOpenAck}: wait_for_block_commits: waiting for commit of tx hashes(s) 6F3538618562F3269E1DE51E072B133E144677E3C1425103069F25CB2DD2D40B id=cosmos
+2022-09-09T07:15:22.224946Z  INFO ThreadId(01) 🎊  cosmos => IbcEventWithHeight {
+    event: OpenAckChannel(
+        OpenAck {
+            port_id: PortId(
+                "transfer",
+            ),
+            channel_id: Some(
+                ChannelId(
+                    "channel-1",
+                ),
+            ),
+            counterparty_channel_id: Some(
+                ChannelId(
+                    "channel-0",
+                ),
+            ),
+            connection_id: ConnectionId(
+                "connection-1",
+            ),
+            counterparty_port_id: PortId(
+                "transfer",
+            ),
+        },
+    ),
+    height: Height {
+        revision: 0,
+        height: 31,
+    },
+}
+
+2022-09-09T07:15:23.226683Z DEBUG ThreadId(01) do_chan_open_handshake with channel end states: OPEN, TRYOPEN
+2022-09-09T07:15:27.082761Z DEBUG ThreadId(01) [cosmos -> osmosis:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-30 to target height 0-32
+2022-09-09T07:15:27.083344Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenConfirm}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:15:27.085685Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenConfirm}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: tx simulation successful, gas amount used: 131026
+2022-09-09T07:15:27.085724Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenConfirm}:send_tx_with_account_sequence_retry{id=osmosis}: send_tx: using 131026 gas, fee Fee { amount: "145uosmo", gas_limit: 144128 } id=osmosis
+2022-09-09T07:15:27.087335Z DEBUG ThreadId(27) send_tx_commit{id=ChannelOpenConfirm}:send_tx_with_account_sequence_retry{id=osmosis}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(7DD89CE6FA8E42D76B4EC5E21F863A18EEB8349AF946295DECA7A5DD781C118C) }
+2022-09-09T07:15:27.087363Z  INFO ThreadId(27) send_tx_commit{id=ChannelOpenConfirm}: wait_for_block_commits: waiting for commit of tx hashes(s) 7DD89CE6FA8E42D76B4EC5E21F863A18EEB8349AF946295DECA7A5DD781C118C id=osmosis
+2022-09-09T07:15:28.891761Z  INFO ThreadId(01) 🎊  osmosis => IbcEventWithHeight {
+    event: OpenConfirmChannel(
+        OpenConfirm {
+            port_id: PortId(
+                "transfer",
+            ),
+            channel_id: Some(
+                ChannelId(
+                    "channel-0",
+                ),
+            ),
+            connection_id: ConnectionId(
+                "connection-1",
+            ),
+            counterparty_port_id: PortId(
+                "transfer",
+            ),
+            counterparty_channel_id: Some(
+                ChannelId(
+                    "channel-1",
+                ),
+            ),
+        },
+    ),
+    height: Height {
+        revision: 0,
+        height: 80,
+    },
+}
+
+2022-09-09T07:15:29.893531Z DEBUG ThreadId(01) do_chan_open_handshake with channel end states: OPEN, OPEN
+2022-09-09T07:15:29.893595Z  INFO ThreadId(01) channel handshake already finished for Channel {
+    ordering: Unordered,
+    a_side: ChannelSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "cosmos",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-1",
+        ),
+        connection_id: ConnectionId(
+            "connection-1",
+        ),
+        port_id: PortId(
+            "transfer",
+        ),
+        channel_id: Some(
+            ChannelId(
+                "channel-1",
+            ),
+        ),
+        version: None,
+    },
+    b_side: ChannelSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "osmosis",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-1",
+        ),
+        connection_id: ConnectionId(
+            "connection-1",
+        ),
+        port_id: PortId(
+            "transfer",
+        ),
+        channel_id: Some(
+            ChannelId(
+                "channel-0",
+            ),
+        ),
+        version: None,
+    },
+    connection_delay: 0ns,
+}
+
+SUCCESS Channel {
+    ordering: Unordered,
+    a_side: ChannelSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "cosmos",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-1",
+        ),
+        connection_id: ConnectionId(
+            "connection-1",
+        ),
+        port_id: PortId(
+            "transfer",
+        ),
+        channel_id: Some(
+            ChannelId(
+                "channel-1",
+            ),
+        ),
+        version: None,
+    },
+    b_side: ChannelSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "osmosis",
+                version: 0,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-1",
+        ),
+        connection_id: ConnectionId(
+            "connection-1",
+        ),
+        port_id: PortId(
+            "transfer",
+        ),
+        channel_id: Some(
+            ChannelId(
+                "channel-0",
+            ),
+        ),
+        version: None,
+    },
+    connection_delay: 0ns,
+}

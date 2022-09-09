@@ -1,0 +1,779 @@
+2022-09-09T07:15:50.486663Z  INFO ThreadId(01) using default configuration from '/home/laurens/.hermes/config.toml'
+2022-09-09T07:15:50.488064Z  INFO ThreadId(01) starting REST API server listening at http://127.0.0.1:3000
+2022-09-09T07:15:50.492809Z DEBUG ThreadId(24) running diagnostic on version info Specs { sdk_version: Version { major: 0, minor: 46, patch: 1 }, ibc_go_version: Some(Version { major: 3, minor: 2, patch: 0 }), tendermint_version: Version { major: 0, minor: 34, patch: 21 } }
+2022-09-09T07:15:50.492873Z  WARN ThreadId(24) Health checkup for chain 'osmosis' failed
+2022-09-09T07:15:50.492882Z  WARN ThreadId(24)     Reason: Hermes health check failed while verifying the application compatibility for chain osmosis:http://127.0.0.1:9096/; caused by: SDK module at version '0.46.1' does not meet compatibility requirements >=0.41, <0.46
+2022-09-09T07:15:50.492889Z  WARN ThreadId(24)     Some Hermes features may not work in this mode!
+2022-09-09T07:15:50.492926Z  WARN ThreadId(01) chain is unhealthy: Hermes health check failed while verifying the application compatibility for chain osmosis:http://127.0.0.1:9096/; caused by: SDK module at version '0.46.1' does not meet compatibility requirements >=0.41, <0.46 chain=osmosis
+2022-09-09T07:15:50.496699Z DEBUG ThreadId(25) running diagnostic on version info Specs { sdk_version: Version { major: 0, minor: 45, patch: 3 }, ibc_go_version: Some(Version { major: 3, minor: 0, patch: 0 }), tendermint_version: Version { major: 0, minor: 34, patch: 19 } }
+2022-09-09T07:15:50.498198Z  INFO ThreadId(01) chain is healthy chain=cosmos
+2022-09-09T07:15:50.510438Z DEBUG ThreadId(26) running diagnostic on version info Specs { sdk_version: Version { major: 0, minor: 45, patch: 6 }, ibc_go_version: Some(Version { major: 3, minor: 1, patch: 0 }), tendermint_version: Version { major: 0, minor: 34, patch: 19 } }
+2022-09-09T07:15:50.514247Z  INFO ThreadId(01) chain is healthy chain=quasar
+2022-09-09T07:15:50.514485Z  INFO ThreadId(01) scan.chain{chain=osmosis}: scanning chain...
+2022-09-09T07:15:50.514599Z  INFO ThreadId(01) scan.chain{chain=osmosis}: scanning chain for all clients, connections and channels
+2022-09-09T07:15:50.514642Z  INFO ThreadId(01) scan.chain{chain=osmosis}: scanning all clients...
+2022-09-09T07:15:50.516042Z  INFO ThreadId(01) scan.chain{chain=osmosis}:scan.client{client=07-tendermint-0}: scanning client...
+2022-09-09T07:15:50.516065Z DEBUG ThreadId(01) scan.chain{chain=osmosis}:scan.client{client=07-tendermint-0}: [client filter] Allow: relay for client Client(ChainId { id: "osmosis", version: 0 }, ClientId("07-tendermint-0"))
+2022-09-09T07:15:50.518516Z  INFO ThreadId(01) scan.chain{chain=osmosis}:scan.client{client=07-tendermint-0}:scan.connection{connection=connection-0}: scanning connection...
+2022-09-09T07:15:50.519112Z DEBUG ThreadId(01) scan.chain{chain=osmosis}:scan.client{client=07-tendermint-0}:scan.connection{connection=connection-0}: [client filter] Allow: relay for client Client(ChainId { id: "quasar", version: 0 }, ClientId("07-tendermint-1"))
+2022-09-09T07:15:50.519136Z DEBUG ThreadId(01) scan.chain{chain=osmosis}:scan.client{client=07-tendermint-0}:scan.connection{connection=connection-0}: [client filter] Allow: relay for conn Connection(ChainId { id: "osmosis", version: 0 }, ConnectionId("connection-0"))
+2022-09-09T07:15:50.522473Z  INFO ThreadId(01) scan.chain{chain=osmosis}:scan.client{client=07-tendermint-1}: scanning client...
+2022-09-09T07:15:50.522515Z DEBUG ThreadId(01) scan.chain{chain=osmosis}:scan.client{client=07-tendermint-1}: [client filter] Allow: relay for client Client(ChainId { id: "osmosis", version: 0 }, ClientId("07-tendermint-1"))
+2022-09-09T07:15:50.524488Z  INFO ThreadId(01) scan.chain{chain=osmosis}:scan.client{client=07-tendermint-1}:scan.connection{connection=connection-1}: scanning connection...
+2022-09-09T07:15:50.525212Z DEBUG ThreadId(01) scan.chain{chain=osmosis}:scan.client{client=07-tendermint-1}:scan.connection{connection=connection-1}: [client filter] Allow: relay for client Client(ChainId { id: "cosmos", version: 0 }, ClientId("07-tendermint-1"))
+2022-09-09T07:15:50.525275Z DEBUG ThreadId(01) scan.chain{chain=osmosis}:scan.client{client=07-tendermint-1}:scan.connection{connection=connection-1}: [client filter] Allow: relay for conn Connection(ChainId { id: "osmosis", version: 0 }, ConnectionId("connection-1"))
+2022-09-09T07:15:50.527862Z  INFO ThreadId(01) scan.chain{chain=cosmos}: scanning chain...
+2022-09-09T07:15:50.527951Z  INFO ThreadId(01) scan.chain{chain=cosmos}: scanning chain for all clients, connections and channels
+2022-09-09T07:15:50.527966Z  INFO ThreadId(01) scan.chain{chain=cosmos}: scanning all clients...
+2022-09-09T07:15:50.528960Z  INFO ThreadId(01) scan.chain{chain=cosmos}:scan.client{client=07-tendermint-0}: scanning client...
+2022-09-09T07:15:50.528988Z DEBUG ThreadId(01) scan.chain{chain=cosmos}:scan.client{client=07-tendermint-0}: [client filter] Allow: relay for client Client(ChainId { id: "cosmos", version: 0 }, ClientId("07-tendermint-0"))
+2022-09-09T07:15:50.530365Z  INFO ThreadId(01) scan.chain{chain=cosmos}:scan.client{client=07-tendermint-0}:scan.connection{connection=connection-0}: scanning connection...
+2022-09-09T07:15:50.530901Z DEBUG ThreadId(01) scan.chain{chain=cosmos}:scan.client{client=07-tendermint-0}:scan.connection{connection=connection-0}: [client filter] Allow: relay for client Client(ChainId { id: "quasar", version: 0 }, ClientId("07-tendermint-0"))
+2022-09-09T07:15:50.530920Z DEBUG ThreadId(01) scan.chain{chain=cosmos}:scan.client{client=07-tendermint-0}:scan.connection{connection=connection-0}: [client filter] Allow: relay for conn Connection(ChainId { id: "cosmos", version: 0 }, ConnectionId("connection-0"))
+2022-09-09T07:15:50.533018Z  INFO ThreadId(01) scan.chain{chain=cosmos}:scan.client{client=07-tendermint-1}: scanning client...
+2022-09-09T07:15:50.533709Z  INFO ThreadId(01) scan.chain{chain=cosmos}:scan.client{client=07-tendermint-1}:scan.connection{connection=connection-1}: scanning connection...
+2022-09-09T07:15:50.534324Z DEBUG ThreadId(01) scan.chain{chain=cosmos}:scan.client{client=07-tendermint-1}:scan.connection{connection=connection-1}: [client filter] Allow: relay for conn Connection(ChainId { id: "cosmos", version: 0 }, ConnectionId("connection-1"))
+2022-09-09T07:15:50.535493Z  INFO ThreadId(01) scan.chain{chain=quasar}: scanning chain...
+2022-09-09T07:15:50.535551Z  INFO ThreadId(01) scan.chain{chain=quasar}: scanning chain for all clients, connections and channels
+2022-09-09T07:15:50.535558Z  INFO ThreadId(01) scan.chain{chain=quasar}: scanning all clients...
+2022-09-09T07:15:50.536593Z  INFO ThreadId(01) scan.chain{chain=quasar}:scan.client{client=07-tendermint-0}: scanning client...
+2022-09-09T07:15:50.537313Z  INFO ThreadId(01) scan.chain{chain=quasar}:scan.client{client=07-tendermint-0}:scan.connection{connection=connection-0}: scanning connection...
+2022-09-09T07:15:50.537801Z DEBUG ThreadId(01) scan.chain{chain=quasar}:scan.client{client=07-tendermint-0}:scan.connection{connection=connection-0}: [client filter] Allow: relay for conn Connection(ChainId { id: "quasar", version: 0 }, ConnectionId("connection-0"))
+2022-09-09T07:15:50.539203Z  INFO ThreadId(01) scan.chain{chain=quasar}:scan.client{client=07-tendermint-1}: scanning client...
+2022-09-09T07:15:50.539828Z  INFO ThreadId(01) scan.chain{chain=quasar}:scan.client{client=07-tendermint-1}:scan.connection{connection=connection-1}: scanning connection...
+2022-09-09T07:15:50.540384Z DEBUG ThreadId(01) scan.chain{chain=quasar}:scan.client{client=07-tendermint-1}:scan.connection{connection=connection-1}: [client filter] Allow: relay for conn Connection(ChainId { id: "quasar", version: 0 }, ConnectionId("connection-1"))
+2022-09-09T07:15:50.543346Z  INFO ThreadId(01) Scanned chains:
+2022-09-09T07:15:50.543371Z  INFO ThreadId(01) # Chain: osmosis
+  - Client: 07-tendermint-0
+    * Connection: connection-0
+      | State: OPEN
+      | Counterparty state: OPEN
+      + Channel: channel-1
+        | Port: transfer
+        | State: OPEN
+        | Counterparty: channel-3
+  - Client: 07-tendermint-1
+    * Connection: connection-1
+      | State: OPEN
+      | Counterparty state: OPEN
+      + Channel: channel-0
+        | Port: transfer
+        | State: OPEN
+        | Counterparty: channel-1
+# Chain: cosmos
+  - Client: 07-tendermint-0
+    * Connection: connection-0
+      | State: OPEN
+      | Counterparty state: OPEN
+      + Channel: channel-0
+        | Port: transfer
+        | State: OPEN
+        | Counterparty: channel-2
+  - Client: 07-tendermint-1
+    * Connection: connection-1
+      | State: OPEN
+      | Counterparty state: OPEN
+      + Channel: channel-1
+        | Port: transfer
+        | State: OPEN
+        | Counterparty: channel-0
+# Chain: quasar
+  - Client: 07-tendermint-0
+    * Connection: connection-0
+      | State: OPEN
+      | Counterparty state: OPEN
+      + Channel: channel-2
+        | Port: transfer
+        | State: OPEN
+        | Counterparty: channel-0
+  - Client: 07-tendermint-1
+    * Connection: connection-1
+      | State: OPEN
+      | Counterparty state: OPEN
+      + Channel: channel-0
+        | Port: icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc
+        | State: INIT
+        | Counterparty: <none>
+      + Channel: channel-1
+        | Port: icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc
+        | State: INIT
+        | Counterparty: <none>
+      + Channel: channel-3
+        | Port: transfer
+        | State: OPEN
+        | Counterparty: channel-1
+
+2022-09-09T07:15:50.543414Z  INFO ThreadId(01) connection is Open, state on destination chain is Open chain=osmosis connection=connection-0 counterparty_chain=quasar
+2022-09-09T07:15:50.543422Z  INFO ThreadId(01) connection is already open, not spawning Connection worker chain=osmosis connection=connection-0
+2022-09-09T07:15:50.543429Z  INFO ThreadId(01) no connection workers were spawn chain=osmosis connection=connection-0
+2022-09-09T07:15:50.543434Z  INFO ThreadId(01) channel is OPEN, state on destination chain is OPEN chain=osmosis counterparty_chain=quasar channel=channel-1
+2022-09-09T07:15:50.544649Z DEBUG ThreadId(01) refresh{client=07-tendermint-0 src_chain=quasar dst_chain=osmosis}: spawning task
+2022-09-09T07:15:50.545920Z DEBUG ThreadId(01) DetectMisbehaviorWorker{client=07-tendermint-0 src_chain=quasar dst_chain=osmosis}: spawning task
+2022-09-09T07:15:50.545988Z  INFO ThreadId(01) spawned client worker: client::quasar->osmosis:07-tendermint-0
+2022-09-09T07:15:50.546032Z DEBUG ThreadId(28) DetectMisbehaviorWorker{client=07-tendermint-0 src_chain=quasar dst_chain=osmosis}:DetectMisbehaviorFirstCheck{client=07-tendermint-0 src_chain=quasar dst_chain=osmosis}: doing first check
+2022-09-09T07:15:50.548455Z  INFO ThreadId(01) done spawning channel workers chain=osmosis channel=channel-1
+2022-09-09T07:15:50.548500Z  INFO ThreadId(01) connection is Open, state on destination chain is Open chain=osmosis connection=connection-1 counterparty_chain=cosmos
+2022-09-09T07:15:50.548507Z  INFO ThreadId(01) connection is already open, not spawning Connection worker chain=osmosis connection=connection-1
+2022-09-09T07:15:50.548513Z  INFO ThreadId(01) no connection workers were spawn chain=osmosis connection=connection-1
+2022-09-09T07:15:50.548517Z  INFO ThreadId(01) channel is OPEN, state on destination chain is OPEN chain=osmosis counterparty_chain=cosmos channel=channel-0
+2022-09-09T07:15:50.549611Z DEBUG ThreadId(01) refresh{client=07-tendermint-1 src_chain=cosmos dst_chain=osmosis}: spawning task
+2022-09-09T07:15:50.550617Z DEBUG ThreadId(01) DetectMisbehaviorWorker{client=07-tendermint-1 src_chain=cosmos dst_chain=osmosis}: spawning task
+2022-09-09T07:15:50.550677Z  INFO ThreadId(01) spawned client worker: client::cosmos->osmosis:07-tendermint-1
+2022-09-09T07:15:50.550724Z DEBUG ThreadId(30) DetectMisbehaviorWorker{client=07-tendermint-1 src_chain=cosmos dst_chain=osmosis}:DetectMisbehaviorFirstCheck{client=07-tendermint-1 src_chain=cosmos dst_chain=osmosis}: doing first check
+2022-09-09T07:15:50.552926Z  INFO ThreadId(01) done spawning channel workers chain=osmosis channel=channel-0
+2022-09-09T07:15:50.552964Z DEBUG ThreadId(01) wallet{chain=osmosis}: spawning task
+2022-09-09T07:15:50.553027Z  INFO ThreadId(01) spawning Wallet worker: wallet::osmosis
+2022-09-09T07:15:50.553049Z  INFO ThreadId(01) connection is Open, state on destination chain is Open chain=cosmos connection=connection-0 counterparty_chain=quasar
+2022-09-09T07:15:50.553056Z  INFO ThreadId(01) connection is already open, not spawning Connection worker chain=cosmos connection=connection-0
+2022-09-09T07:15:50.553062Z  INFO ThreadId(01) no connection workers were spawn chain=cosmos connection=connection-0
+2022-09-09T07:15:50.553067Z  INFO ThreadId(01) channel is OPEN, state on destination chain is OPEN chain=cosmos counterparty_chain=quasar channel=channel-0
+2022-09-09T07:15:50.554265Z DEBUG ThreadId(01) refresh{client=07-tendermint-0 src_chain=quasar dst_chain=cosmos}: spawning task
+2022-09-09T07:15:50.555381Z DEBUG ThreadId(01) DetectMisbehaviorWorker{client=07-tendermint-0 src_chain=quasar dst_chain=cosmos}: spawning task
+2022-09-09T07:15:50.555439Z  INFO ThreadId(01) spawned client worker: client::quasar->cosmos:07-tendermint-0
+2022-09-09T07:15:50.555482Z DEBUG ThreadId(33) DetectMisbehaviorWorker{client=07-tendermint-0 src_chain=quasar dst_chain=cosmos}:DetectMisbehaviorFirstCheck{client=07-tendermint-0 src_chain=quasar dst_chain=cosmos}: doing first check
+2022-09-09T07:15:50.557443Z  INFO ThreadId(01) done spawning channel workers chain=cosmos channel=channel-0
+2022-09-09T07:15:50.557489Z  INFO ThreadId(01) connection is Open, state on destination chain is Open chain=cosmos connection=connection-1 counterparty_chain=osmosis
+2022-09-09T07:15:50.557502Z  INFO ThreadId(01) connection is already open, not spawning Connection worker chain=cosmos connection=connection-1
+2022-09-09T07:15:50.557511Z  INFO ThreadId(01) no connection workers were spawn chain=cosmos connection=connection-1
+2022-09-09T07:15:50.557520Z  INFO ThreadId(01) channel is OPEN, state on destination chain is OPEN chain=cosmos counterparty_chain=osmosis channel=channel-1
+2022-09-09T07:15:50.558612Z DEBUG ThreadId(01) refresh{client=07-tendermint-1 src_chain=osmosis dst_chain=cosmos}: spawning task
+2022-09-09T07:15:50.559698Z DEBUG ThreadId(01) DetectMisbehaviorWorker{client=07-tendermint-1 src_chain=osmosis dst_chain=cosmos}: spawning task
+2022-09-09T07:15:50.559761Z  INFO ThreadId(01) spawned client worker: client::osmosis->cosmos:07-tendermint-1
+2022-09-09T07:15:50.559803Z DEBUG ThreadId(35) DetectMisbehaviorWorker{client=07-tendermint-1 src_chain=osmosis dst_chain=cosmos}:DetectMisbehaviorFirstCheck{client=07-tendermint-1 src_chain=osmosis dst_chain=cosmos}: doing first check
+2022-09-09T07:15:50.561979Z  INFO ThreadId(01) done spawning channel workers chain=cosmos channel=channel-1
+2022-09-09T07:15:50.562025Z DEBUG ThreadId(01) wallet{chain=cosmos}: spawning task
+2022-09-09T07:15:50.562103Z  INFO ThreadId(01) spawning Wallet worker: wallet::cosmos
+2022-09-09T07:15:50.562129Z  INFO ThreadId(01) connection is Open, state on destination chain is Open chain=quasar connection=connection-0 counterparty_chain=cosmos
+2022-09-09T07:15:50.562141Z  INFO ThreadId(01) connection is already open, not spawning Connection worker chain=quasar connection=connection-0
+2022-09-09T07:15:50.562147Z  INFO ThreadId(01) no connection workers were spawn chain=quasar connection=connection-0
+2022-09-09T07:15:50.562152Z  INFO ThreadId(01) channel is OPEN, state on destination chain is OPEN chain=quasar counterparty_chain=cosmos channel=channel-2
+2022-09-09T07:15:50.563942Z DEBUG ThreadId(01) refresh{client=07-tendermint-0 src_chain=cosmos dst_chain=quasar}: spawning task
+2022-09-09T07:15:50.565009Z DEBUG ThreadId(01) DetectMisbehaviorWorker{client=07-tendermint-0 src_chain=cosmos dst_chain=quasar}: spawning task
+2022-09-09T07:15:50.565064Z  INFO ThreadId(01) spawned client worker: client::cosmos->quasar:07-tendermint-0
+2022-09-09T07:15:50.565103Z DEBUG ThreadId(38) DetectMisbehaviorWorker{client=07-tendermint-0 src_chain=cosmos dst_chain=quasar}:DetectMisbehaviorFirstCheck{client=07-tendermint-0 src_chain=cosmos dst_chain=quasar}: doing first check
+2022-09-09T07:15:50.567189Z  INFO ThreadId(01) done spawning channel workers chain=quasar channel=channel-2
+2022-09-09T07:15:50.567238Z  INFO ThreadId(01) connection is Open, state on destination chain is Open chain=quasar connection=connection-1 counterparty_chain=osmosis
+2022-09-09T07:15:50.567248Z  INFO ThreadId(01) connection is already open, not spawning Connection worker chain=quasar connection=connection-1
+2022-09-09T07:15:50.567257Z  INFO ThreadId(01) no connection workers were spawn chain=quasar connection=connection-1
+2022-09-09T07:15:50.567265Z  INFO ThreadId(01) channel is INIT, state on destination chain is UNINITIALIZED chain=quasar counterparty_chain=osmosis channel=channel-0
+2022-09-09T07:15:50.567290Z DEBUG ThreadId(01) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: spawning task
+2022-09-09T07:15:50.567351Z  INFO ThreadId(01) spawned channel worker: channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis
+2022-09-09T07:15:50.567361Z  INFO ThreadId(01) done spawning channel workers chain=quasar channel=channel-0
+2022-09-09T07:15:50.567369Z  INFO ThreadId(01) channel is INIT, state on destination chain is UNINITIALIZED chain=quasar counterparty_chain=osmosis channel=channel-1
+2022-09-09T07:15:50.567386Z DEBUG ThreadId(01) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: spawning task
+2022-09-09T07:15:50.567426Z  INFO ThreadId(01) spawned channel worker: channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis
+2022-09-09T07:15:50.567435Z  INFO ThreadId(01) done spawning channel workers chain=quasar channel=channel-1
+2022-09-09T07:15:50.567443Z  INFO ThreadId(01) channel is OPEN, state on destination chain is OPEN chain=quasar counterparty_chain=osmosis channel=channel-3
+2022-09-09T07:15:50.568577Z DEBUG ThreadId(01) refresh{client=07-tendermint-1 src_chain=osmosis dst_chain=quasar}: spawning task
+2022-09-09T07:15:50.569556Z DEBUG ThreadId(01) DetectMisbehaviorWorker{client=07-tendermint-1 src_chain=osmosis dst_chain=quasar}: spawning task
+2022-09-09T07:15:50.569611Z  INFO ThreadId(01) spawned client worker: client::osmosis->quasar:07-tendermint-1
+2022-09-09T07:15:50.569655Z DEBUG ThreadId(42) DetectMisbehaviorWorker{client=07-tendermint-1 src_chain=osmosis dst_chain=quasar}:DetectMisbehaviorFirstCheck{client=07-tendermint-1 src_chain=osmosis dst_chain=quasar}: doing first check
+2022-09-09T07:15:50.571722Z  INFO ThreadId(01) done spawning channel workers chain=quasar channel=channel-3
+2022-09-09T07:15:50.571763Z DEBUG ThreadId(01) wallet{chain=quasar}: spawning task
+2022-09-09T07:15:50.571830Z  INFO ThreadId(01) spawning Wallet worker: wallet::quasar
+2022-09-09T07:15:50.575458Z DEBUG ThreadId(44) starting event monitor chain=osmosis
+2022-09-09T07:15:50.577282Z DEBUG ThreadId(45) starting event monitor chain=cosmos
+2022-09-09T07:15:50.579391Z DEBUG ThreadId(01) spawning task
+2022-09-09T07:15:50.579402Z DEBUG ThreadId(46) starting event monitor chain=quasar
+2022-09-09T07:15:50.579453Z DEBUG ThreadId(01) spawning task
+2022-09-09T07:15:50.579492Z DEBUG ThreadId(01) spawning task
+2022-09-09T07:15:50.579529Z DEBUG ThreadId(01) cmd: spawning task
+2022-09-09T07:15:50.579565Z DEBUG ThreadId(01) rest: spawning task
+2022-09-09T07:15:50.579633Z  INFO ThreadId(01) Hermes has started
+2022-09-09T07:15:57.395082Z DEBUG ThreadId(49) [client filter] Allow: relay for channel Channel(ChainId { id: "quasar", version: 0 }, PortId("icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc"), ChannelId("channel-4")): 
+2022-09-09T07:15:57.395144Z DEBUG ThreadId(49) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: spawning task
+2022-09-09T07:15:57.395223Z DEBUG ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing Some(
+    IbcEventWithHeight {
+        event: OpenInitChannel(
+            OpenInit {
+                port_id: PortId(
+                    "icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc",
+                ),
+                channel_id: Some(
+                    ChannelId(
+                        "channel-4",
+                    ),
+                ),
+                connection_id: ConnectionId(
+                    "connection-1",
+                ),
+                counterparty_port_id: PortId(
+                    "icahost",
+                ),
+                counterparty_channel_id: None,
+            },
+        ),
+        height: Height {
+            revision: 0,
+            height: 37,
+        },
+    },
+)
+2022-09-09T07:15:57.569974Z DEBUG ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 37,
+}
+2022-09-09T07:15:57.570001Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 37,
+}
+2022-09-09T07:16:02.435494Z DEBUG ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: [quasar -> osmosis:07-tendermint-0] MsgUpdateAnyClient from trusted height 0-36 to target height 0-39
+2022-09-09T07:16:02.436938Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:16:02.439352Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: tx simulation successful, gas amount used: 214746
+2022-09-09T07:16:02.439390Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: send_tx: using 214746 gas, fee Fee { amount: "237uosmo", gas_limit: 236220 } id=osmosis
+2022-09-09T07:16:02.441531Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(0B51F9319FE59D6726728DA6BDF5FBCBAF2382150FAFA23490DD2986BBFA66FD) }
+2022-09-09T07:16:02.441572Z  INFO ThreadId(24) send_tx_commit{id=ChannelOpenTry}: wait_for_block_commits: waiting for commit of tx hashes(s) 0B51F9319FE59D6726728DA6BDF5FBCBAF2382150FAFA23490DD2986BBFA66FD id=osmosis
+2022-09-09T07:16:03.644905Z  INFO ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: 🎊  osmosis => IbcEventWithHeight {
+    event: OpenTryChannel(
+        OpenTry {
+            port_id: PortId(
+                "icahost",
+            ),
+            channel_id: Some(
+                ChannelId(
+                    "channel-2",
+                ),
+            ),
+            connection_id: ConnectionId(
+                "connection-0",
+            ),
+            counterparty_port_id: PortId(
+                "icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc",
+            ),
+            counterparty_channel_id: Some(
+                ChannelId(
+                    "channel-4",
+                ),
+            ),
+        },
+    ),
+    height: Height {
+        revision: 0,
+        height: 97,
+    },
+}
+
+2022-09-09T07:16:03.644965Z  INFO ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: channel handshake step completed with events: OpenTryChannel(
+    OpenTry {
+        port_id: PortId(
+            "icahost",
+        ),
+        channel_id: Some(
+            ChannelId(
+                "channel-2",
+            ),
+        ),
+        connection_id: ConnectionId(
+            "connection-0",
+        ),
+        counterparty_port_id: PortId(
+            "icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc",
+        ),
+        counterparty_channel_id: Some(
+            ChannelId(
+                "channel-4",
+            ),
+        ),
+    },
+)
+
+2022-09-09T07:16:03.652613Z DEBUG ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: [quasar -> osmosis:07-tendermint-0] MsgUpdateAnyClient from trusted height 0-36 to target height 0-39
+2022-09-09T07:16:03.653256Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:16:03.655438Z ERROR ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "97"} }
+2022-09-09T07:16:03.655496Z ERROR ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: failed ChanInit with error: failed during a transaction submission step to chain 'osmosis': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "97"} }
+2022-09-09T07:16:03.657651Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: [quasar -> osmosis:07-tendermint-0] MsgUpdateAnyClient from trusted height 0-36 to target height 0-39
+2022-09-09T07:16:03.658235Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:16:03.660344Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: tx simulation successful, gas amount used: 179938
+2022-09-09T07:16:03.660389Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: send_tx: using 179938 gas, fee Fee { amount: "198uosmo", gas_limit: 197931 } id=osmosis
+2022-09-09T07:16:03.661846Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(702B0298D2809A2AF2C566EB93418808F37B25BF51101CA5CFB8EFD1B0057844) }
+2022-09-09T07:16:03.661884Z  INFO ThreadId(24) send_tx_commit{id=ChannelOpenTry}: wait_for_block_commits: waiting for commit of tx hashes(s) 702B0298D2809A2AF2C566EB93418808F37B25BF51101CA5CFB8EFD1B0057844 id=osmosis
+2022-09-09T07:16:03.845068Z DEBUG ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 38,
+}
+2022-09-09T07:16:05.467682Z  INFO ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: 🎊  osmosis => IbcEventWithHeight {
+    event: OpenTryChannel(
+        OpenTry {
+            port_id: PortId(
+                "icahost",
+            ),
+            channel_id: Some(
+                ChannelId(
+                    "channel-3",
+                ),
+            ),
+            connection_id: ConnectionId(
+                "connection-0",
+            ),
+            counterparty_port_id: PortId(
+                "icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc",
+            ),
+            counterparty_channel_id: Some(
+                ChannelId(
+                    "channel-1",
+                ),
+            ),
+        },
+    ),
+    height: Height {
+        revision: 0,
+        height: 98,
+    },
+}
+
+2022-09-09T07:16:05.467751Z  INFO ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: channel handshake step completed with events: OpenTryChannel(
+    OpenTry {
+        port_id: PortId(
+            "icahost",
+        ),
+        channel_id: Some(
+            ChannelId(
+                "channel-3",
+            ),
+        ),
+        connection_id: ConnectionId(
+            "connection-0",
+        ),
+        counterparty_port_id: PortId(
+            "icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc",
+        ),
+        counterparty_channel_id: Some(
+            ChannelId(
+                "channel-1",
+            ),
+        ),
+    },
+)
+
+2022-09-09T07:16:05.474928Z DEBUG ThreadId(47) [client filter] Allow: relay for channel Channel(ChainId { id: "osmosis", version: 0 }, PortId("icahost"), ChannelId("channel-2")): 
+2022-09-09T07:16:05.475021Z DEBUG ThreadId(47) worker.channel{channel=channel::channel-2/icahost:osmosis->quasar}: spawning task
+2022-09-09T07:16:05.475115Z DEBUG ThreadId(288) worker.channel{channel=channel::channel-2/icahost:osmosis->quasar}: starts processing Some(
+    IbcEventWithHeight {
+        event: OpenTryChannel(
+            OpenTry {
+                port_id: PortId(
+                    "icahost",
+                ),
+                channel_id: Some(
+                    ChannelId(
+                        "channel-2",
+                    ),
+                ),
+                connection_id: ConnectionId(
+                    "connection-0",
+                ),
+                counterparty_port_id: PortId(
+                    "icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc",
+                ),
+                counterparty_channel_id: Some(
+                    ChannelId(
+                        "channel-4",
+                    ),
+                ),
+            },
+        ),
+        height: Height {
+            revision: 0,
+            height: 97,
+        },
+    },
+)
+2022-09-09T07:16:05.667895Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 38,
+}
+2022-09-09T07:16:05.977118Z DEBUG ThreadId(28) DetectMisbehaviorWorker{client=07-tendermint-0 src_chain=quasar dst_chain=osmosis}: checking misbehavior for updated client
+2022-09-09T07:16:07.474577Z DEBUG ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 39,
+}
+2022-09-09T07:16:07.482640Z DEBUG ThreadId(47) [client filter] Allow: relay for channel Channel(ChainId { id: "osmosis", version: 0 }, PortId("icahost"), ChannelId("channel-3")): 
+2022-09-09T07:16:07.482695Z DEBUG ThreadId(47) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: spawning task
+2022-09-09T07:16:07.482779Z DEBUG ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: starts processing Some(
+    IbcEventWithHeight {
+        event: OpenTryChannel(
+            OpenTry {
+                port_id: PortId(
+                    "icahost",
+                ),
+                channel_id: Some(
+                    ChannelId(
+                        "channel-3",
+                    ),
+                ),
+                connection_id: ConnectionId(
+                    "connection-0",
+                ),
+                counterparty_port_id: PortId(
+                    "icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc",
+                ),
+                counterparty_channel_id: Some(
+                    ChannelId(
+                        "channel-1",
+                    ),
+                ),
+            },
+        ),
+        height: Height {
+            revision: 0,
+            height: 98,
+        },
+    },
+)
+2022-09-09T07:16:07.490434Z DEBUG ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: [quasar -> osmosis:07-tendermint-0] MsgUpdateAnyClient from trusted height 0-39 to target height 0-40
+2022-09-09T07:16:07.495787Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:16:07.496629Z DEBUG ThreadId(288) worker.channel{channel=channel::channel-2/icahost:osmosis->quasar}: [osmosis -> quasar:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-86 to target height 0-99
+2022-09-09T07:16:07.498148Z DEBUG ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: max fee, for use in tx simulation: Fee { amount: "3001uqsr", gas_limit: 3000000 }
+2022-09-09T07:16:07.498355Z ERROR ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "99"} }
+2022-09-09T07:16:07.498407Z ERROR ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: failed ChanInit with error: failed during a transaction submission step to chain 'osmosis': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "99"} }
+2022-09-09T07:16:07.500529Z DEBUG ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}:estimate_gas: tx simulation successful, gas amount used: 171949
+2022-09-09T07:16:07.500576Z DEBUG ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: send_tx: using 171949 gas, fee Fee { amount: "190uqsr", gas_limit: 189143 } id=quasar
+2022-09-09T07:16:07.502023Z DEBUG ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(B9C10EFE89C5768B8DE9EEC4956CA4AA1E8D22B53A63FDE787EFFB8983F048A1) }
+2022-09-09T07:16:07.502056Z  INFO ThreadId(26) send_tx_commit{id=ChannelOpenAck}: wait_for_block_commits: waiting for commit of tx hashes(s) B9C10EFE89C5768B8DE9EEC4956CA4AA1E8D22B53A63FDE787EFFB8983F048A1 id=quasar
+2022-09-09T07:16:07.671836Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 39,
+}
+2022-09-09T07:16:07.983590Z DEBUG ThreadId(28) DetectMisbehaviorWorker{client=07-tendermint-0 src_chain=quasar dst_chain=osmosis}: checking misbehavior for updated client
+2022-09-09T07:16:12.614622Z  INFO ThreadId(288) worker.channel{channel=channel::channel-2/icahost:osmosis->quasar}: 🎊  quasar => IbcEventWithHeight {
+    event: OpenAckChannel(
+        OpenAck {
+            port_id: PortId(
+                "icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc",
+            ),
+            channel_id: Some(
+                ChannelId(
+                    "channel-4",
+                ),
+            ),
+            counterparty_channel_id: Some(
+                ChannelId(
+                    "channel-2",
+                ),
+            ),
+            connection_id: ConnectionId(
+                "connection-1",
+            ),
+            counterparty_port_id: PortId(
+                "icahost",
+            ),
+        },
+    ),
+    height: Height {
+        revision: 0,
+        height: 41,
+    },
+}
+
+2022-09-09T07:16:12.614686Z  INFO ThreadId(288) worker.channel{channel=channel::channel-2/icahost:osmosis->quasar}: channel handshake step completed with events: OpenAckChannel(
+    OpenAck {
+        port_id: PortId(
+            "icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc",
+        ),
+        channel_id: Some(
+            ChannelId(
+                "channel-4",
+            ),
+        ),
+        counterparty_channel_id: Some(
+            ChannelId(
+                "channel-2",
+            ),
+        ),
+        connection_id: ConnectionId(
+            "connection-1",
+        ),
+        counterparty_port_id: PortId(
+            "icahost",
+        ),
+    },
+)
+
+2022-09-09T07:16:12.627380Z DEBUG ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: [osmosis -> quasar:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-86 to target height 0-99
+2022-09-09T07:16:12.628956Z DEBUG ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: max fee, for use in tx simulation: Fee { amount: "3001uqsr", gas_limit: 3000000 }
+2022-09-09T07:16:12.630941Z ERROR ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "41"} }
+2022-09-09T07:16:12.631003Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanOpenAck ChannelSide { chain: CachingChainHandle { inner: BaseChainHandle { chain_id: ChainId { id: "quasar", version: 0 }, runtime_sender: Sender { .. } }, cache: Cache { .. } }, client_id: ClientId("07-tendermint-1"), connection_id: ConnectionId("connection-1"), port_id: PortId("icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc"), channel_id: Some(ChannelId("channel-1")), version: None }: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "41"} }
+2022-09-09T07:16:12.631031Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanTryOpen with error: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "41"} }
+2022-09-09T07:16:12.679457Z DEBUG ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 40,
+}
+2022-09-09T07:16:12.814827Z DEBUG ThreadId(288) worker.channel{channel=channel::channel-2/icahost:osmosis->quasar}: starts processing block event at Height {
+    revision: 0,
+    height: 98,
+}
+2022-09-09T07:16:12.818340Z DEBUG ThreadId(288) worker.channel{channel=channel::channel-2/icahost:osmosis->quasar}: aborting task
+2022-09-09T07:16:12.818371Z DEBUG ThreadId(288) worker.channel{channel=channel::channel-2/icahost:osmosis->quasar}: task terminated
+2022-09-09T07:16:12.826040Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 40,
+}
+2022-09-09T07:16:13.645267Z DEBUG ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: [osmosis -> quasar:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-99 to target height 0-102
+2022-09-09T07:16:13.646000Z DEBUG ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: max fee, for use in tx simulation: Fee { amount: "3001uqsr", gas_limit: 3000000 }
+2022-09-09T07:16:13.648625Z ERROR ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "41"} }
+2022-09-09T07:16:13.648706Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanOpenAck ChannelSide { chain: CachingChainHandle { inner: BaseChainHandle { chain_id: ChainId { id: "quasar", version: 0 }, runtime_sender: Sender { .. } }, cache: Cache { .. } }, client_id: ClientId("07-tendermint-1"), connection_id: ConnectionId("connection-1"), port_id: PortId("icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc"), channel_id: Some(ChannelId("channel-1")), version: None }: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "41"} }
+2022-09-09T07:16:13.648743Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanTryOpen with error: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "41"} }
+2022-09-09T07:16:15.770188Z DEBUG ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: [osmosis -> quasar:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-99 to target height 0-103
+2022-09-09T07:16:15.770853Z DEBUG ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: max fee, for use in tx simulation: Fee { amount: "3001uqsr", gas_limit: 3000000 }
+2022-09-09T07:16:15.775245Z ERROR ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "41"} }
+2022-09-09T07:16:15.775331Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanOpenAck ChannelSide { chain: CachingChainHandle { inner: BaseChainHandle { chain_id: ChainId { id: "quasar", version: 0 }, runtime_sender: Sender { .. } }, cache: Cache { .. } }, client_id: ClientId("07-tendermint-1"), connection_id: ConnectionId("connection-1"), port_id: PortId("icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc"), channel_id: Some(ChannelId("channel-1")), version: None }: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "41"} }
+2022-09-09T07:16:15.775379Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanTryOpen with error: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "41"} }
+2022-09-09T07:16:17.630722Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 41,
+}
+2022-09-09T07:16:17.664863Z DEBUG ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: [quasar -> osmosis:07-tendermint-0] MsgUpdateAnyClient from trusted height 0-39 to target height 0-42
+2022-09-09T07:16:17.665468Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:16:17.667920Z ERROR ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "104"} }
+2022-09-09T07:16:17.667972Z ERROR ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: failed ChanInit with error: failed during a transaction submission step to chain 'osmosis': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "104"} }
+2022-09-09T07:16:17.684673Z DEBUG ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 41,
+}
+2022-09-09T07:16:17.793297Z DEBUG ThreadId(42) DetectMisbehaviorWorker{client=07-tendermint-1 src_chain=osmosis dst_chain=quasar}: checking misbehavior for updated client
+2022-09-09T07:16:17.797119Z DEBUG ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: [osmosis -> quasar:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-99 to target height 0-104
+2022-09-09T07:16:17.797703Z DEBUG ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: max fee, for use in tx simulation: Fee { amount: "3001uqsr", gas_limit: 3000000 }
+2022-09-09T07:16:17.799815Z ERROR ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "42"} }
+2022-09-09T07:16:17.799876Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanOpenAck ChannelSide { chain: CachingChainHandle { inner: BaseChainHandle { chain_id: ChainId { id: "quasar", version: 0 }, runtime_sender: Sender { .. } }, cache: Cache { .. } }, client_id: ClientId("07-tendermint-1"), connection_id: ConnectionId("connection-1"), port_id: PortId("icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc"), channel_id: Some(ChannelId("channel-1")), version: None }: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "42"} }
+2022-09-09T07:16:17.799902Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanTryOpen with error: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "42"} }
+2022-09-09T07:16:17.886757Z DEBUG ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing Some(
+    IbcEventWithHeight {
+        event: OpenAckChannel(
+            OpenAck {
+                port_id: PortId(
+                    "icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc",
+                ),
+                channel_id: Some(
+                    ChannelId(
+                        "channel-4",
+                    ),
+                ),
+                counterparty_channel_id: Some(
+                    ChannelId(
+                        "channel-2",
+                    ),
+                ),
+                connection_id: ConnectionId(
+                    "connection-1",
+                ),
+                counterparty_port_id: PortId(
+                    "icahost",
+                ),
+            },
+        ),
+        height: Height {
+            revision: 0,
+            height: 41,
+        },
+    },
+)
+2022-09-09T07:16:19.717881Z DEBUG ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: [osmosis -> quasar:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-99 to target height 0-105
+2022-09-09T07:16:19.718502Z DEBUG ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: max fee, for use in tx simulation: Fee { amount: "3001uqsr", gas_limit: 3000000 }
+2022-09-09T07:16:19.720781Z ERROR ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "42"} }
+2022-09-09T07:16:19.720864Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanOpenAck ChannelSide { chain: CachingChainHandle { inner: BaseChainHandle { chain_id: ChainId { id: "quasar", version: 0 }, runtime_sender: Sender { .. } }, cache: Cache { .. } }, client_id: ClientId("07-tendermint-1"), connection_id: ConnectionId("connection-1"), port_id: PortId("icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc"), channel_id: Some(ChannelId("channel-1")), version: None }: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "42"} }
+2022-09-09T07:16:19.720892Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanTryOpen with error: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "42"} }
+2022-09-09T07:16:21.841971Z DEBUG ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: [osmosis -> quasar:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-99 to target height 0-106
+2022-09-09T07:16:21.842578Z DEBUG ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: max fee, for use in tx simulation: Fee { amount: "3001uqsr", gas_limit: 3000000 }
+2022-09-09T07:16:21.844820Z ERROR ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "42"} }
+2022-09-09T07:16:21.844880Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanOpenAck ChannelSide { chain: CachingChainHandle { inner: BaseChainHandle { chain_id: ChainId { id: "quasar", version: 0 }, runtime_sender: Sender { .. } }, cache: Cache { .. } }, client_id: ClientId("07-tendermint-1"), connection_id: ConnectionId("connection-1"), port_id: PortId("icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc"), channel_id: Some(ChannelId("channel-1")), version: None }: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "42"} }
+2022-09-09T07:16:21.844910Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanTryOpen with error: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "42"} }
+2022-09-09T07:16:22.635324Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 42,
+}
+2022-09-09T07:16:22.723751Z DEBUG ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: [quasar -> osmosis:07-tendermint-0] MsgUpdateAnyClient from trusted height 0-39 to target height 0-43
+2022-09-09T07:16:22.724319Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenConfirm}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:16:22.726719Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenConfirm}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: tx simulation successful, gas amount used: 151667
+2022-09-09T07:16:22.726776Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenConfirm}:send_tx_with_account_sequence_retry{id=osmosis}: send_tx: using 151667 gas, fee Fee { amount: "167uosmo", gas_limit: 166833 } id=osmosis
+2022-09-09T07:16:22.729097Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenConfirm}:send_tx_with_account_sequence_retry{id=osmosis}: broadcast_tx_sync: Response { code: Ok, data: Data([]), log: Log("[]"), hash: transaction::Hash(5A1694DA765177A3D59A167EA254430FF3D476CAAE0BE103766C638DE011B219) }
+2022-09-09T07:16:22.729139Z  INFO ThreadId(24) send_tx_commit{id=ChannelOpenConfirm}: wait_for_block_commits: waiting for commit of tx hashes(s) 5A1694DA765177A3D59A167EA254430FF3D476CAAE0BE103766C638DE011B219 id=osmosis
+2022-09-09T07:16:23.932620Z  INFO ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: 🎊  osmosis => IbcEventWithHeight {
+    event: OpenConfirmChannel(
+        OpenConfirm {
+            port_id: PortId(
+                "icahost",
+            ),
+            channel_id: Some(
+                ChannelId(
+                    "channel-2",
+                ),
+            ),
+            connection_id: ConnectionId(
+                "connection-0",
+            ),
+            counterparty_port_id: PortId(
+                "icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc",
+            ),
+            counterparty_channel_id: Some(
+                ChannelId(
+                    "channel-4",
+                ),
+            ),
+        },
+    ),
+    height: Height {
+        revision: 0,
+        height: 107,
+    },
+}
+
+2022-09-09T07:16:23.932685Z  INFO ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: channel handshake step completed with events: OpenConfirmChannel(
+    OpenConfirm {
+        port_id: PortId(
+            "icahost",
+        ),
+        channel_id: Some(
+            ChannelId(
+                "channel-2",
+            ),
+        ),
+        connection_id: ConnectionId(
+            "connection-0",
+        ),
+        counterparty_port_id: PortId(
+            "icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc",
+        ),
+        counterparty_channel_id: Some(
+            ChannelId(
+                "channel-4",
+            ),
+        ),
+    },
+)
+
+2022-09-09T07:16:23.943328Z DEBUG ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: [osmosis -> quasar:07-tendermint-1] MsgUpdateAnyClient from trusted height 0-99 to target height 0-107
+2022-09-09T07:16:23.943580Z DEBUG ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: [quasar -> osmosis:07-tendermint-0] MsgUpdateAnyClient from trusted height 0-39 to target height 0-43
+2022-09-09T07:16:23.944083Z DEBUG ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}: max fee, for use in tx simulation: Fee { amount: "3001uqsr", gas_limit: 3000000 }
+2022-09-09T07:16:23.944394Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:16:23.946511Z ERROR ThreadId(26) send_tx_commit{id=ChannelOpenAck}:send_tx_with_account_sequence_retry{id=quasar}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "43"} }
+2022-09-09T07:16:23.946574Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanOpenAck ChannelSide { chain: CachingChainHandle { inner: BaseChainHandle { chain_id: ChainId { id: "quasar", version: 0 }, runtime_sender: Sender { .. } }, cache: Cache { .. } }, client_id: ClientId("07-tendermint-1"), connection_id: ConnectionId("connection-1"), port_id: PortId("icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc"), channel_id: Some(ChannelId("channel-1")), version: None }: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "43"} }
+2022-09-09T07:16:23.946604Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: failed ChanTryOpen with error: failed during a transaction submission step to chain 'quasar': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open ack callback failed: existing active channel channel-4 for portID icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc: active channel already set for this owner", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "43"} }
+2022-09-09T07:16:23.946629Z ERROR ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: task aborting after encountering fatal error: worker failed after 7 retries
+2022-09-09T07:16:23.946641Z DEBUG ThreadId(298) worker.channel{channel=channel::channel-3/icahost:osmosis->quasar}: task terminated
+2022-09-09T07:16:23.946738Z ERROR ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "107"} }
+2022-09-09T07:16:23.946788Z ERROR ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: failed ChanInit with error: failed during a transaction submission step to chain 'osmosis': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "107"} }
+2022-09-09T07:16:24.132796Z DEBUG ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 42,
+}
+2022-09-09T07:16:24.133912Z DEBUG ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: aborting task
+2022-09-09T07:16:24.133936Z DEBUG ThreadId(260) worker.channel{channel=channel::channel-4/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: task terminated
+2022-09-09T07:16:25.924092Z DEBUG ThreadId(28) DetectMisbehaviorWorker{client=07-tendermint-0 src_chain=quasar dst_chain=osmosis}: checking misbehavior for updated client
+2022-09-09T07:16:27.640449Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 43,
+}
+2022-09-09T07:16:27.676054Z DEBUG ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: [quasar -> osmosis:07-tendermint-0] MsgUpdateAnyClient from trusted height 0-43 to target height 0-44
+2022-09-09T07:16:27.676660Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:16:27.678982Z ERROR ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "108"} }
+2022-09-09T07:16:27.679034Z ERROR ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: failed ChanInit with error: failed during a transaction submission step to chain 'osmosis': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "108"} }
+2022-09-09T07:16:32.617655Z DEBUG ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: [quasar -> osmosis:07-tendermint-0] MsgUpdateAnyClient from trusted height 0-43 to target height 0-45
+2022-09-09T07:16:32.618285Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:16:32.620761Z ERROR ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "111"} }
+2022-09-09T07:16:32.620814Z ERROR ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: failed ChanInit with error: failed during a transaction submission step to chain 'osmosis': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "111"} }
+2022-09-09T07:16:32.645736Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 44,
+}
+2022-09-09T07:16:37.650849Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 45,
+}
+2022-09-09T07:16:37.661524Z DEBUG ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: [quasar -> osmosis:07-tendermint-0] MsgUpdateAnyClient from trusted height 0-43 to target height 0-46
+2022-09-09T07:16:37.662145Z DEBUG ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}: max fee, for use in tx simulation: Fee { amount: "3001uosmo", gas_limit: 3000000 }
+2022-09-09T07:16:37.664742Z ERROR ThreadId(24) send_tx_commit{id=ChannelOpenTry}:send_tx_with_account_sequence_retry{id=osmosis}:estimate_gas: failed to simulate tx. propagating error to caller: gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "113"} }
+2022-09-09T07:16:37.664802Z ERROR ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: failed ChanInit with error: failed during a transaction submission step to chain 'osmosis': gRPC call failed with status: status: Unknown, message: "failed to execute message; message index: 1: channel open try callback failed: expected connection-0, got : invalid connection", details: [], metadata: MetadataMap { headers: {"content-type": "application/grpc", "x-cosmos-block-height": "113"} }
+2022-09-09T07:16:37.664833Z ERROR ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: task aborting after encountering fatal error: worker failed after 7 retries
+2022-09-09T07:16:37.664841Z DEBUG ThreadId(39) worker.channel{channel=channel::channel-0/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: task terminated
+2022-09-09T07:16:42.656709Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 46,
+}
+2022-09-09T07:16:47.862085Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 47,
+}
+2022-09-09T07:16:52.867474Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 48,
+}
+2022-09-09T07:16:57.873657Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 49,
+}
+2022-09-09T07:17:02.878733Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 50,
+}
+2022-09-09T07:17:07.884542Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 51,
+}
+2022-09-09T07:17:12.889714Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 52,
+}
+2022-09-09T07:17:17.900078Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 53,
+}
+2022-09-09T07:17:22.908459Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 54,
+}
+2022-09-09T07:17:27.915620Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 55,
+}
+2022-09-09T07:17:33.124218Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 56,
+}
+2022-09-09T07:17:38.141340Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 57,
+}
+2022-09-09T07:17:43.147273Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 58,
+}
+2022-09-09T07:17:48.152773Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 59,
+}
+2022-09-09T07:17:53.157501Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 60,
+}
+2022-09-09T07:17:58.163724Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 61,
+}
+2022-09-09T07:18:03.169850Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 62,
+}
+2022-09-09T07:18:08.175260Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 63,
+}
+2022-09-09T07:18:13.181941Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 64,
+}
+2022-09-09T07:18:15.934101Z ERROR ThreadId(45) [cosmos] failed to collect events: RPC error: response error
+2022-09-09T07:18:15.934841Z ERROR ThreadId(44) [osmosis] failed to collect events: RPC error: response error
+2022-09-09T07:18:15.934983Z ERROR ThreadId(46) [quasar] failed to collect events: RPC error: response error
+2022-09-09T07:18:15.936690Z  INFO ThreadId(45) [cosmos] successfully reconnected to WebSocket endpoint ws://127.0.0.1:26669/websocket
+2022-09-09T07:18:15.937237Z  INFO ThreadId(46) [quasar] successfully reconnected to WebSocket endpoint ws://127.0.0.1:26659/websocket
+2022-09-09T07:18:15.937284Z  INFO ThreadId(44) [osmosis] successfully reconnected to WebSocket endpoint ws://127.0.0.1:26679/websocket
+2022-09-09T07:18:15.960279Z ERROR ThreadId(46) [quasar] failed to collect events: WebSocket driver failed: web socket error: failed to read from WebSocket connection: WebSocket protocol error: Connection reset without closing handshake
+2022-09-09T07:18:15.965534Z ERROR ThreadId(45) [cosmos] failed to collect events: WebSocket driver failed: web socket error: failed to read from WebSocket connection: WebSocket protocol error: Connection reset without closing handshake
+2022-09-09T07:18:15.966154Z ERROR ThreadId(44) [osmosis] failed to collect events: WebSocket driver failed: web socket error: failed to read from WebSocket connection: WebSocket protocol error: Connection reset without closing handshake
+2022-09-09T07:18:15.986512Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: starts processing block event at Height {
+    revision: 0,
+    height: 65,
+}
+2022-09-09T07:18:15.986983Z ERROR ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: task aborting after encountering fatal error: channel error: relayer error: RPC error to endpoint http://127.0.0.1:26659/: HTTP error: error trying to connect: tcp connect error: Connection refused (os error 111)
+2022-09-09T07:18:15.987010Z DEBUG ThreadId(40) worker.channel{channel=channel::channel-1/icacontroller-quasar14yjkz7yxapuee3d7qkhwzlumwrarayfh0pycxc:quasar->osmosis}: task terminated
+2022-09-09T07:18:16.208893Z  WARN ThreadId(41) refresh{client=07-tendermint-1 src_chain=osmosis dst_chain=quasar}: task encountered ignorable error: error raised while trying to refresh client 07-tendermint-1: failed querying client state on dst chain: RPC error to endpoint http://127.0.0.1:26659/: HTTP error: error trying to connect: tcp connect error: Connection refused (os error 111)

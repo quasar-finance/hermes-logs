@@ -1,0 +1,773 @@
+[90m9:12AM[0m [32mINF[0m starting node with ABCI Tendermint in-process
+[90m9:12AM[0m [32mINF[0m Starting multiAppConn service [36mimpl=[0mmultiAppConn [36mmodule=[0mproxy
+[90m9:12AM[0m [32mINF[0m Starting localClient service [36mconnection=[0mquery [36mimpl=[0mlocalClient [36mmodule=[0mabci-client
+[90m9:12AM[0m [32mINF[0m Starting localClient service [36mconnection=[0msnapshot [36mimpl=[0mlocalClient [36mmodule=[0mabci-client
+[90m9:12AM[0m [32mINF[0m Starting localClient service [36mconnection=[0mmempool [36mimpl=[0mlocalClient [36mmodule=[0mabci-client
+[90m9:12AM[0m [32mINF[0m Starting localClient service [36mconnection=[0mconsensus [36mimpl=[0mlocalClient [36mmodule=[0mabci-client
+[90m9:12AM[0m [32mINF[0m Starting EventBus service [36mimpl=[0mEventBus [36mmodule=[0mevents
+[90m9:12AM[0m [32mINF[0m Starting PubSub service [36mimpl=[0mPubSub [36mmodule=[0mpubsub
+[90m9:12AM[0m [32mINF[0m Starting IndexerService service [36mimpl=[0mIndexerService [36mmodule=[0mtxindex
+[90m9:12AM[0m [32mINF[0m ABCI Handshake App Info [36mhash=[0m [36mheight=[0m0 [36mmodule=[0mconsensus [36mprotocol-version=[0m0 [36msoftware-version=[0mbugfix/replace_default_transfer_with_router_module-4e60052b8b1c59cb2d42a09f1fafb968f1c28343
+[90m9:12AM[0m [32mINF[0m ABCI Replay Blocks [36mappHeight=[0m0 [36mmodule=[0mconsensus [36mstateHeight=[0m0 [36mstoreHeight=[0m0
+[90m9:12AM[0m [32mINF[0m asserting crisis invariants [36minv=[0m0/12 [36mmodule=[0mx/crisis [36mname=[0mstaking/module-accounts
+[90m9:12AM[0m [32mINF[0m asserting crisis invariants [36minv=[0m1/12 [36mmodule=[0mx/crisis [36mname=[0mstaking/nonnegative-power
+[90m9:12AM[0m [32mINF[0m asserting crisis invariants [36minv=[0m2/12 [36mmodule=[0mx/crisis [36mname=[0mstaking/positive-delegation
+[90m9:12AM[0m [32mINF[0m asserting crisis invariants [36minv=[0m3/12 [36mmodule=[0mx/crisis [36mname=[0mstaking/delegator-shares
+[90m9:12AM[0m [32mINF[0m asserting crisis invariants [36minv=[0m4/12 [36mmodule=[0mx/crisis [36mname=[0mbank/nonnegative-outstanding
+[90m9:12AM[0m [32mINF[0m asserting crisis invariants [36minv=[0m5/12 [36mmodule=[0mx/crisis [36mname=[0mbank/total-supply
+[90m9:12AM[0m [32mINF[0m asserting crisis invariants [36minv=[0m6/12 [36mmodule=[0mx/crisis [36mname=[0mliquidity/escrow-amount
+[90m9:12AM[0m [32mINF[0m asserting crisis invariants [36minv=[0m7/12 [36mmodule=[0mx/crisis [36mname=[0mdistribution/nonnegative-outstanding
+[90m9:12AM[0m [32mINF[0m asserting crisis invariants [36minv=[0m8/12 [36mmodule=[0mx/crisis [36mname=[0mdistribution/can-withdraw
+[90m9:12AM[0m [32mINF[0m asserting crisis invariants [36minv=[0m9/12 [36mmodule=[0mx/crisis [36mname=[0mdistribution/reference-count
+[90m9:12AM[0m [32mINF[0m asserting crisis invariants [36minv=[0m10/12 [36mmodule=[0mx/crisis [36mname=[0mdistribution/module-account
+[90m9:12AM[0m [32mINF[0m asserting crisis invariants [36minv=[0m11/12 [36mmodule=[0mx/crisis [36mname=[0mgov/module-account
+[90m9:12AM[0m [32mINF[0m asserted all invariants [36mduration=[0m0.789822 [36mheight=[0m0 [36mmodule=[0mx/crisis
+[90m9:12AM[0m [32mINF[0m created new capability [36mmodule=[0mibc [36mname=[0mports/transfer
+[90m9:12AM[0m [32mINF[0m port binded [36mmodule=[0mx/ibc/port [36mport=[0mtransfer
+[90m9:12AM[0m [32mINF[0m claimed capability [36mcapability=[0m1 [36mmodule=[0mtransfer [36mname=[0mports/transfer
+[90m9:12AM[0m [32mINF[0m created new capability [36mmodule=[0mibc [36mname=[0mports/icahost
+[90m9:12AM[0m [32mINF[0m port binded [36mmodule=[0mx/ibc/port [36mport=[0micahost
+[90m9:12AM[0m [32mINF[0m claimed capability [36mcapability=[0m2 [36mmodule=[0micahost [36mname=[0mports/icahost
+[90m9:12AM[0m [32mINF[0m Completed ABCI Handshake - Tendermint and App are synced [36mappHash=[0m [36mappHeight=[0m0 [36mmodule=[0mconsensus
+[90m9:12AM[0m [32mINF[0m Version info [36mblock=[0m11 [36mp2p=[0m8 [36mtendermint_version=[0mv0.34.19
+[90m9:12AM[0m [32mINF[0m This node is a validator [36maddr=[0m1A20772735BD5D487B8A041EDB8820756D8873CD [36mmodule=[0mconsensus [36mpubKey=[0mXEBrbn0mAttDcVrfbMEn3vKs/eJTSSvZO4uPA2W81jk=
+[90m9:12AM[0m [32mINF[0m P2P Node ID [36mID=[0m9a941b30a7e23159a94c9897284057afb4b1d637 [36mfile=[0m/home/laurens/.gaia/config/node_key.json [36mmodule=[0mp2p
+[90m9:12AM[0m [32mINF[0m Adding persistent peers [36maddrs=[0m[] [36mmodule=[0mp2p
+[90m9:12AM[0m [32mINF[0m Adding unconditional peer ids [36mids=[0m[] [36mmodule=[0mp2p
+[90m9:12AM[0m [32mINF[0m Add our address to book [36maddr=[0m{"id":"9a941b30a7e23159a94c9897284057afb4b1d637","ip":"0.0.0.0","port":26663} [36mbook=[0m/home/laurens/.gaia/config/addrbook.json [36mmodule=[0mp2p
+[90m9:12AM[0m [32mINF[0m Starting Node service [36mimpl=[0mNode
+[90m9:12AM[0m [32mINF[0m Starting pprof server [36mladdr=[0mlocalhost:6063
+[90m9:12AM[0m [32mINF[0m Starting RPC HTTP server on 127.0.0.1:26669 [36mmodule=[0mrpc-server
+[90m9:12AM[0m [32mINF[0m Starting P2P Switch service [36mimpl=[0m"P2P Switch" [36mmodule=[0mp2p
+[90m9:12AM[0m [32mINF[0m Starting Mempool service [36mimpl=[0mMempool [36mmodule=[0mmempool
+[90m9:12AM[0m [32mINF[0m Starting BlockchainReactor service [36mimpl=[0mBlockchainReactor [36mmodule=[0mblockchain
+[90m9:12AM[0m [32mINF[0m Starting Consensus service [36mimpl=[0mConsensusReactor [36mmodule=[0mconsensus
+[90m9:12AM[0m [32mINF[0m Reactor  [36mmodule=[0mconsensus [36mwaitSync=[0mfalse
+[90m9:12AM[0m [32mINF[0m Starting State service [36mimpl=[0mConsensusState [36mmodule=[0mconsensus
+[90m9:12AM[0m [32mINF[0m Starting baseWAL service [36mimpl=[0mbaseWAL [36mmodule=[0mconsensus [36mwal=[0m/home/laurens/.gaia/data/cs.wal/wal
+[90m9:12AM[0m [32mINF[0m Starting Group service [36mimpl=[0mGroup [36mmodule=[0mconsensus [36mwal=[0m/home/laurens/.gaia/data/cs.wal/wal
+[90m9:12AM[0m [32mINF[0m Starting TimeoutTicker service [36mimpl=[0mTimeoutTicker [36mmodule=[0mconsensus
+[90m9:12AM[0m [32mINF[0m Searching for height [36mheight=[0m1 [36mmax=[0m0 [36mmin=[0m0 [36mmodule=[0mconsensus [36mwal=[0m/home/laurens/.gaia/data/cs.wal/wal
+[90m9:12AM[0m [32mINF[0m Searching for height [36mheight=[0m0 [36mmax=[0m0 [36mmin=[0m0 [36mmodule=[0mconsensus [36mwal=[0m/home/laurens/.gaia/data/cs.wal/wal
+[90m9:12AM[0m [32mINF[0m Found [36mheight=[0m0 [36mindex=[0m0 [36mmodule=[0mconsensus [36mwal=[0m/home/laurens/.gaia/data/cs.wal/wal
+[90m9:12AM[0m [32mINF[0m Catchup by replaying consensus messages [36mheight=[0m1 [36mmodule=[0mconsensus
+[90m9:12AM[0m [32mINF[0m Replay: Done [36mmodule=[0mconsensus
+[90m9:12AM[0m [32mINF[0m Starting Evidence service [36mimpl=[0mEvidence [36mmodule=[0mevidence
+[90m9:12AM[0m [32mINF[0m Starting StateSync service [36mimpl=[0mStateSync [36mmodule=[0mstatesync
+[90m9:12AM[0m [32mINF[0m Starting PEX service [36mimpl=[0mPEX [36mmodule=[0mpex
+[90m9:12AM[0m [32mINF[0m Starting AddrBook service [36mbook=[0m/home/laurens/.gaia/config/addrbook.json [36mimpl=[0mAddrBook [36mmodule=[0mp2p
+[90m9:12AM[0m [32mINF[0m Saving AddrBook to file [36mbook=[0m/home/laurens/.gaia/config/addrbook.json [36mmodule=[0mp2p [36msize=[0m0
+[90m9:12AM[0m [32mINF[0m Ensure peers [36mmodule=[0mpex [36mnumDialing=[0m0 [36mnumInPeers=[0m0 [36mnumOutPeers=[0m0 [36mnumToDial=[0m10
+[90m9:12AM[0m [32mINF[0m No addresses to dial. Falling back to seeds [36mmodule=[0mpex
+[90m9:12AM[0m [32mINF[0m starting API server... [36mmodule=[0mapi-server
+[90m9:12AM[0m [32mINF[0m Starting RPC HTTP server on [::]:1313 [36mmodule=[0mapi-server
+[90m9:12AM[0m [32mINF[0m Timed out [36mdur=[0m4994.962181 [36mheight=[0m1 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:12AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"7A2B295788DA535632DF23FD72410FF9CBBA0C5A691ADEEFEA3387B515D62474","parts":{"hash":"1581875F050370BA4E4FEE773F38A5AEE60D1CF3081A696157DF7595196C51AF","total":1}},"height":1,"pol_round":-1,"round":0,"signature":"POUMcW2CNqHjDjHmiu7gmULOzpY4Cfu/jM23NWR68f/jFEKKgfF0d3TNJdNBl0HmGLaHuSTpEEPPUSCIcLvKAw==","timestamp":"2022-09-09T07:12:50.997009331Z"}
+[90m9:12AM[0m [32mINF[0m received complete proposal block [36mhash=[0m7A2B295788DA535632DF23FD72410FF9CBBA0C5A691ADEEFEA3387B515D62474 [36mheight=[0m1 [36mmodule=[0mconsensus
+[90m9:12AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m7A2B295788DA535632DF23FD72410FF9CBBA0C5A691ADEEFEA3387B515D62474 [36mheight=[0m1 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mE3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+[90m9:12AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:12AM[0m [32mINF[0m executed block [36mheight=[0m1 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:12AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B323235203234332032323920323434203230382039392039342032323720313838203820383820333220363520313720373320313037203132372032323720323337203136312031383820323333203436203233382031383120323231203620313532203533203831203137352033345D3A317D
+[90m9:12AM[0m [32mINF[0m committed state [36mapp_hash=[0mE1F3E5F4D0635EE3BC0858204111496B7FE3EDA1BCE92EEEB5DD06983551AF22 [36mheight=[0m1 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:12AM[0m [32mINF[0m indexed block [36mheight=[0m1 [36mmodule=[0mtxindex
+[90m9:12AM[0m [32mINF[0m Timed out [36mdur=[0m4985.192924 [36mheight=[0m2 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:12AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"D188C4EA898F47DAA3BB4A71250F2F411DB985D11292C565908D22D4F48F7CF1","parts":{"hash":"B508815FF93DDDD06113E684CECA85D6003BEEE37E7F23A70CFCC9E59953FED7","total":1}},"height":2,"pol_round":-1,"round":0,"signature":"4b4U3NguWrsqsWLmgblydI9m2bhsQ9GQlm/6Nt72FRa7oT9GMBZaVhTkTTJGxbvanuzTfqxMw85smvjA1SClCQ==","timestamp":"2022-09-09T07:12:56.024658312Z"}
+[90m9:12AM[0m [32mINF[0m received complete proposal block [36mhash=[0mD188C4EA898F47DAA3BB4A71250F2F411DB985D11292C565908D22D4F48F7CF1 [36mheight=[0m2 [36mmodule=[0mconsensus
+[90m9:12AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mD188C4EA898F47DAA3BB4A71250F2F411DB985D11292C565908D22D4F48F7CF1 [36mheight=[0m2 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mE1F3E5F4D0635EE3BC0858204111496B7FE3EDA1BCE92EEEB5DD06983551AF22
+[90m9:12AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:12AM[0m [32mINF[0m executed block [36mheight=[0m2 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:12AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B313839203131302032343520382033382032303420313130203235332031303920343420373020353020373620323430203837203137362031373120313137203233352032333420313020343220313735203139302031393820313230203139392038392031393920343120313036203230365D3A327D
+[90m9:12AM[0m [32mINF[0m committed state [36mapp_hash=[0mBD6EF50826CC6EFD6D2C46324CF057B0AB75EBEA0A2AAFBEC678C759C7296ACE [36mheight=[0m2 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:12AM[0m [32mINF[0m indexed block [36mheight=[0m2 [36mmodule=[0mtxindex
+[90m9:12AM[0m [32mINF[0m client created at height [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-2 [36mmodule=[0mx/ibc/client
+[90m9:12AM[0m [32mINF[0m client created at height [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-2 [36mmodule=[0mx/ibc/client
+[90m9:13AM[0m [32mINF[0m Timed out [36mdur=[0m4986.055914 [36mheight=[0m3 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:13AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"E27526EF5061501CABD1AFBA6E31BD8E91D9DD63072B3931FFC37FBB919941AE","parts":{"hash":"1AB4983BA9FA43BE262BD4967C080C20C5934BE1B71A8B1761CFEC0F365B3356","total":1}},"height":3,"pol_round":-1,"round":0,"signature":"9JpD79YCWnOkdxbtDjLM/Umf/E6nCk1ju70fsVFBQqxXJlqZpash7ivEF2AKmYRhl0EquPm7eRxFPY8f38q+AQ==","timestamp":"2022-09-09T07:13:01.057150753Z"}
+[90m9:13AM[0m [32mINF[0m received complete proposal block [36mhash=[0mE27526EF5061501CABD1AFBA6E31BD8E91D9DD63072B3931FFC37FBB919941AE [36mheight=[0m3 [36mmodule=[0mconsensus
+[90m9:13AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mE27526EF5061501CABD1AFBA6E31BD8E91D9DD63072B3931FFC37FBB919941AE [36mheight=[0m3 [36mmodule=[0mconsensus [36mnum_txs=[0m1 [36mroot=[0mBD6EF50826CC6EFD6D2C46324CF057B0AB75EBEA0A2AAFBEC678C759C7296ACE
+[90m9:13AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:13AM[0m [32mINF[0m client created at height [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-2 [36mmodule=[0mx/ibc/client
+[90m9:13AM[0m [32mINF[0m client created at height [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-2 [36mmodule=[0mx/ibc/client
+[90m9:13AM[0m [32mINF[0m executed block [36mheight=[0m3 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m1
+[90m9:13AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B32343820363520313831203233382032303820313139203231352036302031313720313534203136382032353020393620323435203136322031333320323820323030203820363820322031343820323136203235342037312035302033352031393220313630203131322033203230305D3A337D
+[90m9:13AM[0m [32mINF[0m committed state [36mapp_hash=[0mF841B5EED077D73C759AA8FA60F5A2851CC808440294D8FE473223C0A07003C8 [36mheight=[0m3 [36mmodule=[0mstate [36mnum_txs=[0m1
+[90m9:13AM[0m [32mINF[0m indexed block [36mheight=[0m3 [36mmodule=[0mtxindex
+[90m9:13AM[0m [32mINF[0m Timed out [36mdur=[0m4985.414368 [36mheight=[0m4 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:13AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"DFBD2F12FC48BF1F58582AC75AA4C4FA7296FFCD86937979552A32026A45E45C","parts":{"hash":"F6B5797F6D06694B30A8C16C959B6FCC10C6EC0501FA117190C56EF6F80D9B20","total":1}},"height":4,"pol_round":-1,"round":0,"signature":"cA18lzGpaXt53Su2sVzX2RPepVIt/0b33X6Qaptduq4Qi9kSN80FTzs/51N+yqhnrxs9y+7pcf37GtUW5SvNDA==","timestamp":"2022-09-09T07:13:06.082349722Z"}
+[90m9:13AM[0m [32mINF[0m received complete proposal block [36mhash=[0mDFBD2F12FC48BF1F58582AC75AA4C4FA7296FFCD86937979552A32026A45E45C [36mheight=[0m4 [36mmodule=[0mconsensus
+[90m9:13AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mDFBD2F12FC48BF1F58582AC75AA4C4FA7296FFCD86937979552A32026A45E45C [36mheight=[0m4 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mF841B5EED077D73C759AA8FA60F5A2851CC808440294D8FE473223C0A07003C8
+[90m9:13AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:13AM[0m [32mINF[0m executed block [36mheight=[0m4 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:13AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B313235203137302032333720313033203233342036372032313620333620343120313432203620383920353520313833203139302032323820313134203234392036342034352031323720343220313938203138382032303020313330203138322031363020343120383820313636203233395D3A347D
+[90m9:13AM[0m [32mINF[0m committed state [36mapp_hash=[0m7DAAED67EA43D824298E065937B7BEE472F9402D7F2AC6BCC882B6A02958A6EF [36mheight=[0m4 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:13AM[0m [32mINF[0m indexed block [36mheight=[0m4 [36mmodule=[0mtxindex
+[90m9:13AM[0m [32mINF[0m Timed out [36mdur=[0m4986.031283 [36mheight=[0m5 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:13AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"41AF094C89A37D74CC22ECA317034B2A038FB96AF0BE127FB3B8F9BAB2A84D53","parts":{"hash":"2E5566DE6C5B64A966DD1640DB167B8E82E3EA5843EC5E376B887CD41EC367F7","total":1}},"height":5,"pol_round":-1,"round":0,"signature":"hw7bj+IYIk37bMI5r42d87OCfgFCxPsg9M8NKGfUW6OzTbT/KsvoInwBH4moR/EhxVEs35fzfRMzTDhN4eo3Aw==","timestamp":"2022-09-09T07:13:11.114490043Z"}
+[90m9:13AM[0m [32mINF[0m received complete proposal block [36mhash=[0m41AF094C89A37D74CC22ECA317034B2A038FB96AF0BE127FB3B8F9BAB2A84D53 [36mheight=[0m5 [36mmodule=[0mconsensus
+[90m9:13AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m41AF094C89A37D74CC22ECA317034B2A038FB96AF0BE127FB3B8F9BAB2A84D53 [36mheight=[0m5 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m7DAAED67EA43D824298E065937B7BEE472F9402D7F2AC6BCC882B6A02958A6EF
+[90m9:13AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:13AM[0m [32mINF[0m executed block [36mheight=[0m5 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:13AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3932203233352037332032343920333620323036203138332031363820313631203134203134332032343720313734203133203234312031323920323239203530203138322031353020363020362037203230332032313420383620313937203132362031312031383420323439203139395D3A357D
+[90m9:13AM[0m [32mINF[0m committed state [36mapp_hash=[0m5CEB49F924CEB7A8A10E8FF7AE0DF181E532B6963C0607CBD656C57E0BB8F9C7 [36mheight=[0m5 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:13AM[0m [32mINF[0m indexed block [36mheight=[0m5 [36mmodule=[0mtxindex
+[90m9:13AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-5 [36mmodule=[0mx/ibc/client
+[90m9:13AM[0m [32mINF[0m connection state updated [36mconnection-id=[0mconnection-0 [36mmodule=[0mx/ibc/connection [36mnew-state=[0mTRYOPEN [36mprevious-state=[0mSTATE_UNINITIALIZED_UNSPECIFIED
+[90m9:13AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-5 [36mmodule=[0mx/ibc/client
+[90m9:13AM[0m [32mINF[0m Ensure peers [36mmodule=[0mpex [36mnumDialing=[0m0 [36mnumInPeers=[0m0 [36mnumOutPeers=[0m0 [36mnumToDial=[0m10
+[90m9:13AM[0m [32mINF[0m No addresses to dial. Falling back to seeds [36mmodule=[0mpex
+[90m9:13AM[0m [32mINF[0m Timed out [36mdur=[0m4986.498786 [36mheight=[0m6 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:13AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"23EA0EBAD90E0C598C74FE15CA3E5843859CEFAB2FA48B538451087ECEF8B929","parts":{"hash":"196F1EC490D7D23792A2FFB0DB813E2F33DBA418914A77EFF6F0C317D4134F84","total":1}},"height":6,"pol_round":-1,"round":0,"signature":"4C3b6EUYebo6jtBREhDLsicXDvDVtE89+0prkkFvwXWj6nCDkWPCP7a7nGtA/2T+of49DMIyZbt/uAXU7PEOAg==","timestamp":"2022-09-09T07:13:16.14725704Z"}
+[90m9:13AM[0m [32mINF[0m received complete proposal block [36mhash=[0m23EA0EBAD90E0C598C74FE15CA3E5843859CEFAB2FA48B538451087ECEF8B929 [36mheight=[0m6 [36mmodule=[0mconsensus
+[90m9:13AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m23EA0EBAD90E0C598C74FE15CA3E5843859CEFAB2FA48B538451087ECEF8B929 [36mheight=[0m6 [36mmodule=[0mconsensus [36mnum_txs=[0m1 [36mroot=[0m5CEB49F924CEB7A8A10E8FF7AE0DF181E532B6963C0607CBD656C57E0BB8F9C7
+[90m9:13AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:13AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-5 [36mmodule=[0mx/ibc/client
+[90m9:13AM[0m [32mINF[0m connection state updated [36mconnection-id=[0mconnection-0 [36mmodule=[0mx/ibc/connection [36mnew-state=[0mTRYOPEN [36mprevious-state=[0mSTATE_UNINITIALIZED_UNSPECIFIED
+[90m9:13AM[0m [32mINF[0m executed block [36mheight=[0m6 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m1
+[90m9:13AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B323035203133372031333520323437203232362031313620333220313731203520313639203232342036322032303820323132203920313933203138203130302032323620323535203232342036312037352031303220313520332031373120323534203135382032303520323531203134365D3A367D
+[90m9:13AM[0m [32mINF[0m committed state [36mapp_hash=[0mCD8987F7E27420AB05A9E03ED0D409C11264E2FFE03D4B660F03ABFE9ECDFB92 [36mheight=[0m6 [36mmodule=[0mstate [36mnum_txs=[0m1
+[90m9:13AM[0m [32mINF[0m indexed block [36mheight=[0m6 [36mmodule=[0mtxindex
+[90m9:13AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-6 [36mmodule=[0mx/ibc/client
+[90m9:13AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-6 [36mmodule=[0mx/ibc/client
+[90m9:13AM[0m [32mINF[0m Timed out [36mdur=[0m4984.11056 [36mheight=[0m7 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:13AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"28404D686E77ED66561C68BE28CBE3C29508FB4B6A0A5DE566DEFFF6379492AA","parts":{"hash":"4BFD7BED2386C930F29804734557214BDD49C78BA97DB800F7F8A3CECB0811D1","total":1}},"height":7,"pol_round":-1,"round":0,"signature":"yXX3/Iol+0Eqn8gmWHlZonFJnZcZdvPsHUogrtuiRFHluqpNI5l5N76M+KJdyBIIXd/5Ip0I+lk5VFMU87jqDg==","timestamp":"2022-09-09T07:13:21.17982849Z"}
+[90m9:13AM[0m [32mINF[0m received complete proposal block [36mhash=[0m28404D686E77ED66561C68BE28CBE3C29508FB4B6A0A5DE566DEFFF6379492AA [36mheight=[0m7 [36mmodule=[0mconsensus
+[90m9:13AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m28404D686E77ED66561C68BE28CBE3C29508FB4B6A0A5DE566DEFFF6379492AA [36mheight=[0m7 [36mmodule=[0mconsensus [36mnum_txs=[0m1 [36mroot=[0mCD8987F7E27420AB05A9E03ED0D409C11264E2FFE03D4B660F03ABFE9ECDFB92
+[90m9:13AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:13AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-6 [36mmodule=[0mx/ibc/client
+[90m9:13AM[0m [32mINF[0m executed block [36mheight=[0m7 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m1
+[90m9:13AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B31383420323137203130392031323320313431203134302033372032333620313833203232332038312031353820313638203235342036322031333320313838203132372031333220313637203133392032313520323520313020313730203231362031313520363920393620323337203138302037355D3A377D
+[90m9:13AM[0m [32mINF[0m committed state [36mapp_hash=[0mB8D96D7B8D8C25ECB7DF519EA8FE3E85BC7F84A78BD7190AAAD8734560EDB44B [36mheight=[0m7 [36mmodule=[0mstate [36mnum_txs=[0m1
+[90m9:13AM[0m [32mINF[0m indexed block [36mheight=[0m7 [36mmodule=[0mtxindex
+[90m9:13AM[0m [32mINF[0m Timed out [36mdur=[0m4985.414482 [36mheight=[0m8 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:13AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"4E2C4460A7460D62325714F4F7CFFA6823C7122A659E531623725820EE69C8B6","parts":{"hash":"74E7E9F7EFEF8BB58A88772094449426F5B904BF60CB6A26B490AA79A0ABD9BD","total":1}},"height":8,"pol_round":-1,"round":0,"signature":"JGwjtmmqmpn0SXGj8FrD2JUUrln3k7RNHJFEC7Ca9i4Tr1I2fwDzppSPhNVJrweYd10kuLSP78WIA7Gk4O1wDA==","timestamp":"2022-09-09T07:13:26.212353082Z"}
+[90m9:13AM[0m [32mINF[0m received complete proposal block [36mhash=[0m4E2C4460A7460D62325714F4F7CFFA6823C7122A659E531623725820EE69C8B6 [36mheight=[0m8 [36mmodule=[0mconsensus
+[90m9:13AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m4E2C4460A7460D62325714F4F7CFFA6823C7122A659E531623725820EE69C8B6 [36mheight=[0m8 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mB8D96D7B8D8C25ECB7DF519EA8FE3E85BC7F84A78BD7190AAAD8734560EDB44B
+[90m9:13AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:13AM[0m [32mINF[0m executed block [36mheight=[0m8 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:13AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B32312031303520323238203136332031322031393320313620313520313839203930203232382030203134362037392032333020313820353720313532203232382032322037392032313020353220342031313420313620313733203133352031303820333020313736203134395D3A387D
+[90m9:13AM[0m [32mINF[0m committed state [36mapp_hash=[0m1569E4A30CC1100FBD5AE400924FE6123998E4164FD234047210AD876C1EB095 [36mheight=[0m8 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:13AM[0m [32mINF[0m indexed block [36mheight=[0m8 [36mmodule=[0mtxindex
+[90m9:13AM[0m [32mINF[0m Timed out [36mdur=[0m4986.865751 [36mheight=[0m9 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:13AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"5A28D1D2105A4AAABA15FFE9B7F553223304FE6A724A130B09A2D9B3027D1CF7","parts":{"hash":"ECFD9F26BA54B163F8E249C8056821C4ABD7B58B79D0C343E8583A9CE486A577","total":1}},"height":9,"pol_round":-1,"round":0,"signature":"NyhaYRfJnbxXgp0lJ927PbM+EWbEbJ3kNzuVM0atL02969wFK0v6irq1eCZB4rprInzl2dUW13vKxScbrM5lDw==","timestamp":"2022-09-09T07:13:31.244531514Z"}
+[90m9:13AM[0m [32mINF[0m received complete proposal block [36mhash=[0m5A28D1D2105A4AAABA15FFE9B7F553223304FE6A724A130B09A2D9B3027D1CF7 [36mheight=[0m9 [36mmodule=[0mconsensus
+[90m9:13AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m5A28D1D2105A4AAABA15FFE9B7F553223304FE6A724A130B09A2D9B3027D1CF7 [36mheight=[0m9 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m1569E4A30CC1100FBD5AE400924FE6123998E4164FD234047210AD876C1EB095
+[90m9:13AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:13AM[0m [32mINF[0m executed block [36mheight=[0m9 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:13AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B363820343320323020363220313130203230392031323920313831203139322032382032313620353720323030203731203234352031383720323135203634203737203132312031353720343720383520313236203233392035302031203431203838203420323137203131345D3A397D
+[90m9:13AM[0m [32mINF[0m committed state [36mapp_hash=[0m442B143E6ED181B5C01CD839C847F5BBD7404D799D2F557EEF3201295804D972 [36mheight=[0m9 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:13AM[0m [32mINF[0m indexed block [36mheight=[0m9 [36mmodule=[0mtxindex
+[90m9:13AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-9 [36mmodule=[0mx/ibc/client
+[90m9:13AM[0m [32mINF[0m connection state updated [36mconnection-id=[0mconnection-0 [36mmodule=[0mx/ibc/connection [36mnew-state=[0mOPEN [36mprevious-state=[0mTRYOPEN
+[90m9:13AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-9 [36mmodule=[0mx/ibc/client
+[90m9:13AM[0m [32mINF[0m Timed out [36mdur=[0m4986.357876 [36mheight=[0m10 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:13AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"65D3E49179FE5C662FDA0E09BA9C9FFCE6179D16C8A6C381FD943B2ACDB06940","parts":{"hash":"43AD7B6FC7F208582D4D574469E6BBE93314D31330BDA7ACB6EEDE2823915E59","total":1}},"height":10,"pol_round":-1,"round":0,"signature":"q6wmB5pKjUxrnaQ3fFAHZgNUTvhuEl/3w+srC9oAIWWNi2k6fHtBZi+zeAs8qt7XxHF0KZeIGNOQ5sGvleRVCA==","timestamp":"2022-09-09T07:13:36.269746361Z"}
+[90m9:13AM[0m [32mINF[0m received complete proposal block [36mhash=[0m65D3E49179FE5C662FDA0E09BA9C9FFCE6179D16C8A6C381FD943B2ACDB06940 [36mheight=[0m10 [36mmodule=[0mconsensus
+[90m9:13AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m65D3E49179FE5C662FDA0E09BA9C9FFCE6179D16C8A6C381FD943B2ACDB06940 [36mheight=[0m10 [36mmodule=[0mconsensus [36mnum_txs=[0m1 [36mroot=[0m442B143E6ED181B5C01CD839C847F5BBD7404D799D2F557EEF3201295804D972
+[90m9:13AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:13AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-9 [36mmodule=[0mx/ibc/client
+[90m9:13AM[0m [32mINF[0m connection state updated [36mconnection-id=[0mconnection-0 [36mmodule=[0mx/ibc/connection [36mnew-state=[0mOPEN [36mprevious-state=[0mTRYOPEN
+[90m9:13AM[0m [32mINF[0m executed block [36mheight=[0m10 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m1
+[90m9:13AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3234203131342032333820313320313739203130332035392032323120313833203735203232352032323520323230203131203537203232342031353820313933203130362031393420363420313130203932203232382031343620313232203432203139203135203432203736203139365D3A417D
+[90m9:13AM[0m [32mINF[0m committed state [36mapp_hash=[0m1872EE0DB3673BDDB74BE1E1DC0B39E09EC16AC2406E5CE4927A2A130F2A4CC4 [36mheight=[0m10 [36mmodule=[0mstate [36mnum_txs=[0m1
+[90m9:13AM[0m [32mINF[0m indexed block [36mheight=[0m10 [36mmodule=[0mtxindex
+[90m9:13AM[0m [32mINF[0m Timed out [36mdur=[0m4983.536357 [36mheight=[0m11 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:13AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"22117742FE552499E5D031FA11509526C86E71E7181008DF00193A3AE4E1DC47","parts":{"hash":"D7DC785CAE61C1DB833656243FD2DED1BD11A3F0E0BB0D625A74ABDFD9D28EED","total":1}},"height":11,"pol_round":-1,"round":0,"signature":"Y1W1p26YbLgkziVLKHC+olXR1DmxlgmdFOImJRukP1XWRLx+TbEl4D6WoPVyu3b1+JvPbB8gysNMjbIQN9wQAQ==","timestamp":"2022-09-09T07:13:41.29674456Z"}
+[90m9:13AM[0m [32mINF[0m received complete proposal block [36mhash=[0m22117742FE552499E5D031FA11509526C86E71E7181008DF00193A3AE4E1DC47 [36mheight=[0m11 [36mmodule=[0mconsensus
+[90m9:13AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m22117742FE552499E5D031FA11509526C86E71E7181008DF00193A3AE4E1DC47 [36mheight=[0m11 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m1872EE0DB3673BDDB74BE1E1DC0B39E09EC16AC2406E5CE4927A2A130F2A4CC4
+[90m9:13AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:13AM[0m [32mINF[0m executed block [36mheight=[0m11 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:13AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3134342031383220323330203134392032353420313120323030203831203130352032343620393220373420313633203135312033392031303820323038203130302031343420323339203435203130203339203130342031363020343420313320313537203335203130362036352039305D3A427D
+[90m9:13AM[0m [32mINF[0m committed state [36mapp_hash=[0m90B6E695FE0BC85169F65C4AA397276CD06490EF2D0A2768A02C0D9D236A415A [36mheight=[0m11 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:13AM[0m [32mINF[0m indexed block [36mheight=[0m11 [36mmodule=[0mtxindex
+[90m9:13AM[0m [32mINF[0m Ensure peers [36mmodule=[0mpex [36mnumDialing=[0m0 [36mnumInPeers=[0m0 [36mnumOutPeers=[0m0 [36mnumToDial=[0m10
+[90m9:13AM[0m [32mINF[0m No addresses to dial. Falling back to seeds [36mmodule=[0mpex
+[90m9:13AM[0m [32mINF[0m Timed out [36mdur=[0m4986.428071 [36mheight=[0m12 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:13AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"2589F2F6FBB113B4A2B55C11E185141337296EF6164043903D1D5808DF19449D","parts":{"hash":"A9316D34B6ED5AAB3E10ED87FE47D804DFC25877488FCAF32836CACEA1F93073","total":1}},"height":12,"pol_round":-1,"round":0,"signature":"ufBE04lUpvEDp6rE2gn7y2C5G13bdmtK5aVbSbMxQHWDDQ/yBEhwTpD7Un1Ek9wwXxJVmtfBA+zNZcCjbStlBg==","timestamp":"2022-09-09T07:13:46.322719469Z"}
+[90m9:13AM[0m [32mINF[0m received complete proposal block [36mhash=[0m2589F2F6FBB113B4A2B55C11E185141337296EF6164043903D1D5808DF19449D [36mheight=[0m12 [36mmodule=[0mconsensus
+[90m9:13AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m2589F2F6FBB113B4A2B55C11E185141337296EF6164043903D1D5808DF19449D [36mheight=[0m12 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m90B6E695FE0BC85169F65C4AA397276CD06490EF2D0A2768A02C0D9D236A415A
+[90m9:13AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:13AM[0m [32mINF[0m executed block [36mheight=[0m12 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:13AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3232362031373320323439203233372031383620352031383120313634203132322032313820323135203130372032323520323332203733203736203131312031373920313638203820313239203138312032323420313834203138362032333020313936203139322032313020313037203230302036395D3A437D
+[90m9:13AM[0m [32mINF[0m committed state [36mapp_hash=[0mE2ADF9EDBA05B5A47ADAD76BE1E8494C6FB3A80881B5E0B8BAE6C4C0D26BC845 [36mheight=[0m12 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:13AM[0m [32mINF[0m indexed block [36mheight=[0m12 [36mmodule=[0mtxindex
+[90m9:13AM[0m [32mINF[0m Timed out [36mdur=[0m4986.639482 [36mheight=[0m13 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:13AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"2A4D2F131E271EBD55B8FA9564E54C318C8F7430A9C5DA968E7F6F4EBE120016","parts":{"hash":"4CB6FB1556C3B860F203C198805DBBC100F894E945EC08501DC54782E325C00C","total":1}},"height":13,"pol_round":-1,"round":0,"signature":"DRP9pdYTjzo/x1xBx3QJadZG/FghZaEqDK90mPurUwM2vgs0cki7wHhicNi+1rGAVgRYTgeccQnOj9zjG5IMCA==","timestamp":"2022-09-09T07:13:51.35130299Z"}
+[90m9:13AM[0m [32mINF[0m received complete proposal block [36mhash=[0m2A4D2F131E271EBD55B8FA9564E54C318C8F7430A9C5DA968E7F6F4EBE120016 [36mheight=[0m13 [36mmodule=[0mconsensus
+[90m9:13AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m2A4D2F131E271EBD55B8FA9564E54C318C8F7430A9C5DA968E7F6F4EBE120016 [36mheight=[0m13 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mE2ADF9EDBA05B5A47ADAD76BE1E8494C6FB3A80881B5E0B8BAE6C4C0D26BC845
+[90m9:13AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:13AM[0m [32mINF[0m executed block [36mheight=[0m13 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:13AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B32353320323433203137342032333120323030203134332035372032343420323620313635203133302031313620313433203234322032343620313236203136203832203135332031312037352039332032372031383020313333203138362032313520313537203732203231372031352034355D3A447D
+[90m9:13AM[0m [32mINF[0m committed state [36mapp_hash=[0mFDF3AEE7C88F39F41AA582748FF2F67E1052990B4B5D1BB485BAD79D48D90F2D [36mheight=[0m13 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:13AM[0m [32mINF[0m indexed block [36mheight=[0m13 [36mmodule=[0mtxindex
+[90m9:13AM[0m [32mINF[0m Timed out [36mdur=[0m4977.775238 [36mheight=[0m14 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:13AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"3A6F1AAF7020C770356C544A060A71BED8A059E8BDBD4491B41AC0B1FA7EBF8C","parts":{"hash":"C0A57B28B8EC0DCFE3514591716B97077E549D9E1DA23971ABB9F8B20674729D","total":1}},"height":14,"pol_round":-1,"round":0,"signature":"ckR3GXPz2MQkE7PIccs5KIhAeOEx6J95A5/3jaRW3O9a91RCbxdu7dmF+0VNtz7SKHsOOrYdJ7f/1yaSNTD5CA==","timestamp":"2022-09-09T07:13:56.401388877Z"}
+[90m9:13AM[0m [32mINF[0m received complete proposal block [36mhash=[0m3A6F1AAF7020C770356C544A060A71BED8A059E8BDBD4491B41AC0B1FA7EBF8C [36mheight=[0m14 [36mmodule=[0mconsensus
+[90m9:13AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m3A6F1AAF7020C770356C544A060A71BED8A059E8BDBD4491B41AC0B1FA7EBF8C [36mheight=[0m14 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mFDF3AEE7C88F39F41AA582748FF2F67E1052990B4B5D1BB485BAD79D48D90F2D
+[90m9:13AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:13AM[0m [32mINF[0m executed block [36mheight=[0m14 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:13AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B32323920313231203839203235312036382035312035342031363520393620313238203732203533203133302031353520313630203136322031393920323534203137332031313520323220313637203833203235322036382034362031353220323420313832203133382039342037365D3A457D
+[90m9:13AM[0m [32mINF[0m committed state [36mapp_hash=[0mE57959FB443336A560804835829BA0A2C7FEAD7316A753FC442E9818B68A5E4C [36mheight=[0m14 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:13AM[0m [32mINF[0m indexed block [36mheight=[0m14 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m Timed out [36mdur=[0m4985.783783 [36mheight=[0m15 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:14AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"E551842B166184EDD946D04039B1071110C8EFF4B9E7DC71B43A4E627356E5A3","parts":{"hash":"184A685143A29DF970786882E6F7B5AA02A343C030ADB58D70E803B8A53253AD","total":1}},"height":15,"pol_round":-1,"round":0,"signature":"6Sx3Qen1dat910VxO4Xo/WHSZY9/+apCg5gFhwFZv3vVzMlRpl+d+dmp/4mo/46HYje1KyK38t/8hC8hoPf5DQ==","timestamp":"2022-09-09T07:14:01.433661798Z"}
+[90m9:14AM[0m [32mINF[0m received complete proposal block [36mhash=[0mE551842B166184EDD946D04039B1071110C8EFF4B9E7DC71B43A4E627356E5A3 [36mheight=[0m15 [36mmodule=[0mconsensus
+[90m9:14AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mE551842B166184EDD946D04039B1071110C8EFF4B9E7DC71B43A4E627356E5A3 [36mheight=[0m15 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mE57959FB443336A560804835829BA0A2C7FEAD7316A753FC442E9818B68A5E4C
+[90m9:14AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:14AM[0m [32mINF[0m executed block [36mheight=[0m15 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:14AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B313020313534203130392033302031373120382031323820313330203130372031323020313331203133352031393620323820313035203235203138362031392038352031313520323034203139342036362031383020353820313620323435203134372032353520323036203937203138395D3A467D
+[90m9:14AM[0m [32mINF[0m committed state [36mapp_hash=[0m0A9A6D1EAB0880826B788387C41C6919BA135573CCC242B43A10F593FFCE61BD [36mheight=[0m15 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:14AM[0m [32mINF[0m indexed block [36mheight=[0m15 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m Timed out [36mdur=[0m4985.363192 [36mheight=[0m16 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:14AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"8579C2607945E6F3187F7CE2C4BD18CAF1B14663E8E1AA7C59374E5F9B6DDA74","parts":{"hash":"D7065866F16D77960BD23A9C754E460460C66BBDE66057AE219494DC9F25E814","total":1}},"height":16,"pol_round":-1,"round":0,"signature":"33hpWXdIrF48H19taOF9PmhfDnm6akXMjpoJ1V0DbsgunSXpxKOLBMgzadviDd6B75vwiMm15S9dSmRVPNpvBA==","timestamp":"2022-09-09T07:14:06.466840676Z"}
+[90m9:14AM[0m [32mINF[0m received complete proposal block [36mhash=[0m8579C2607945E6F3187F7CE2C4BD18CAF1B14663E8E1AA7C59374E5F9B6DDA74 [36mheight=[0m16 [36mmodule=[0mconsensus
+[90m9:14AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m8579C2607945E6F3187F7CE2C4BD18CAF1B14663E8E1AA7C59374E5F9B6DDA74 [36mheight=[0m16 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m0A9A6D1EAB0880826B788387C41C6919BA135573CCC242B43A10F593FFCE61BD
+[90m9:14AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:14AM[0m [32mINF[0m executed block [36mheight=[0m16 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:14AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B32323620313937203238203232382031373220323036203932203431203136372031353520323139203520323232203231352031313420323237203232322032312032353120323420323220323534203136352031313420323334203532203135312032303220323235203137302033392038385D3A31307D
+[90m9:14AM[0m [32mINF[0m committed state [36mapp_hash=[0mE2C51CE4ACCE5C29A79BDB05DED772E3DE15FB1816FEA572EA3497CAE1AA2758 [36mheight=[0m16 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:14AM[0m [32mINF[0m indexed block [36mheight=[0m16 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m Timed out [36mdur=[0m4985.266143 [36mheight=[0m17 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:14AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"197DCFD5E91468CE776E16E21D798141526DF83D9CBA6E1E65B6D2E34FDDF7E2","parts":{"hash":"C900C44CA460A2135E7F02C91034F9B4977E615B4338DE74947F1723D73DFA08","total":1}},"height":17,"pol_round":-1,"round":0,"signature":"H+EHhW6Pz5eKlDOFkARB7DNvz3yaCj+fxbwirfXtYJT0Zp31reaf53kBUm9B/E7906kvYZu5uke98ZVoG4rQCQ==","timestamp":"2022-09-09T07:14:11.502784668Z"}
+[90m9:14AM[0m [32mINF[0m received complete proposal block [36mhash=[0m197DCFD5E91468CE776E16E21D798141526DF83D9CBA6E1E65B6D2E34FDDF7E2 [36mheight=[0m17 [36mmodule=[0mconsensus
+[90m9:14AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m197DCFD5E91468CE776E16E21D798141526DF83D9CBA6E1E65B6D2E34FDDF7E2 [36mheight=[0m17 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mE2C51CE4ACCE5C29A79BDB05DED772E3DE15FB1816FEA572EA3497CAE1AA2758
+[90m9:14AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:14AM[0m [32mINF[0m executed block [36mheight=[0m17 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:14AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B32343220393320313233203233352031333620313936203839203830203820313731203631203533203135392032353120313730203232312031303920313535203138302031393720353320323436203137382039392032313920323233203933203133362033302032303620323331203233325D3A31317D
+[90m9:14AM[0m [32mINF[0m committed state [36mapp_hash=[0mF25D7BEB88C4595008AB3D359FFBAADD6D9BB4C535F6B263DBDF5D881ECEE7E8 [36mheight=[0m17 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:14AM[0m [32mINF[0m indexed block [36mheight=[0m17 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m client created at height [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-44 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m client created at height [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-44 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m Ensure peers [36mmodule=[0mpex [36mnumDialing=[0m0 [36mnumInPeers=[0m0 [36mnumOutPeers=[0m0 [36mnumToDial=[0m10
+[90m9:14AM[0m [32mINF[0m No addresses to dial. Falling back to seeds [36mmodule=[0mpex
+[90m9:14AM[0m [32mINF[0m Timed out [36mdur=[0m4986.567666 [36mheight=[0m18 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:14AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"4E633FEAA5AE045F9F2D03DD22C88DFC9C8D1B316B62DC473631B9304E2B994D","parts":{"hash":"D3B8899F7163309AF6A650F70081F9D072E891986EDEB61C27CDBDC097AEE0CF","total":1}},"height":18,"pol_round":-1,"round":0,"signature":"H19dZQmuSIAXbEgiUcL5nXr9i2EK15WoJRfzQKXIPE9bhetsUImaVM9oKuff+Z7vD3zEvOGnmNBM1IEBl0pBAw==","timestamp":"2022-09-09T07:14:16.527958937Z"}
+[90m9:14AM[0m [32mINF[0m received complete proposal block [36mhash=[0m4E633FEAA5AE045F9F2D03DD22C88DFC9C8D1B316B62DC473631B9304E2B994D [36mheight=[0m18 [36mmodule=[0mconsensus
+[90m9:14AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m4E633FEAA5AE045F9F2D03DD22C88DFC9C8D1B316B62DC473631B9304E2B994D [36mheight=[0m18 [36mmodule=[0mconsensus [36mnum_txs=[0m1 [36mroot=[0mF25D7BEB88C4595008AB3D359FFBAADD6D9BB4C535F6B263DBDF5D881ECEE7E8
+[90m9:14AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:14AM[0m [32mINF[0m client created at height [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-44 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m client created at height [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-44 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m executed block [36mheight=[0m18 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m1
+[90m9:14AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3820323533203130352032333420323533203137203438203132352031383120313734203233392032303420393020313633203137312038312031363120313134203133382032342031392036342032303820313330203237203137322031333120343720363720353620313939203232375D3A31327D
+[90m9:14AM[0m [32mINF[0m committed state [36mapp_hash=[0m08FD69EAFD11307DB5AEEFCC5AA3AB51A1728A181340D0821BAC832F4338C7E3 [36mheight=[0m18 [36mmodule=[0mstate [36mnum_txs=[0m1
+[90m9:14AM[0m [32mINF[0m indexed block [36mheight=[0m18 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m Timed out [36mdur=[0m4985.97701 [36mheight=[0m19 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:14AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"91AB9AA4EABB144C26E9995DEDA2FAF1B35EC1B5CBC1FC81DE3806A8D15A7D4C","parts":{"hash":"0782396A72D5019E3BE13FA88DA04B2D46D83FFDE871941AA11D6C11C2C9E092","total":1}},"height":19,"pol_round":-1,"round":0,"signature":"hOnn3P/liMt9Lh97i4px8ym1nCbjcSwRdhizpNKki04Fj/t/BMr78JdXX9Gp3Ja/9GH40RZnWe6bfTJKLz1wDA==","timestamp":"2022-09-09T07:14:21.560045337Z"}
+[90m9:14AM[0m [32mINF[0m received complete proposal block [36mhash=[0m91AB9AA4EABB144C26E9995DEDA2FAF1B35EC1B5CBC1FC81DE3806A8D15A7D4C [36mheight=[0m19 [36mmodule=[0mconsensus
+[90m9:14AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m91AB9AA4EABB144C26E9995DEDA2FAF1B35EC1B5CBC1FC81DE3806A8D15A7D4C [36mheight=[0m19 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m08FD69EAFD11307DB5AEEFCC5AA3AB51A1728A181340D0821BAC832F4338C7E3
+[90m9:14AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:14AM[0m [32mINF[0m executed block [36mheight=[0m19 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:14AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3136352031333020323334203231322031323020383020323520363220313334203131322032372032313120393720353220323020313132203137382031363120313420323330203139382038382031323620313134203930203332203234382032372035322032313420313536203134315D3A31337D
+[90m9:14AM[0m [32mINF[0m committed state [36mapp_hash=[0mA582EAD47850193E86701BD361341470B2A10EE6C6587E725A20F81B34D69C8D [36mheight=[0m19 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:14AM[0m [32mINF[0m indexed block [36mheight=[0m19 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-47 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m connection state updated [36mconnection-id=[0mconnection-1 [36mmodule=[0mx/ibc/connection [36mnew-state=[0mTRYOPEN [36mprevious-state=[0mSTATE_UNINITIALIZED_UNSPECIFIED
+[90m9:14AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-47 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m Timed out [36mdur=[0m4986.483071 [36mheight=[0m20 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:14AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"B54050B43B53668F256A952AC87CF11CE61B39ACAE0068C92FBA08568B824FF3","parts":{"hash":"0047011F1A9BFBF26D59DE6406290CB424AD7659C026C4FAA93033DA56CC2AF5","total":1}},"height":20,"pol_round":-1,"round":0,"signature":"k4dzndVFZdA3M8THBUgg/u+xP9WbRNQ4kQjeO6iSW8RIoGPd2xfKMHtxvKgV7j+NA4/RryNsr95T+67khaH7Dg==","timestamp":"2022-09-09T07:14:26.585547208Z"}
+[90m9:14AM[0m [32mINF[0m received complete proposal block [36mhash=[0mB54050B43B53668F256A952AC87CF11CE61B39ACAE0068C92FBA08568B824FF3 [36mheight=[0m20 [36mmodule=[0mconsensus
+[90m9:14AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mB54050B43B53668F256A952AC87CF11CE61B39ACAE0068C92FBA08568B824FF3 [36mheight=[0m20 [36mmodule=[0mconsensus [36mnum_txs=[0m1 [36mroot=[0mA582EAD47850193E86701BD361341470B2A10EE6C6587E725A20F81B34D69C8D
+[90m9:14AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:14AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-47 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m connection state updated [36mconnection-id=[0mconnection-1 [36mmodule=[0mx/ibc/connection [36mnew-state=[0mTRYOPEN [36mprevious-state=[0mSTATE_UNINITIALIZED_UNSPECIFIED
+[90m9:14AM[0m [32mINF[0m executed block [36mheight=[0m20 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m1
+[90m9:14AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B313031203235332031363620313035203232362031393820323439203437203133302031343320313535203233382032323420323135203235342032343920343320323233203937203135332031393720323033203137352032303520323134203234203230302031333920313335203232312031353920345D3A31347D
+[90m9:14AM[0m [32mINF[0m committed state [36mapp_hash=[0m65FDA669E2C6F92F828F9BEEE0D7FEF92BDF6199C5CBAFCDD618C88B87DD9F04 [36mheight=[0m20 [36mmodule=[0mstate [36mnum_txs=[0m1
+[90m9:14AM[0m [32mINF[0m indexed block [36mheight=[0m20 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-49 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-49 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m Timed out [36mdur=[0m4984.710155 [36mheight=[0m21 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:14AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"9C27971EFD1396FE5B678EB676E0207AD52798595F0193BF1A1B913B192D76AD","parts":{"hash":"3AF7FE21F5020CAB206718E595DFB43DCF61A1A514B92F582B8022C8C8426991","total":1}},"height":21,"pol_round":-1,"round":0,"signature":"ihJuabDjlodgFk7yB2gQQ8R6Jm3zo8IX6qcIRQPhz40La8RmGbFDRD2xysKe3JNMJ6QnD8xs0Y2E+KB0TSRcBQ==","timestamp":"2022-09-09T07:14:31.618630272Z"}
+[90m9:14AM[0m [32mINF[0m received complete proposal block [36mhash=[0m9C27971EFD1396FE5B678EB676E0207AD52798595F0193BF1A1B913B192D76AD [36mheight=[0m21 [36mmodule=[0mconsensus
+[90m9:14AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m9C27971EFD1396FE5B678EB676E0207AD52798595F0193BF1A1B913B192D76AD [36mheight=[0m21 [36mmodule=[0mconsensus [36mnum_txs=[0m1 [36mroot=[0m65FDA669E2C6F92F828F9BEEE0D7FEF92BDF6199C5CBAFCDD618C88B87DD9F04
+[90m9:14AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:14AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-49 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m executed block [36mheight=[0m21 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m1
+[90m9:14AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B35302037342039312031363920313130203230203633203232342031373220313336203131312031373620323030203139372031353020313739203233362031323520323534203530203539203932203232372033322031333920313638203132322036382031373220313032203136332038385D3A31357D
+[90m9:14AM[0m [32mINF[0m committed state [36mapp_hash=[0m324A5BA96E143FE0AC886FB0C8C596B3EC7DFE323B5CE3208BA87A44AC66A358 [36mheight=[0m21 [36mmodule=[0mstate [36mnum_txs=[0m1
+[90m9:14AM[0m [32mINF[0m indexed block [36mheight=[0m21 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m Timed out [36mdur=[0m4985.42069 [36mheight=[0m22 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:14AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"6059470CDBC7AB1F41DAD1CC9C496430A028A35835D5D2420DB0BF447C8DA7BC","parts":{"hash":"04A77A765D8A3EC8A3C57EDC5AE32810754ACBAE78F9F1A337DECEB646053BD5","total":1}},"height":22,"pol_round":-1,"round":0,"signature":"+pnEhwHwVIO4WCJqtwhqJAMRDSj2ffyKejZ8lDWKYTQTRqREzz0tJtfIPBdL3XyC+oj7e5Mp81TphF29NsbODQ==","timestamp":"2022-09-09T07:14:36.651300586Z"}
+[90m9:14AM[0m [32mINF[0m received complete proposal block [36mhash=[0m6059470CDBC7AB1F41DAD1CC9C496430A028A35835D5D2420DB0BF447C8DA7BC [36mheight=[0m22 [36mmodule=[0mconsensus
+[90m9:14AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m6059470CDBC7AB1F41DAD1CC9C496430A028A35835D5D2420DB0BF447C8DA7BC [36mheight=[0m22 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m324A5BA96E143FE0AC886FB0C8C596B3EC7DFE323B5CE3208BA87A44AC66A358
+[90m9:14AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:14AM[0m [32mINF[0m executed block [36mheight=[0m22 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:14AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B38342032343220313620323430203836203335203136362031363820313438203533203235203230392031323820393320333520313733203135203137322035322038322032343120323534203139203138312031353620373020342035302036362031373920313933203136365D3A31367D
+[90m9:14AM[0m [32mINF[0m committed state [36mapp_hash=[0m54F210F05623A6A8943519D1805D23AD0FAC3452F1FE13B59C46043242B3C1A6 [36mheight=[0m22 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:14AM[0m [32mINF[0m indexed block [36mheight=[0m22 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-56 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m connection state updated [36mconnection-id=[0mconnection-1 [36mmodule=[0mx/ibc/connection [36mnew-state=[0mOPEN [36mprevious-state=[0mTRYOPEN
+[90m9:14AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-56 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m Timed out [36mdur=[0m4986.140209 [36mheight=[0m23 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:14AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"65087AD9E189880C9EE0C5290EAC392E35A77B8174153CC4E33E337E44C235E4","parts":{"hash":"C335396F3480B3C0F2806934B130A4F72FCEFB01452C0D3FD0693FB44D8FF752","total":1}},"height":23,"pol_round":-1,"round":0,"signature":"zywYvUQa2ySoG80UE94nvPqtFZzfWOVd3khPa8Qd/T6lCygvhNGocaW/xoKS+xtNsiwnNvaTBBQjCzH+LwuwBA==","timestamp":"2022-09-09T07:14:41.683931651Z"}
+[90m9:14AM[0m [32mINF[0m received complete proposal block [36mhash=[0m65087AD9E189880C9EE0C5290EAC392E35A77B8174153CC4E33E337E44C235E4 [36mheight=[0m23 [36mmodule=[0mconsensus
+[90m9:14AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m65087AD9E189880C9EE0C5290EAC392E35A77B8174153CC4E33E337E44C235E4 [36mheight=[0m23 [36mmodule=[0mconsensus [36mnum_txs=[0m1 [36mroot=[0m54F210F05623A6A8943519D1805D23AD0FAC3452F1FE13B59C46043242B3C1A6
+[90m9:14AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:14AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-56 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m connection state updated [36mconnection-id=[0mconnection-1 [36mmodule=[0mx/ibc/connection [36mnew-state=[0mOPEN [36mprevious-state=[0mTRYOPEN
+[90m9:14AM[0m [32mINF[0m executed block [36mheight=[0m23 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m1
+[90m9:14AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3132352031323720323534203233322038392033362031373820313930203834203837203539203135342031313420382031343120313320373320313333203320313838203232352032372034203839203233322031363520323336203320313130203935203837203232305D3A31377D
+[90m9:14AM[0m [32mINF[0m committed state [36mapp_hash=[0m7D7FFEE85924B2BE54573B9A72088D0D498503BCE11B0459E8A5EC036E5F57DC [36mheight=[0m23 [36mmodule=[0mstate [36mnum_txs=[0m1
+[90m9:14AM[0m [32mINF[0m indexed block [36mheight=[0m23 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m created new capability [36mmodule=[0mibc [36mname=[0mcapabilities/ports/transfer/channels/channel-0
+[90m9:14AM[0m [32mINF[0m claimed capability [36mcapability=[0m3 [36mmodule=[0mtransfer [36mname=[0mcapabilities/ports/transfer/channels/channel-0
+[90m9:14AM[0m [32mINF[0m channel state updated [36mchannel-id=[0mchannel-0 [36mmodule=[0mx/ibc/channel [36mnew-state=[0mINIT [36mport-id=[0mtransfer [36mprevious-state=[0mNONE
+[90m9:14AM[0m [32mINF[0m Saving AddrBook to file [36mbook=[0m/home/laurens/.gaia/config/addrbook.json [36mmodule=[0mp2p [36msize=[0m0
+[90m9:14AM[0m [32mINF[0m Ensure peers [36mmodule=[0mpex [36mnumDialing=[0m0 [36mnumInPeers=[0m0 [36mnumOutPeers=[0m0 [36mnumToDial=[0m10
+[90m9:14AM[0m [32mINF[0m No addresses to dial. Falling back to seeds [36mmodule=[0mpex
+[90m9:14AM[0m [32mINF[0m Timed out [36mdur=[0m4983.916261 [36mheight=[0m24 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:14AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"AD1E805CD7E8B5D174C1E8CED8DA4011F51DE9FEBB4B01785E2CCC79EEC35B17","parts":{"hash":"EC086F58921CE98B49C44337B55EE87D7A7FBBBA4E54FCC6CA6B825FDB9D6954","total":1}},"height":24,"pol_round":-1,"round":0,"signature":"d0XL4NJ2HkL82YuZHQ9t+Zl1/9LGweLHrY78YmCTF3eMx1Gpi85ML7mEfQk7FGWHk96NgkmorTX9LrLsCj+HBA==","timestamp":"2022-09-09T07:14:46.716758395Z"}
+[90m9:14AM[0m [32mINF[0m received complete proposal block [36mhash=[0mAD1E805CD7E8B5D174C1E8CED8DA4011F51DE9FEBB4B01785E2CCC79EEC35B17 [36mheight=[0m24 [36mmodule=[0mconsensus
+[90m9:14AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mAD1E805CD7E8B5D174C1E8CED8DA4011F51DE9FEBB4B01785E2CCC79EEC35B17 [36mheight=[0m24 [36mmodule=[0mconsensus [36mnum_txs=[0m1 [36mroot=[0m7D7FFEE85924B2BE54573B9A72088D0D498503BCE11B0459E8A5EC036E5F57DC
+[90m9:14AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:14AM[0m [32mINF[0m created new capability [36mmodule=[0mibc [36mname=[0mcapabilities/ports/transfer/channels/channel-0
+[90m9:14AM[0m [32mINF[0m claimed capability [36mcapability=[0m3 [36mmodule=[0mtransfer [36mname=[0mcapabilities/ports/transfer/channels/channel-0
+[90m9:14AM[0m [32mINF[0m channel state updated [36mchannel-id=[0mchannel-0 [36mmodule=[0mx/ibc/channel [36mnew-state=[0mINIT [36mport-id=[0mtransfer [36mprevious-state=[0mNONE
+[90m9:14AM[0m [32mINF[0m executed block [36mheight=[0m24 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m1
+[90m9:14AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B31333220373520343720353820373520343120313820313938203134342031333820323231203137382031313620383020313533203431203235352036372039342031353520323820313536203435203138332031303620313437203233382031343720322038322038382039385D3A31387D
+[90m9:14AM[0m [32mINF[0m committed state [36mapp_hash=[0m844B2F3A4B2912C6908ADDB274509929FF435E9B1C9C2DB76A93EE9302525862 [36mheight=[0m24 [36mmodule=[0mstate [36mnum_txs=[0m1
+[90m9:14AM[0m [32mINF[0m indexed block [36mheight=[0m24 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m Timed out [36mdur=[0m4985.265564 [36mheight=[0m25 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:14AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"9683BF8A495338518F26530ECF8C94EF5A6108FBE45CE214FBD2FCE30558A44C","parts":{"hash":"71628D119E8D59E2FF4F831C690A0251056AF72AE47281C777B6C33C0AE2972A","total":1}},"height":25,"pol_round":-1,"round":0,"signature":"I4r3L6o1fgwkXiYiYZpqxpUEJrIAe1FutyoyLmXwPbtV76O8cQKf2xz/U4Py4ooXTRJa2VwJk6mzOGrS+v/WCA==","timestamp":"2022-09-09T07:14:51.752900231Z"}
+[90m9:14AM[0m [32mINF[0m received complete proposal block [36mhash=[0m9683BF8A495338518F26530ECF8C94EF5A6108FBE45CE214FBD2FCE30558A44C [36mheight=[0m25 [36mmodule=[0mconsensus
+[90m9:14AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m9683BF8A495338518F26530ECF8C94EF5A6108FBE45CE214FBD2FCE30558A44C [36mheight=[0m25 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m844B2F3A4B2912C6908ADDB274509929FF435E9B1C9C2DB76A93EE9302525862
+[90m9:14AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:14AM[0m [32mINF[0m executed block [36mheight=[0m25 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:14AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B32353020313336203720323437203130362031313920323038203136312032302036322032332033382032303620333220323220323535203133342031203137362031393620332032313420302030203233312031363520313720313431203220373220313836203134355D3A31397D
+[90m9:14AM[0m [32mINF[0m committed state [36mapp_hash=[0mFA8807F76A77D0A1143E1726CE2016FF8601B0C403D60000E7A5118D0248BA91 [36mheight=[0m25 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:14AM[0m [32mINF[0m indexed block [36mheight=[0m25 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m Timed out [36mdur=[0m4986.5332 [36mheight=[0m26 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:14AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"4E965A6619DDF649124F4B1D32AC91D3DF4708515128EEBAB5B69708AE2D1BD0","parts":{"hash":"9832E6A2C3208C56B9DB291FA2BFAC5C7A41AE864B99F413490DF1850C17590F","total":1}},"height":26,"pol_round":-1,"round":0,"signature":"Wiq8Goo8fLWh71MQyDqJQnOgGqoOf3HDdzB14jN5Td60/A+9tBmu2SpF3I0JCb+LYEwbWOMIwqQqHX+OBKCVAg==","timestamp":"2022-09-09T07:14:56.778697544Z"}
+[90m9:14AM[0m [32mINF[0m received complete proposal block [36mhash=[0m4E965A6619DDF649124F4B1D32AC91D3DF4708515128EEBAB5B69708AE2D1BD0 [36mheight=[0m26 [36mmodule=[0mconsensus
+[90m9:14AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m4E965A6619DDF649124F4B1D32AC91D3DF4708515128EEBAB5B69708AE2D1BD0 [36mheight=[0m26 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mFA8807F76A77D0A1143E1726CE2016FF8601B0C403D60000E7A5118D0248BA91
+[90m9:14AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:14AM[0m [32mINF[0m executed block [36mheight=[0m26 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:14AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B313220373520383920353620373720313538203939203134312032342031323520313020383020313137203432203231203336203130352031353420383520313131203138352032323520323220383220313339203138362031393320323035203139302037203130382035375D3A31417D
+[90m9:14AM[0m [32mINF[0m committed state [36mapp_hash=[0m0C4B59384D9E638D187D0A50752A1524699A556FB9E116528BBAC1CDBE076C39 [36mheight=[0m26 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:14AM[0m [32mINF[0m indexed block [36mheight=[0m26 [36mmodule=[0mtxindex
+[90m9:14AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-26 [36mmodule=[0mx/ibc/client
+[90m9:14AM[0m [32mINF[0m channel state updated [36mchannel-id=[0mchannel-0 [36mmodule=[0mx/ibc/channel [36mnew-state=[0mOPEN [36mport-id=[0mtransfer [36mprevious-state=[0mSTATE_OPEN
+[90m9:14AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-26 [36mmodule=[0mx/ibc/client
+[90m9:15AM[0m [32mINF[0m Timed out [36mdur=[0m4986.264211 [36mheight=[0m27 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:15AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"2ABB8ABFCD67377339CEA5DF7A7A24D4581C0C3AFD1C6AA8BBAFD57C1BC2C226","parts":{"hash":"1E061B2359C1F4B8F35598A5BAA736559B85AB9748A66F44EED9D6C4F57D6821","total":1}},"height":27,"pol_round":-1,"round":0,"signature":"AX+QxrH5yEtKfBHbKbREPrL/1+EThmpEd3BUbTCWaXI7jUpWcPNN4+3gyT5NVy+so+hLJf9s29JAvn/MnFmJCw==","timestamp":"2022-09-09T07:15:01.811145475Z"}
+[90m9:15AM[0m [32mINF[0m received complete proposal block [36mhash=[0m2ABB8ABFCD67377339CEA5DF7A7A24D4581C0C3AFD1C6AA8BBAFD57C1BC2C226 [36mheight=[0m27 [36mmodule=[0mconsensus
+[90m9:15AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m2ABB8ABFCD67377339CEA5DF7A7A24D4581C0C3AFD1C6AA8BBAFD57C1BC2C226 [36mheight=[0m27 [36mmodule=[0mconsensus [36mnum_txs=[0m1 [36mroot=[0m0C4B59384D9E638D187D0A50752A1524699A556FB9E116528BBAC1CDBE076C39
+[90m9:15AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:15AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-0 [36mheight=[0m0-26 [36mmodule=[0mx/ibc/client
+[90m9:15AM[0m [32mINF[0m channel state updated [36mchannel-id=[0mchannel-0 [36mmodule=[0mx/ibc/channel [36mnew-state=[0mOPEN [36mport-id=[0mtransfer [36mprevious-state=[0mSTATE_OPEN
+[90m9:15AM[0m [32mINF[0m executed block [36mheight=[0m27 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m1
+[90m9:15AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B323334203933203131372031333820313431203136342032353520323330203136322032303720313437203020313836203133382032323220323432203620323820313531203233332031393320393620373920313432203136382031372039382032352032323720313035203635203131335D3A31427D
+[90m9:15AM[0m [32mINF[0m committed state [36mapp_hash=[0mEA5D758A8DA4FFE6A2CF9300BA8ADEF2061C97E9C1604F8EA8116219E3694171 [36mheight=[0m27 [36mmodule=[0mstate [36mnum_txs=[0m1
+[90m9:15AM[0m [32mINF[0m indexed block [36mheight=[0m27 [36mmodule=[0mtxindex
+[90m9:15AM[0m [32mINF[0m Timed out [36mdur=[0m4984.788116 [36mheight=[0m28 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:15AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"2CDE625EDB40ED68FB31EEBA54B54FF2BAFA35CBC746AFD70370B3E3DD7DDF64","parts":{"hash":"D44000F8CEBF71889F831A332515DEF0D30123D335B8C84202278674AA44FB6A","total":1}},"height":28,"pol_round":-1,"round":0,"signature":"LlugJCHIm5ejACr8eGjNTg/eGw+y8ihyD8qBamB9LhdUOPNulC0UBqmqsyBCB4kwWa2w8Rzbt1+dptE04c2eBw==","timestamp":"2022-09-09T07:15:06.843650284Z"}
+[90m9:15AM[0m [32mINF[0m received complete proposal block [36mhash=[0m2CDE625EDB40ED68FB31EEBA54B54FF2BAFA35CBC746AFD70370B3E3DD7DDF64 [36mheight=[0m28 [36mmodule=[0mconsensus
+[90m9:15AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m2CDE625EDB40ED68FB31EEBA54B54FF2BAFA35CBC746AFD70370B3E3DD7DDF64 [36mheight=[0m28 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mEA5D758A8DA4FFE6A2CF9300BA8ADEF2061C97E9C1604F8EA8116219E3694171
+[90m9:15AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:15AM[0m [32mINF[0m executed block [36mheight=[0m28 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:15AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B37332032323320323620343820323432203132372031343220313520343720323534203136342033312036362031343520323020323532203134392032323220373420343520313137203232352031323020313238203832203231382031353520313036203234342032333220323535203231305D3A31437D
+[90m9:15AM[0m [32mINF[0m committed state [36mapp_hash=[0m49DF1A30F27F8E0F2FFEA41F429114FC95DE4A2D75E1788052DA9B6AF4E8FFD2 [36mheight=[0m28 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:15AM[0m [32mINF[0m indexed block [36mheight=[0m28 [36mmodule=[0mtxindex
+[90m9:15AM[0m [32mINF[0m created new capability [36mmodule=[0mibc [36mname=[0mcapabilities/ports/transfer/channels/channel-1
+[90m9:15AM[0m [32mINF[0m claimed capability [36mcapability=[0m4 [36mmodule=[0mtransfer [36mname=[0mcapabilities/ports/transfer/channels/channel-1
+[90m9:15AM[0m [32mINF[0m channel state updated [36mchannel-id=[0mchannel-1 [36mmodule=[0mx/ibc/channel [36mnew-state=[0mINIT [36mport-id=[0mtransfer [36mprevious-state=[0mNONE
+[90m9:15AM[0m [32mINF[0m Timed out [36mdur=[0m4986.206156 [36mheight=[0m29 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:15AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"2816DA51716DF1959CC4375A8989FA8858F6B9F42EC0961134558C29B8463FA3","parts":{"hash":"B93AFB47E50980EA309C90D3A27432BB91BA6D7CC4D9EFC1D2901E5317554E1A","total":1}},"height":29,"pol_round":-1,"round":0,"signature":"X+1ODEfpGNGCGd/PG2nmxe66swpS5EelbcCFxJJTrLcAfbC9f34NKpC2OZ0ISyfZU1lb3d/O7AVNQ6qb/O/jDQ==","timestamp":"2022-09-09T07:15:11.868380247Z"}
+[90m9:15AM[0m [32mINF[0m received complete proposal block [36mhash=[0m2816DA51716DF1959CC4375A8989FA8858F6B9F42EC0961134558C29B8463FA3 [36mheight=[0m29 [36mmodule=[0mconsensus
+[90m9:15AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m2816DA51716DF1959CC4375A8989FA8858F6B9F42EC0961134558C29B8463FA3 [36mheight=[0m29 [36mmodule=[0mconsensus [36mnum_txs=[0m1 [36mroot=[0m49DF1A30F27F8E0F2FFEA41F429114FC95DE4A2D75E1788052DA9B6AF4E8FFD2
+[90m9:15AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:15AM[0m [32mINF[0m created new capability [36mmodule=[0mibc [36mname=[0mcapabilities/ports/transfer/channels/channel-1
+[90m9:15AM[0m [32mINF[0m claimed capability [36mcapability=[0m4 [36mmodule=[0mtransfer [36mname=[0mcapabilities/ports/transfer/channels/channel-1
+[90m9:15AM[0m [32mINF[0m channel state updated [36mchannel-id=[0mchannel-1 [36mmodule=[0mx/ibc/channel [36mnew-state=[0mINIT [36mport-id=[0mtransfer [36mprevious-state=[0mNONE
+[90m9:15AM[0m [32mINF[0m executed block [36mheight=[0m29 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m1
+[90m9:15AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3138372032333320323039203134312034203139312031363520323336203135382031302031333820373320323235203235342031323320313438203138362031383220313836203934203133382038392032323420323530203133382031333220323138203235302031363620323034203137372038315D3A31447D
+[90m9:15AM[0m [32mINF[0m committed state [36mapp_hash=[0mBBE9D18D04BFA5EC9E0A8A49E1FE7B94BAB6BA5E8A59E0FA8A84DAFAA6CCB151 [36mheight=[0m29 [36mmodule=[0mstate [36mnum_txs=[0m1
+[90m9:15AM[0m [32mINF[0m indexed block [36mheight=[0m29 [36mmodule=[0mtxindex
+[90m9:15AM[0m [32mINF[0m Ensure peers [36mmodule=[0mpex [36mnumDialing=[0m0 [36mnumInPeers=[0m0 [36mnumOutPeers=[0m0 [36mnumToDial=[0m10
+[90m9:15AM[0m [32mINF[0m No addresses to dial. Falling back to seeds [36mmodule=[0mpex
+[90m9:15AM[0m [32mINF[0m Timed out [36mdur=[0m4985.114687 [36mheight=[0m30 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:15AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"CE7F965583D4029F1C291E495C227CA6F54254F3D5B1B22EE5D8BE24D091001F","parts":{"hash":"5E15229CC52321673AAF2F279BB671D22CF99C9B774FA64CCF05B7010B7BDE01","total":1}},"height":30,"pol_round":-1,"round":0,"signature":"V8fQCW6nll4wP6Y47CwLfzndGenw/Z2nmPg+k9VuZaIb6Ligr/YHkX3DV2Td0WOJI52/WTXLGwUeFEuP+Yu5Bg==","timestamp":"2022-09-09T07:15:16.900265813Z"}
+[90m9:15AM[0m [32mINF[0m received complete proposal block [36mhash=[0mCE7F965583D4029F1C291E495C227CA6F54254F3D5B1B22EE5D8BE24D091001F [36mheight=[0m30 [36mmodule=[0mconsensus
+[90m9:15AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mCE7F965583D4029F1C291E495C227CA6F54254F3D5B1B22EE5D8BE24D091001F [36mheight=[0m30 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mBBE9D18D04BFA5EC9E0A8A49E1FE7B94BAB6BA5E8A59E0FA8A84DAFAA6CCB151
+[90m9:15AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:15AM[0m [32mINF[0m executed block [36mheight=[0m30 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:15AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B31313320313932203339203020323330203137362032333020333120313131203132322032352031313520323336203836203232203136392032333020363820353620323235203132302036312036352031343420313834203730203235352031313220372032343520313837203133375D3A31457D
+[90m9:15AM[0m [32mINF[0m committed state [36mapp_hash=[0m71C02700E6B0E61F6F7A1973EC5616A9E64438E1783D4190B846FF7007F5BB89 [36mheight=[0m30 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:15AM[0m [32mINF[0m indexed block [36mheight=[0m30 [36mmodule=[0mtxindex
+[90m9:15AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-76 [36mmodule=[0mx/ibc/client
+[90m9:15AM[0m [32mINF[0m channel state updated [36mchannel-id=[0mchannel-1 [36mmodule=[0mx/ibc/channel [36mnew-state=[0mOPEN [36mport-id=[0mtransfer [36mprevious-state=[0mSTATE_OPEN
+[90m9:15AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-76 [36mmodule=[0mx/ibc/client
+[90m9:15AM[0m [32mINF[0m Timed out [36mdur=[0m4986.655158 [36mheight=[0m31 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:15AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"07B519F1CA94788EF0CDAEDC581816C5A81F00C178C9A4E5DB58414226545553","parts":{"hash":"67BCA5459C6DFFEF739B95453593E1B262480DB4E92D33F16496B719DB993FE3","total":1}},"height":31,"pol_round":-1,"round":0,"signature":"fiJnC5gDSGLzd9jMrVWk+umVmbzPd6cYDOMI2PvaAO+9E3Dxh7WzTZp8inrSW8c1u+r7jzsyNY5XlTzDkBJDBg==","timestamp":"2022-09-09T07:15:21.932039417Z"}
+[90m9:15AM[0m [32mINF[0m received complete proposal block [36mhash=[0m07B519F1CA94788EF0CDAEDC581816C5A81F00C178C9A4E5DB58414226545553 [36mheight=[0m31 [36mmodule=[0mconsensus
+[90m9:15AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m07B519F1CA94788EF0CDAEDC581816C5A81F00C178C9A4E5DB58414226545553 [36mheight=[0m31 [36mmodule=[0mconsensus [36mnum_txs=[0m1 [36mroot=[0m71C02700E6B0E61F6F7A1973EC5616A9E64438E1783D4190B846FF7007F5BB89
+[90m9:15AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:15AM[0m [32mINF[0m client state updated [36mclient-id=[0m07-tendermint-1 [36mheight=[0m0-76 [36mmodule=[0mx/ibc/client
+[90m9:15AM[0m [32mINF[0m channel state updated [36mchannel-id=[0mchannel-1 [36mmodule=[0mx/ibc/channel [36mnew-state=[0mOPEN [36mport-id=[0mtransfer [36mprevious-state=[0mSTATE_OPEN
+[90m9:15AM[0m [32mINF[0m executed block [36mheight=[0m31 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m1
+[90m9:15AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3135312032343020313639203133312031342031382031373820323437203137342031313220343120323336203137342034203137203135342031363820313520323235203336203134203131322033322039302032302035302032313520313334203135312032333220313020355D3A31467D
+[90m9:15AM[0m [32mINF[0m committed state [36mapp_hash=[0m97F0A9830E12B2F7AE7029ECAE04119AA80FE1240E70205A1432D78697E80A05 [36mheight=[0m31 [36mmodule=[0mstate [36mnum_txs=[0m1
+[90m9:15AM[0m [32mINF[0m indexed block [36mheight=[0m31 [36mmodule=[0mtxindex
+[90m9:15AM[0m [32mINF[0m Timed out [36mdur=[0m4983.956078 [36mheight=[0m32 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:15AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"E7EACCD0F12A6BCBC50C4F5E17B3C1FE485056DC3A03EA4C77A0964E5C87032F","parts":{"hash":"1B8E92235AC10B8A37627EB1F305B033F6098E98AAF8594D7E5115AD3295B200","total":1}},"height":32,"pol_round":-1,"round":0,"signature":"egmEAxYFLZRNG6519zGxqmH/8hKG/MBokbtpJPwoCPhCYN488VnsCdEX0pzsxyF3lBkEQVzJiWtDoBx1SDzzDA==","timestamp":"2022-09-09T07:15:26.965107694Z"}
+[90m9:15AM[0m [32mINF[0m received complete proposal block [36mhash=[0mE7EACCD0F12A6BCBC50C4F5E17B3C1FE485056DC3A03EA4C77A0964E5C87032F [36mheight=[0m32 [36mmodule=[0mconsensus
+[90m9:15AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mE7EACCD0F12A6BCBC50C4F5E17B3C1FE485056DC3A03EA4C77A0964E5C87032F [36mheight=[0m32 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m97F0A9830E12B2F7AE7029ECAE04119AA80FE1240E70205A1432D78697E80A05
+[90m9:15AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:15AM[0m [32mINF[0m executed block [36mheight=[0m32 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:15AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B323039203533203134322039392038332031363320323336203135342031393420313637203133203130203232203937203133392032303820313138203132372036352034382031303920323030203432203330203837203836203233362031363820363120313631203932203132365D3A32307D
+[90m9:15AM[0m [32mINF[0m committed state [36mapp_hash=[0mD1358E6353A3EC9AC2A70D0A16618BD0767F41306DC82A1E5756ECA83DA15C7E [36mheight=[0m32 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:15AM[0m [32mINF[0m indexed block [36mheight=[0m32 [36mmodule=[0mtxindex
+[90m9:15AM[0m [32mINF[0m Timed out [36mdur=[0m4986.351409 [36mheight=[0m33 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:15AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"07134480B71503830881C8E7FA41CA9CA4335B1D99BBC21A577D04262FEF7F2C","parts":{"hash":"3DB6E69622AA454D6279DFFDDDCBFD9F358F8F0D3398D3BA43242EFC99B5D81A","total":1}},"height":33,"pol_round":-1,"round":0,"signature":"qZi2cAkndn74ng6zU/aPiXoIjS9oGwHel4u10CBrua+XPSs0LXQm748VrnZC2kPKaSmD/RQgNPrHtQG8RVXIBg==","timestamp":"2022-09-09T07:15:31.997560517Z"}
+[90m9:15AM[0m [32mINF[0m received complete proposal block [36mhash=[0m07134480B71503830881C8E7FA41CA9CA4335B1D99BBC21A577D04262FEF7F2C [36mheight=[0m33 [36mmodule=[0mconsensus
+[90m9:15AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m07134480B71503830881C8E7FA41CA9CA4335B1D99BBC21A577D04262FEF7F2C [36mheight=[0m33 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mD1358E6353A3EC9AC2A70D0A16618BD0767F41306DC82A1E5756ECA83DA15C7E
+[90m9:15AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:15AM[0m [32mINF[0m executed block [36mheight=[0m33 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:15AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B31393720313537203235342037312031313620333020343320313536203233352031332031363920313539203233312032313820383820392036203130322032313120323430203131382032333020393020313520343920313037203136362032382039203439203136203233385D3A32317D
+[90m9:15AM[0m [32mINF[0m committed state [36mapp_hash=[0mC59DFE47741E2B9CEB0DA99FE7DA58090666D3F076E65A0F316BA61C093110EE [36mheight=[0m33 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:15AM[0m [32mINF[0m indexed block [36mheight=[0m33 [36mmodule=[0mtxindex
+[90m9:15AM[0m [32mINF[0m Timed out [36mdur=[0m4985.928452 [36mheight=[0m34 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:15AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"A15F97B4391A5C562C3568F1C796DD3D3693E700BCCD1806B3F175BC4AED8C33","parts":{"hash":"9738835219CC05AC3771636BDBFC472774A2CD910E43B96F627CFF4E6A0D4BF6","total":1}},"height":34,"pol_round":-1,"round":0,"signature":"GerlenZbvGlXqbAqeo6NSRtqXJNca0V31Xu+1pj+Ii7hAhXS9TTpfP775AEWKgqJu087ph4ebi/fjt31Sn8PDA==","timestamp":"2022-09-09T07:15:37.02305814Z"}
+[90m9:15AM[0m [32mINF[0m received complete proposal block [36mhash=[0mA15F97B4391A5C562C3568F1C796DD3D3693E700BCCD1806B3F175BC4AED8C33 [36mheight=[0m34 [36mmodule=[0mconsensus
+[90m9:15AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mA15F97B4391A5C562C3568F1C796DD3D3693E700BCCD1806B3F175BC4AED8C33 [36mheight=[0m34 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mC59DFE47741E2B9CEB0DA99FE7DA58090666D3F076E65A0F316BA61C093110EE
+[90m9:15AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:15AM[0m [32mINF[0m executed block [36mheight=[0m34 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:15AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B32303420382039372037342032313920323330203133342032303920343020333020313939203138302032312031373420363120373620373420313936203131302033352032303520313730203720353620313534203230332031303520323320323720313836203132372034335D3A32327D
+[90m9:15AM[0m [32mINF[0m committed state [36mapp_hash=[0mCC08614ADBE686D1281EC7B415AE3D4C4AC46E23CDAA07389ACB69171BBA7F2B [36mheight=[0m34 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:15AM[0m [32mINF[0m indexed block [36mheight=[0m34 [36mmodule=[0mtxindex
+[90m9:15AM[0m [32mINF[0m Timed out [36mdur=[0m4986.525464 [36mheight=[0m35 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:15AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"D7C88C2B79C8A1F71A8E7359C57020D94AA71E003C1209065D6E2DE7DDACFAC4","parts":{"hash":"3984FBA4F8A9435277DAFE7D32F28261750E3DD14132C829F85B5C3E9DD265D3","total":1}},"height":35,"pol_round":-1,"round":0,"signature":"Je8mZWDyYLHaFLEhI9sOfSjcYdPhr/hNCxFeAYoPYMdygIwVcLAyotEu2XIit19Q2cGRHHfJs04iXX8nZjX3Dg==","timestamp":"2022-09-09T07:15:42.051913223Z"}
+[90m9:15AM[0m [32mINF[0m received complete proposal block [36mhash=[0mD7C88C2B79C8A1F71A8E7359C57020D94AA71E003C1209065D6E2DE7DDACFAC4 [36mheight=[0m35 [36mmodule=[0mconsensus
+[90m9:15AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mD7C88C2B79C8A1F71A8E7359C57020D94AA71E003C1209065D6E2DE7DDACFAC4 [36mheight=[0m35 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mCC08614ADBE686D1281EC7B415AE3D4C4AC46E23CDAA07389ACB69171BBA7F2B
+[90m9:15AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:15AM[0m [32mINF[0m executed block [36mheight=[0m35 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:15AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3837203136362035352032302031353920313130203134392031393520313639203136342034362031313620313530203131342038382032303920323331203234372037322032323020323037203836203732203139372032343520323330203135392034322032323120313736203131382032385D3A32337D
+[90m9:15AM[0m [32mINF[0m committed state [36mapp_hash=[0m57A637149F6E95C3A9A42E74967258D1E7F748DCCF5648C5F5E69F2ADDB0761C [36mheight=[0m35 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:15AM[0m [32mINF[0m indexed block [36mheight=[0m35 [36mmodule=[0mtxindex
+[90m9:15AM[0m [32mINF[0m Ensure peers [36mmodule=[0mpex [36mnumDialing=[0m0 [36mnumInPeers=[0m0 [36mnumOutPeers=[0m0 [36mnumToDial=[0m10
+[90m9:15AM[0m [32mINF[0m No addresses to dial. Falling back to seeds [36mmodule=[0mpex
+[90m9:15AM[0m [32mINF[0m Timed out [36mdur=[0m4986.600112 [36mheight=[0m36 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:15AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"C134AC4505FF278DC4322EC2E8E7E0ACF6F43460D02B2D179387350A5A75BB7A","parts":{"hash":"C7A5963CAD2273F42E0F4CFFE246932DF78D32208E992F25811A988425138F21","total":1}},"height":36,"pol_round":-1,"round":0,"signature":"qFLGIeuaGorq4G1YfKH95PbiskyRzL81PI3pK9y7RLiFACwlNpF5jUTmaMFu9lZ7549TCWAFNVPoMEaoQfMODA==","timestamp":"2022-09-09T07:15:47.084019005Z"}
+[90m9:15AM[0m [32mINF[0m received complete proposal block [36mhash=[0mC134AC4505FF278DC4322EC2E8E7E0ACF6F43460D02B2D179387350A5A75BB7A [36mheight=[0m36 [36mmodule=[0mconsensus
+[90m9:15AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mC134AC4505FF278DC4322EC2E8E7E0ACF6F43460D02B2D179387350A5A75BB7A [36mheight=[0m36 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m57A637149F6E95C3A9A42E74967258D1E7F748DCCF5648C5F5E69F2ADDB0761C
+[90m9:15AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:15AM[0m [32mINF[0m executed block [36mheight=[0m36 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:15AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3130312031383420393220312031303720383320323137203435203538203135372031353320333120313936203231322031393120313631203135342039342031383120313039203132332031303420383120313637203931203136342032353220373220313138203231392034392031315D3A32347D
+[90m9:15AM[0m [32mINF[0m committed state [36mapp_hash=[0m65B85C016B53D92D3A9D991FC4D4BFA19A5EB56D7B6851A75BA4FC4876DB310B [36mheight=[0m36 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:15AM[0m [32mINF[0m indexed block [36mheight=[0m36 [36mmodule=[0mtxindex
+[90m9:15AM[0m [32mINF[0m New websocket connection [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m127.0.0.1:50164
+[90m9:15AM[0m [32mINF[0m Starting wsConnection service [36mimpl=[0mwsConnection [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m{"IP":"127.0.0.1","Port":50164,"Zone":""}
+[90m9:15AM[0m [32mINF[0m Subscribe to query [36mmodule=[0mrpc [36mquery=[0m"tm.event = 'NewBlock'" [36mremote=[0m127.0.0.1:50164
+[90m9:15AM[0m [32mINF[0m WSJSONRPC [36mmethod=[0msubscribe [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m{"IP":"127.0.0.1","Port":50164,"Zone":""}
+[90m9:15AM[0m [32mINF[0m Subscribe to query [36mmodule=[0mrpc [36mquery=[0m"message.module = 'ibc_client'" [36mremote=[0m127.0.0.1:50164
+[90m9:15AM[0m [32mINF[0m WSJSONRPC [36mmethod=[0msubscribe [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m{"IP":"127.0.0.1","Port":50164,"Zone":""}
+[90m9:15AM[0m [32mINF[0m Subscribe to query [36mmodule=[0mrpc [36mquery=[0m"message.module = 'ibc_connection'" [36mremote=[0m127.0.0.1:50164
+[90m9:15AM[0m [32mINF[0m WSJSONRPC [36mmethod=[0msubscribe [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m{"IP":"127.0.0.1","Port":50164,"Zone":""}
+[90m9:15AM[0m [32mINF[0m Subscribe to query [36mmodule=[0mrpc [36mquery=[0m"message.module = 'ibc_channel'" [36mremote=[0m127.0.0.1:50164
+[90m9:15AM[0m [32mINF[0m WSJSONRPC [36mmethod=[0msubscribe [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m{"IP":"127.0.0.1","Port":50164,"Zone":""}
+[90m9:15AM[0m [32mINF[0m Timed out [36mdur=[0m4977.26254 [36mheight=[0m37 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:15AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"8311AD198A9025B471680DCA8D2FDF64625A39E43DB18C1EE9541BEEDE187317","parts":{"hash":"6C3765C97D4F0FE9007E06671F75B5EC7C177CC074028A5CEADD3AA05AABBFDF","total":1}},"height":37,"pol_round":-1,"round":0,"signature":"YRb7cUT8eABmNTpE2ya6gSkTKl2jI8RStiDj3HBK3zIFzQbz8UrEV5PARcvG+Ig/OKuVX7K290K3qOW1ALgoDw==","timestamp":"2022-09-09T07:15:52.130566425Z"}
+[90m9:15AM[0m [32mINF[0m received complete proposal block [36mhash=[0m8311AD198A9025B471680DCA8D2FDF64625A39E43DB18C1EE9541BEEDE187317 [36mheight=[0m37 [36mmodule=[0mconsensus
+[90m9:15AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m8311AD198A9025B471680DCA8D2FDF64625A39E43DB18C1EE9541BEEDE187317 [36mheight=[0m37 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m65B85C016B53D92D3A9D991FC4D4BFA19A5EB56D7B6851A75BA4FC4876DB310B
+[90m9:15AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:15AM[0m [32mINF[0m executed block [36mheight=[0m37 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:15AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B32353320313732203137392031362032313920313235203633203137322032323320313534203933203531203134362031303020393720323920313733203234392031332032323720363320323530203136312031343820323435203938203133362031343620393720313638203138302034365D3A32357D
+[90m9:15AM[0m [32mINF[0m committed state [36mapp_hash=[0mFDACB310DB7D3FACDF9A5D339264611DADF90DE33FFAA194F562889261A8B42E [36mheight=[0m37 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:15AM[0m [32mINF[0m indexed block [36mheight=[0m37 [36mmodule=[0mtxindex
+[90m9:15AM[0m [32mINF[0m Timed out [36mdur=[0m4986.296951 [36mheight=[0m38 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:15AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"CA9ED398D8637DAB1DBB00F47CDACEC21EA56D5E41BC6323B781592ED3D0942B","parts":{"hash":"26BDBD2418D23164899D9CFA88BF26CDC7486ACB3707B6F231C34818F6D406F4","total":1}},"height":38,"pol_round":-1,"round":0,"signature":"UY1+mTV/XVKe53pwxRPm0UMSbFMD1VmNB7Rg2rxcaQOh2bj2/kr81HYz/64gidnLa8aWn2Qn56NlvNqFksurBg==","timestamp":"2022-09-09T07:15:57.162928762Z"}
+[90m9:15AM[0m [32mINF[0m received complete proposal block [36mhash=[0mCA9ED398D8637DAB1DBB00F47CDACEC21EA56D5E41BC6323B781592ED3D0942B [36mheight=[0m38 [36mmodule=[0mconsensus
+[90m9:15AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mCA9ED398D8637DAB1DBB00F47CDACEC21EA56D5E41BC6323B781592ED3D0942B [36mheight=[0m38 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mFDACB310DB7D3FACDF9A5D339264611DADF90DE33FFAA194F562889261A8B42E
+[90m9:15AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:15AM[0m [32mINF[0m executed block [36mheight=[0m38 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:15AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3232332031343020342036372037332031383420313232203231332032342031333420393420373820323137203434203132312031353120313835203734203234382032203133312031323020323531203134362031333320323232203131302031363820323037203137392031392039325D3A32367D
+[90m9:15AM[0m [32mINF[0m committed state [36mapp_hash=[0mDF8C044349B87AD518865E4ED92C7997B94AF8028378FB9285DE6EA8CFB3135C [36mheight=[0m38 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:15AM[0m [32mINF[0m indexed block [36mheight=[0m38 [36mmodule=[0mtxindex
+[90m9:16AM[0m [32mINF[0m Timed out [36mdur=[0m4986.147927 [36mheight=[0m39 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:16AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"F0C321DEF6585B6FD3D05A3430504C7493F4FA008948BE4A68359807E1B9D360","parts":{"hash":"BFED8E6460DC92E10411A8E4D4881EA0BC22D4A7C6B6D0BE1CDC5B4FA1CD1567","total":1}},"height":39,"pol_round":-1,"round":0,"signature":"fmfa1lva40IKn0jDPVNyFVfLoPF3BZqv7Vpg824o3r+g07Sun+WA7qgBy1W2TF3qcMKVnDjZQa3QBcM20zNICw==","timestamp":"2022-09-09T07:16:02.195287336Z"}
+[90m9:16AM[0m [32mINF[0m received complete proposal block [36mhash=[0mF0C321DEF6585B6FD3D05A3430504C7493F4FA008948BE4A68359807E1B9D360 [36mheight=[0m39 [36mmodule=[0mconsensus
+[90m9:16AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mF0C321DEF6585B6FD3D05A3430504C7493F4FA008948BE4A68359807E1B9D360 [36mheight=[0m39 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mDF8C044349B87AD518865E4ED92C7997B94AF8028378FB9285DE6EA8CFB3135C
+[90m9:16AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:16AM[0m [32mINF[0m executed block [36mheight=[0m39 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:16AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B313137203638203139322031362031303420333820313430203232342031313520353120313636203135322031383420323135203231372032203137392032313820313137203339203230372031383120373120393220363320393420313135203131203639203331203132332038395D3A32377D
+[90m9:16AM[0m [32mINF[0m committed state [36mapp_hash=[0m7544C01068268CE07333A698B8D7D902B3DA7527CFB5475C3F5E730B451F7B59 [36mheight=[0m39 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:16AM[0m [32mINF[0m indexed block [36mheight=[0m39 [36mmodule=[0mtxindex
+[90m9:16AM[0m [32mINF[0m Timed out [36mdur=[0m4986.360752 [36mheight=[0m40 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:16AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"19069AB68FBB1456539A23271B7A9CFBA9F48CD1337E8A57A7E397F4C97C964B","parts":{"hash":"79F6D4269B9DFFC6EDAF7FF60015DA135516AF817273BDF78AEDFD47441A6E96","total":1}},"height":40,"pol_round":-1,"round":0,"signature":"XxyxnMDcFMtzcENgGABdihr02/di8EXmBHaOzCe05iwJRqF+WRZJ4RGzxys3oDW5MzIL5zLGtrh6KfFqSdOVCg==","timestamp":"2022-09-09T07:16:07.226761127Z"}
+[90m9:16AM[0m [32mINF[0m received complete proposal block [36mhash=[0m19069AB68FBB1456539A23271B7A9CFBA9F48CD1337E8A57A7E397F4C97C964B [36mheight=[0m40 [36mmodule=[0mconsensus
+[90m9:16AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m19069AB68FBB1456539A23271B7A9CFBA9F48CD1337E8A57A7E397F4C97C964B [36mheight=[0m40 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m7544C01068268CE07333A698B8D7D902B3DA7527CFB5475C3F5E730B451F7B59
+[90m9:16AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:16AM[0m [32mINF[0m executed block [36mheight=[0m40 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:16AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3232382032303920323437203230372031203132392034302031353020313035203137352031323720383420323137203839203132332032343920313538203939203230322032343920323430203232302031383220313234203935203138203232362034332031333320373020313538203233365D3A32387D
+[90m9:16AM[0m [32mINF[0m committed state [36mapp_hash=[0mE4D1F7CF0181289669AF7F54D9597BF99E63CAF9F0DCB67C5F12E22B85469EEC [36mheight=[0m40 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:16AM[0m [32mINF[0m indexed block [36mheight=[0m40 [36mmodule=[0mtxindex
+[90m9:16AM[0m [32mINF[0m Timed out [36mdur=[0m4986.34633 [36mheight=[0m41 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:16AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"6F943E28A5F09490E5D9631861E6B95D50FD67B88805FB31F72C0581E1744F46","parts":{"hash":"26A4432BCCD74211E1ED6B45043DA0580EAF917F25D6483E1AA5F58B8131C1EF","total":1}},"height":41,"pol_round":-1,"round":0,"signature":"lp/wYv/OYp5T8YMYg7dGYxmYAnPUAgO1h7w5vSlurf8fDQOe9arQbWUzaAxiMayv5SgdLrxdXy9z8ODRKJjEAA==","timestamp":"2022-09-09T07:16:12.252180693Z"}
+[90m9:16AM[0m [32mINF[0m received complete proposal block [36mhash=[0m6F943E28A5F09490E5D9631861E6B95D50FD67B88805FB31F72C0581E1744F46 [36mheight=[0m41 [36mmodule=[0mconsensus
+[90m9:16AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m6F943E28A5F09490E5D9631861E6B95D50FD67B88805FB31F72C0581E1744F46 [36mheight=[0m41 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mE4D1F7CF0181289669AF7F54D9597BF99E63CAF9F0DCB67C5F12E22B85469EEC
+[90m9:16AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:16AM[0m [32mINF[0m executed block [36mheight=[0m41 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:16AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B383720382031382032313820323433203132392031383120323439203220313436203234302031392032303120323432203233362031393720383920323036203532203134352031353020363720313132203135322039392031323920313738203138352031313920313733203936203230385D3A32397D
+[90m9:16AM[0m [32mINF[0m committed state [36mapp_hash=[0m570812DAF381B5F90292F013C9F2ECC559CE3491964370986381B2B977AD60D0 [36mheight=[0m41 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:16AM[0m [32mINF[0m indexed block [36mheight=[0m41 [36mmodule=[0mtxindex
+[90m9:16AM[0m [32mINF[0m Ensure peers [36mmodule=[0mpex [36mnumDialing=[0m0 [36mnumInPeers=[0m0 [36mnumOutPeers=[0m0 [36mnumToDial=[0m10
+[90m9:16AM[0m [32mINF[0m No addresses to dial. Falling back to seeds [36mmodule=[0mpex
+[90m9:16AM[0m [32mINF[0m Timed out [36mdur=[0m4985.592243 [36mheight=[0m42 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:16AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"91D47F849B82B71B4DE8835E88AD17169B25F7D6B4258803510625D54241E256","parts":{"hash":"2329379F99346D855245859DD36563A82D99814E775BB678A4898651FD0F7E2B","total":1}},"height":42,"pol_round":-1,"round":0,"signature":"TcuxN2i7nyXoD3YiGlLr8Zu89SR7I2+fBKhH2bniKetaPLhYHnfto+5Fk6SAKtMovCdK1GsOHfVJxTdPQb9FAw==","timestamp":"2022-09-09T07:16:17.284629729Z"}
+[90m9:16AM[0m [32mINF[0m received complete proposal block [36mhash=[0m91D47F849B82B71B4DE8835E88AD17169B25F7D6B4258803510625D54241E256 [36mheight=[0m42 [36mmodule=[0mconsensus
+[90m9:16AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m91D47F849B82B71B4DE8835E88AD17169B25F7D6B4258803510625D54241E256 [36mheight=[0m42 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m570812DAF381B5F90292F013C9F2ECC559CE3491964370986381B2B977AD60D0
+[90m9:16AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:16AM[0m [32mINF[0m executed block [36mheight=[0m42 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:16AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3736203130332031343720373520323339203232342032333520323036203133392032323820323532203131302031353020313030203137322031323520313435203139352031313520323430203137322033332038203434203235312034372032323720323035203132203233302033392038375D3A32417D
+[90m9:16AM[0m [32mINF[0m committed state [36mapp_hash=[0m4C67934BEFE0EBCE8BE4FC6E9664AC7D91C373F0AC21082CFB2FE3CD0CE62757 [36mheight=[0m42 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:16AM[0m [32mINF[0m indexed block [36mheight=[0m42 [36mmodule=[0mtxindex
+[90m9:16AM[0m [32mINF[0m Timed out [36mdur=[0m4984.619342 [36mheight=[0m43 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:16AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"FED731A45F3F353BA535EBCF45A6D53312AAAB1960AAE5912A9CEA4333DDE0EF","parts":{"hash":"844BD51CD7A29C9923E005A69964A308D628C0720D19E97E76972451A60E63D5","total":1}},"height":43,"pol_round":-1,"round":0,"signature":"Qnbuxdj6dYd42wEoFuoFvaLgKkw4ZeJLhdv6hi5Y72M/Q8ZVyGAny9UAWhQlK3kTFbQj2EhJaQQN6cOybmVKAw==","timestamp":"2022-09-09T07:16:22.311291743Z"}
+[90m9:16AM[0m [32mINF[0m received complete proposal block [36mhash=[0mFED731A45F3F353BA535EBCF45A6D53312AAAB1960AAE5912A9CEA4333DDE0EF [36mheight=[0m43 [36mmodule=[0mconsensus
+[90m9:16AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mFED731A45F3F353BA535EBCF45A6D53312AAAB1960AAE5912A9CEA4333DDE0EF [36mheight=[0m43 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m4C67934BEFE0EBCE8BE4FC6E9664AC7D91C373F0AC21082CFB2FE3CD0CE62757
+[90m9:16AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:16AM[0m [32mINF[0m executed block [36mheight=[0m43 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:16AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B323320313635203131342032313520323139203237203135203231312035203935203231362031333820373120353820363220363120393620323920313130203232302037322031343320313137203135322032303320393820382032303320343320323434203137362037345D3A32427D
+[90m9:16AM[0m [32mINF[0m committed state [36mapp_hash=[0m17A572D7DB1B0FD3055FD88A473A3E3D601D6EDC488F7598CB6208CB2BF4B04A [36mheight=[0m43 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:16AM[0m [32mINF[0m indexed block [36mheight=[0m43 [36mmodule=[0mtxindex
+[90m9:16AM[0m [32mINF[0m Timed out [36mdur=[0m4985.929887 [36mheight=[0m44 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:16AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"23219045DD9CCCD99791065B3EE1A19CF163D6B15241B8B4AD6F8B8CB35F095A","parts":{"hash":"C87A2051E899D1EFEDDD38C908B508AB1AC77AD54AF16B060857CD3E91FABB7B","total":1}},"height":44,"pol_round":-1,"round":0,"signature":"iBNR8bB5JYwitAxdrj/7e3/7byLmtmRBy5DQIzXrzI1fQl7du0gL2FGwehP8+axsNrHThgeiOJaKRptF8EZpCg==","timestamp":"2022-09-09T07:16:27.343780361Z"}
+[90m9:16AM[0m [32mINF[0m received complete proposal block [36mhash=[0m23219045DD9CCCD99791065B3EE1A19CF163D6B15241B8B4AD6F8B8CB35F095A [36mheight=[0m44 [36mmodule=[0mconsensus
+[90m9:16AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m23219045DD9CCCD99791065B3EE1A19CF163D6B15241B8B4AD6F8B8CB35F095A [36mheight=[0m44 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m17A572D7DB1B0FD3055FD88A473A3E3D601D6EDC488F7598CB6208CB2BF4B04A
+[90m9:16AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:16AM[0m [32mINF[0m executed block [36mheight=[0m44 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:16AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B323338203238203132302031363920323131203232203938203733203139392031383020313335203938203835203635203231362032313020313439203137312032313620373220323920323020363020313639203732203137382031353120333820323130203137352032343720385D3A32437D
+[90m9:16AM[0m [32mINF[0m committed state [36mapp_hash=[0mEE1C78A9D3166249C7B487625541D8D295ABD8481D143CA948B29726D2AFF708 [36mheight=[0m44 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:16AM[0m [32mINF[0m indexed block [36mheight=[0m44 [36mmodule=[0mtxindex
+[90m9:16AM[0m [32mINF[0m Timed out [36mdur=[0m4986.225142 [36mheight=[0m45 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:16AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"4F6EC4D7D50070B2BAC8E4A227A437FA7D213181BB1AE7E375585D5DDDAEFBF9","parts":{"hash":"871E0D2E3F112430728BD46C71B11906E6BA4E246995E2B9370B507ADF11CF36","total":1}},"height":45,"pol_round":-1,"round":0,"signature":"n0Nu5sn34XQvSDlzv/2GQULZQpUEY6z6hW+3HLjoQzFu44oHxOxXuHQ36uZVaHvVboYi8OWDbCZrefL/vs94Cw==","timestamp":"2022-09-09T07:16:32.376590347Z"}
+[90m9:16AM[0m [32mINF[0m received complete proposal block [36mhash=[0m4F6EC4D7D50070B2BAC8E4A227A437FA7D213181BB1AE7E375585D5DDDAEFBF9 [36mheight=[0m45 [36mmodule=[0mconsensus
+[90m9:16AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m4F6EC4D7D50070B2BAC8E4A227A437FA7D213181BB1AE7E375585D5DDDAEFBF9 [36mheight=[0m45 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mEE1C78A9D3166249C7B487625541D8D295ABD8481D143CA948B29726D2AFF708
+[90m9:16AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:16AM[0m [32mINF[0m executed block [36mheight=[0m45 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:16AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B38312036332032303820383320343820313520373020323020313035203138352031353020353920323236203233372031343020383720393220313138203132322031373620323438203737203137302031383420323030203139362031303820323135203620313432203239203131385D3A32447D
+[90m9:16AM[0m [32mINF[0m committed state [36mapp_hash=[0m513FD053300F461469B9963BE2ED8C575C767AB0F84DAAB8C8C46CD7068E1D76 [36mheight=[0m45 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:16AM[0m [32mINF[0m indexed block [36mheight=[0m45 [36mmodule=[0mtxindex
+[90m9:16AM[0m [32mINF[0m Timed out [36mdur=[0m4985.809383 [36mheight=[0m46 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:16AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"0B3070E6ECB053DBC418F43988B9767D77C475771E31573D7BD9C8F0D6CEFC26","parts":{"hash":"972379FFF5669F2CD1869229FF300246FCF11EA778BC3F6B994D5B260B8C31B8","total":1}},"height":46,"pol_round":-1,"round":0,"signature":"MrjrKC58lBMXyxNUImk9NzEz1DegCZPJJpzzF9c2XXQetAP/hzEPKT94STXFC530bBzLv6UFCNF9pwfQYJo0Ag==","timestamp":"2022-09-09T07:16:37.434356488Z"}
+[90m9:16AM[0m [32mINF[0m received complete proposal block [36mhash=[0m0B3070E6ECB053DBC418F43988B9767D77C475771E31573D7BD9C8F0D6CEFC26 [36mheight=[0m46 [36mmodule=[0mconsensus
+[90m9:16AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m0B3070E6ECB053DBC418F43988B9767D77C475771E31573D7BD9C8F0D6CEFC26 [36mheight=[0m46 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m513FD053300F461469B9963BE2ED8C575C767AB0F84DAAB8C8C46CD7068E1D76
+[90m9:16AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:16AM[0m [32mINF[0m executed block [36mheight=[0m46 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:16AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3232342032343820313020323436203536203138392031333420313638203132332031302032303620313531203335203120313832203133322035382036332031383320313139203139342031343020313937203133332032343420313537203138342039392032382032343820323234203232335D3A32457D
+[90m9:16AM[0m [32mINF[0m committed state [36mapp_hash=[0mE0F80AF638BD86A87B0ACE972301B6843A3FB777C28CC585F49DB8631CF8E0DF [36mheight=[0m46 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:16AM[0m [32mINF[0m indexed block [36mheight=[0m46 [36mmodule=[0mtxindex
+[90m9:16AM[0m [32mINF[0m Timed out [36mdur=[0m4986.083132 [36mheight=[0m47 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:16AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"1B4BA00E0D0C92C8D3A888B5CA5B900E8B6A9EA630B849D30296A4558708497D","parts":{"hash":"CE400390CDA8F4096F1863FCFAAB6F1B4AA793DD3F5E16247EC9C8177D1907AA","total":1}},"height":47,"pol_round":-1,"round":0,"signature":"1VxrrR1pNE5SpfH7MerlTPWRFuIXFmUgqIwWkXSeTGlw+SCuOm9pIi+Iy52bqTs0b7iq9wXgmneDnAS1dLewAw==","timestamp":"2022-09-09T07:16:42.46728031Z"}
+[90m9:16AM[0m [32mINF[0m received complete proposal block [36mhash=[0m1B4BA00E0D0C92C8D3A888B5CA5B900E8B6A9EA630B849D30296A4558708497D [36mheight=[0m47 [36mmodule=[0mconsensus
+[90m9:16AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m1B4BA00E0D0C92C8D3A888B5CA5B900E8B6A9EA630B849D30296A4558708497D [36mheight=[0m47 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mE0F80AF638BD86A87B0ACE972301B6843A3FB777C28CC585F49DB8631CF8E0DF
+[90m9:16AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:16AM[0m [32mINF[0m executed block [36mheight=[0m47 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:16AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3433203732203935203734203439203138312031312031333720313438203434203836203833203130203139312031353920313534203137372034332031393220323337203137342032343920313833203135302031333620363020313635203835203230332031383120313430203130355D3A32467D
+[90m9:16AM[0m [32mINF[0m committed state [36mapp_hash=[0m2B485F4A31B50B89942C56530ABF9F9AB12BC0EDAEF9B796883CA555CBB58C69 [36mheight=[0m47 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:16AM[0m [32mINF[0m indexed block [36mheight=[0m47 [36mmodule=[0mtxindex
+[90m9:16AM[0m [32mINF[0m Saving AddrBook to file [36mbook=[0m/home/laurens/.gaia/config/addrbook.json [36mmodule=[0mp2p [36msize=[0m0
+[90m9:16AM[0m [32mINF[0m Ensure peers [36mmodule=[0mpex [36mnumDialing=[0m0 [36mnumInPeers=[0m0 [36mnumOutPeers=[0m0 [36mnumToDial=[0m10
+[90m9:16AM[0m [32mINF[0m No addresses to dial. Falling back to seeds [36mmodule=[0mpex
+[90m9:16AM[0m [32mINF[0m Timed out [36mdur=[0m4986.15305 [36mheight=[0m48 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:16AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"2CE4CAF42CE324BCD8898B8CD60EFD46A58E441AA950F1799A6D5CE6D128BEB8","parts":{"hash":"EF890D1576DB61F9B796859C5186C07D7D6BB15890EE50D8743DBF483433BCE2","total":1}},"height":48,"pol_round":-1,"round":0,"signature":"2VnWpdfRZdRIN+SFYg2QPx1pKPih95HxlPGl15AZrqvSX9/763FEkwevRRWme8tu6E1K+rsUr5nk9Ns7SM9FAw==","timestamp":"2022-09-09T07:16:47.502626792Z"}
+[90m9:16AM[0m [32mINF[0m received complete proposal block [36mhash=[0m2CE4CAF42CE324BCD8898B8CD60EFD46A58E441AA950F1799A6D5CE6D128BEB8 [36mheight=[0m48 [36mmodule=[0mconsensus
+[90m9:16AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m2CE4CAF42CE324BCD8898B8CD60EFD46A58E441AA950F1799A6D5CE6D128BEB8 [36mheight=[0m48 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m2B485F4A31B50B89942C56530ABF9F9AB12BC0EDAEF9B796883CA555CBB58C69
+[90m9:16AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:16AM[0m [32mINF[0m executed block [36mheight=[0m48 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:16AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3439203838203230382031313720323134203120313535203739203231312033382032353520313332203230352031353220323136203230362033322031333620323038203638203134203634203131332031363220313938203333203520323232203231342031373020323230203130375D3A33307D
+[90m9:16AM[0m [32mINF[0m committed state [36mapp_hash=[0m3158D075D6019B4FD326FF84CD98D8CE2088D0440E4071A2C62105DED6AADC6B [36mheight=[0m48 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:16AM[0m [32mINF[0m indexed block [36mheight=[0m48 [36mmodule=[0mtxindex
+[90m9:16AM[0m [32mINF[0m Timed out [36mdur=[0m4986.426843 [36mheight=[0m49 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:16AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"4B99E7C8BED1DBEE8A85534805668DADF242EE742321BFA2F2FA5652E522CBBE","parts":{"hash":"4BBE1DF105F0093EFD3DBDED67C849B464B7041A2AC5648580FA6BA5B31EB84A","total":1}},"height":49,"pol_round":-1,"round":0,"signature":"n+QiIaEVjoOmG1rKTu/GuGjXKGjnmu+3ASpTglsm80gZJEhRy9OgYfFDG3LI/xRhfugfaaP9C1Wo4HJ4MslWCg==","timestamp":"2022-09-09T07:16:52.527548304Z"}
+[90m9:16AM[0m [32mINF[0m received complete proposal block [36mhash=[0m4B99E7C8BED1DBEE8A85534805668DADF242EE742321BFA2F2FA5652E522CBBE [36mheight=[0m49 [36mmodule=[0mconsensus
+[90m9:16AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m4B99E7C8BED1DBEE8A85534805668DADF242EE742321BFA2F2FA5652E522CBBE [36mheight=[0m49 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m3158D075D6019B4FD326FF84CD98D8CE2088D0440E4071A2C62105DED6AADC6B
+[90m9:16AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:16AM[0m [32mINF[0m executed block [36mheight=[0m49 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:16AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B32333620313438203437203635203136382032343920363320313835203231372031373220323135203539203438203134302033312031353920313520313532203331203135392032343520313137203134372032312037392032333120383820342031373820363820313337203231345D3A33317D
+[90m9:16AM[0m [32mINF[0m committed state [36mapp_hash=[0mEC942F41A8F93FB9D9ACD73B308C1F9F0F981F9FF57593154FE75804B24489D6 [36mheight=[0m49 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:16AM[0m [32mINF[0m indexed block [36mheight=[0m49 [36mmodule=[0mtxindex
+[90m9:16AM[0m [32mINF[0m Timed out [36mdur=[0m4986.239427 [36mheight=[0m50 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:16AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"1AB8E90DA12738A2CE5A2DECB0A10DB4E8A1F7CC52F3C108EFDDA3AD86F3150B","parts":{"hash":"BC0A3C3B8A68F4D13BB21D0485BF910B28DDC027910726159954047259587B81","total":1}},"height":50,"pol_round":-1,"round":0,"signature":"luKxRo70uZwurTJG7vufhmjFUN3WZZWg6en1gzsi7qWovkjTHJL4HKaWIqYA09QOWM/vrKcC859/CRGQmpcaAw==","timestamp":"2022-09-09T07:16:57.555130603Z"}
+[90m9:16AM[0m [32mINF[0m received complete proposal block [36mhash=[0m1AB8E90DA12738A2CE5A2DECB0A10DB4E8A1F7CC52F3C108EFDDA3AD86F3150B [36mheight=[0m50 [36mmodule=[0mconsensus
+[90m9:16AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m1AB8E90DA12738A2CE5A2DECB0A10DB4E8A1F7CC52F3C108EFDDA3AD86F3150B [36mheight=[0m50 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mEC942F41A8F93FB9D9ACD73B308C1F9F0F981F9FF57593154FE75804B24489D6
+[90m9:16AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:16AM[0m [32mINF[0m executed block [36mheight=[0m50 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:16AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B33332031303420373420323532203130362031302038302035372034342031333020323236203135392032343520313930203232302031333620313433203535203230332032333220313134203138392031393020363620323237203136332032353220373420313034203433203133332033365D3A33327D
+[90m9:16AM[0m [32mINF[0m committed state [36mapp_hash=[0m21684AFC6A0A50392C82E29FF5BEDC888F37CBE872BDBE42E3A3FC4A682B8524 [36mheight=[0m50 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:16AM[0m [32mINF[0m indexed block [36mheight=[0m50 [36mmodule=[0mtxindex
+[90m9:17AM[0m [32mINF[0m Timed out [36mdur=[0m4985.46499 [36mheight=[0m51 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:17AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"FA244AAAD4F45F7CC42E94B810768889663EB19C0832DCD8C74862E0EEE7EC97","parts":{"hash":"0BBF6830AE581A763245BB05C74B019C1390E3087A8BB81AA1175E23D95D9982","total":1}},"height":51,"pol_round":-1,"round":0,"signature":"yg2MBrb2VY6Urn7TBcfBXkHJ1bO8tZH9O/DrGgBAftVx4Uo7x87L+YazyLUJxgB93KyVo3YzOgpao1VTu6C6CQ==","timestamp":"2022-09-09T07:17:02.58205036Z"}
+[90m9:17AM[0m [32mINF[0m received complete proposal block [36mhash=[0mFA244AAAD4F45F7CC42E94B810768889663EB19C0832DCD8C74862E0EEE7EC97 [36mheight=[0m51 [36mmodule=[0mconsensus
+[90m9:17AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mFA244AAAD4F45F7CC42E94B810768889663EB19C0832DCD8C74862E0EEE7EC97 [36mheight=[0m51 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m21684AFC6A0A50392C82E29FF5BEDC888F37CBE872BDBE42E3A3FC4A682B8524
+[90m9:17AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:17AM[0m [32mINF[0m executed block [36mheight=[0m51 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:17AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3230332033302032333220313038203132203232392032333320313937203232392031313320333720313133203132352032332031323020323334203132382033352034203139302032313020333920323138203234322035302031383120313133203830203133302035312039203134345D3A33337D
+[90m9:17AM[0m [32mINF[0m committed state [36mapp_hash=[0mCB1EE86C0CE5E9C5E57125717D1778EA802304BED227DAF232B5715082330990 [36mheight=[0m51 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:17AM[0m [32mINF[0m indexed block [36mheight=[0m51 [36mmodule=[0mtxindex
+[90m9:17AM[0m [32mINF[0m Timed out [36mdur=[0m4985.560905 [36mheight=[0m52 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:17AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"DC34F50FC84541A1173C6B26A3C170E6D91BD70C314ED76FB0DA3E202428454D","parts":{"hash":"18C5C2891C2511631E8ABDC504EBCFE9F357DF068CBF0FED1E6E4D28D9F7B43C","total":1}},"height":52,"pol_round":-1,"round":0,"signature":"N0EfCw3M1/Csi7rZL+RxICHpwd7rTD8Wr8SPS8oXpUN8QgKHrHTwQnh7k2QdLE9qDy7TfzRUZ1fplDmBZPiCCw==","timestamp":"2022-09-09T07:17:07.615338421Z"}
+[90m9:17AM[0m [32mINF[0m received complete proposal block [36mhash=[0mDC34F50FC84541A1173C6B26A3C170E6D91BD70C314ED76FB0DA3E202428454D [36mheight=[0m52 [36mmodule=[0mconsensus
+[90m9:17AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mDC34F50FC84541A1173C6B26A3C170E6D91BD70C314ED76FB0DA3E202428454D [36mheight=[0m52 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mCB1EE86C0CE5E9C5E57125717D1778EA802304BED227DAF232B5715082330990
+[90m9:17AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:17AM[0m [32mINF[0m executed block [36mheight=[0m52 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:17AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3436203139362032343020313731203132302034203931203937203437203136203938203120312031333120323333203130352032353120383320323531203931203231382039332038342039352032303820313532203136362032332031343720323131203235203231335D3A33347D
+[90m9:17AM[0m [32mINF[0m committed state [36mapp_hash=[0m2EC4F0AB78045B612F1062010183E969FB53FB5BDA5D545FD098A61793D319D5 [36mheight=[0m52 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:17AM[0m [32mINF[0m indexed block [36mheight=[0m52 [36mmodule=[0mtxindex
+[90m9:17AM[0m [32mINF[0m Timed out [36mdur=[0m4986.024562 [36mheight=[0m53 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:17AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"F9B2F18EAD3454A330590007BAFFB27FDF3E870F818B97FE8F551D23E129DFF3","parts":{"hash":"33C639FD51BA736AAD9A61C85F7986E535A11FAFDF86DED6A3FD726A957EFDEA","total":1}},"height":53,"pol_round":-1,"round":0,"signature":"9cROHhGtB7wB2CLGW59pyI8dOcnY7S2SyryLjfP5KCUcnBGDRbVsKBfpSoQ/DoCg4f39319b223Y9xHuRt+RBQ==","timestamp":"2022-09-09T07:17:12.647650328Z"}
+[90m9:17AM[0m [32mINF[0m received complete proposal block [36mhash=[0mF9B2F18EAD3454A330590007BAFFB27FDF3E870F818B97FE8F551D23E129DFF3 [36mheight=[0m53 [36mmodule=[0mconsensus
+[90m9:17AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mF9B2F18EAD3454A330590007BAFFB27FDF3E870F818B97FE8F551D23E129DFF3 [36mheight=[0m53 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m2EC4F0AB78045B612F1062010183E969FB53FB5BDA5D545FD098A61793D319D5
+[90m9:17AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:17AM[0m [32mINF[0m executed block [36mheight=[0m53 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:17AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3130372034382031373720323337203535203232352031303720363720363020323231203230392031363320323532203234332034362032333820313438203238203132322034362034372038322032382031322031383120313131203139372031313820313431203137332038342039325D3A33357D
+[90m9:17AM[0m [32mINF[0m committed state [36mapp_hash=[0m6B30B1ED37E16B433CDDD1A3FCF32EEE941C7A2E2F521C0CB56FC5768DAD545C [36mheight=[0m53 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:17AM[0m [32mINF[0m indexed block [36mheight=[0m53 [36mmodule=[0mtxindex
+[90m9:17AM[0m [32mINF[0m Ensure peers [36mmodule=[0mpex [36mnumDialing=[0m0 [36mnumInPeers=[0m0 [36mnumOutPeers=[0m0 [36mnumToDial=[0m10
+[90m9:17AM[0m [32mINF[0m No addresses to dial. Falling back to seeds [36mmodule=[0mpex
+[90m9:17AM[0m [32mINF[0m Timed out [36mdur=[0m4981.78647 [36mheight=[0m54 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:17AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"CF9BCCDD7A4D4DAFD175F01B165F8546A0DB9AE7F25CDB4D6FB9AE8A5EAC9E8F","parts":{"hash":"71F6A12C0A3DFB8A21F1310E4FF2CB04398DF6331CA328E6DA80B86EC7ED472D","total":1}},"height":54,"pol_round":-1,"round":0,"signature":"c9vSLCsfDZ+0jo0/MMrOk6BuSpkWEcUEke9oidWX0xqK6tfQgJrAk11I0WeKr36/y55T1QQZtxNIoVRp4LadAQ==","timestamp":"2022-09-09T07:17:17.684027556Z"}
+[90m9:17AM[0m [32mINF[0m received complete proposal block [36mhash=[0mCF9BCCDD7A4D4DAFD175F01B165F8546A0DB9AE7F25CDB4D6FB9AE8A5EAC9E8F [36mheight=[0m54 [36mmodule=[0mconsensus
+[90m9:17AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mCF9BCCDD7A4D4DAFD175F01B165F8546A0DB9AE7F25CDB4D6FB9AE8A5EAC9E8F [36mheight=[0m54 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m6B30B1ED37E16B433CDDD1A3FCF32EEE941C7A2E2F521C0CB56FC5768DAD545C
+[90m9:17AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:17AM[0m [32mINF[0m executed block [36mheight=[0m54 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:17AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B383520343920343220313333203131392035322036372036203338203136342032392031353020323233203936203133352034372031363720363320373720343220343120312031343820393320363520313231203220313237203230362032303120323237203130375D3A33367D
+[90m9:17AM[0m [32mINF[0m committed state [36mapp_hash=[0m55312A857734430626A41D96DF60872FA73F4D2A2901945D4179027FCEC9E36B [36mheight=[0m54 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:17AM[0m [32mINF[0m indexed block [36mheight=[0m54 [36mmodule=[0mtxindex
+[90m9:17AM[0m [32mINF[0m Timed out [36mdur=[0m4980.812359 [36mheight=[0m55 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:17AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"6906E6F03E5F647D1BD14AB9C36F35AF0C7974D10A651B59AA9C84CEAB568DBF","parts":{"hash":"1C61B4A4BBBD2875B03E3535A315AF851E65FEF22C2D5C3ECFC5C747CD016B95","total":1}},"height":55,"pol_round":-1,"round":0,"signature":"NCX2XfExPwX36xfthpoaWDKAtc4nn3ClUi3MWkZF9TK86ZSVCXFzmpwFCzwo+at3f4Bc0QDSpNE6UteBz5TXCQ==","timestamp":"2022-09-09T07:17:22.720478178Z"}
+[90m9:17AM[0m [32mINF[0m received complete proposal block [36mhash=[0m6906E6F03E5F647D1BD14AB9C36F35AF0C7974D10A651B59AA9C84CEAB568DBF [36mheight=[0m55 [36mmodule=[0mconsensus
+[90m9:17AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m6906E6F03E5F647D1BD14AB9C36F35AF0C7974D10A651B59AA9C84CEAB568DBF [36mheight=[0m55 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m55312A857734430626A41D96DF60872FA73F4D2A2901945D4179027FCEC9E36B
+[90m9:17AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:17AM[0m [32mINF[0m executed block [36mheight=[0m55 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:17AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B323120363820323433203232342032303920393120313534203138322031383620323531203932203136342032323820333220313135203120343320313137203232312031383420313030203230372031353120313138203230342032313620343220373420323035203232342038332035375D3A33377D
+[90m9:17AM[0m [32mINF[0m committed state [36mapp_hash=[0m1544F3E0D15B9AB6BAFB5CA4E42073012B75DDB864CF9776CCD82A4ACDE05339 [36mheight=[0m55 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:17AM[0m [32mINF[0m indexed block [36mheight=[0m55 [36mmodule=[0mtxindex
+[90m9:17AM[0m [32mINF[0m Timed out [36mdur=[0m4981.074479 [36mheight=[0m56 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:17AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"97E991422BAF359913F12DDF4A7974050EA687579DA4A96EB23B00B11AEDEF08","parts":{"hash":"56EEB24B4CA20F00EEDC3125C46864666CA43AC61A40E0F65B42274F4E2404D9","total":1}},"height":56,"pol_round":-1,"round":0,"signature":"W5lUE6Ohr4EJ5mqcX60qv4aO08AGj4yWTxaor0vGQQnQBjqr73vc9zZ+Jy3MT0Qv2v79qdMNmOuaiVSr+OlyDg==","timestamp":"2022-09-09T07:17:27.756987414Z"}
+[90m9:17AM[0m [32mINF[0m received complete proposal block [36mhash=[0m97E991422BAF359913F12DDF4A7974050EA687579DA4A96EB23B00B11AEDEF08 [36mheight=[0m56 [36mmodule=[0mconsensus
+[90m9:17AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m97E991422BAF359913F12DDF4A7974050EA687579DA4A96EB23B00B11AEDEF08 [36mheight=[0m56 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m1544F3E0D15B9AB6BAFB5CA4E42073012B75DDB864CF9776CCD82A4ACDE05339
+[90m9:17AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:17AM[0m [32mINF[0m executed block [36mheight=[0m56 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:17AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B32323820333120323039203231312036352039332033342031383420353120363420323234203234372037382031352036382035203731203635203230352032313020373320323138203138342039302031313920313930203737203533203337203020313635203132345D3A33387D
+[90m9:17AM[0m [32mINF[0m committed state [36mapp_hash=[0mE41FD1D3415D22B83340E0F74E0F44054741CDD249DAB85A77BE4D352500A57C [36mheight=[0m56 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:17AM[0m [32mINF[0m indexed block [36mheight=[0m56 [36mmodule=[0mtxindex
+[90m9:17AM[0m [32mINF[0m Timed out [36mdur=[0m4982.391002 [36mheight=[0m57 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:17AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"F12BBAEA78B281CB0D6C5BCE2127C9C6197441FB859CCDE437911351CAE14BD3","parts":{"hash":"E6A5464EC8612E5025AD1F709D0CF1C09BABAC2A6569F5F6C62F58237157ECFA","total":1}},"height":57,"pol_round":-1,"round":0,"signature":"0MckASzwRol8VrA+G4ResNc4Er8bLSql9A1jcEVp6QtjuzRzXr5giSPf7tKo6WggYKxp1mU2XB/vmqu1R9w/AA==","timestamp":"2022-09-09T07:17:32.783971921Z"}
+[90m9:17AM[0m [32mINF[0m received complete proposal block [36mhash=[0mF12BBAEA78B281CB0D6C5BCE2127C9C6197441FB859CCDE437911351CAE14BD3 [36mheight=[0m57 [36mmodule=[0mconsensus
+[90m9:17AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mF12BBAEA78B281CB0D6C5BCE2127C9C6197441FB859CCDE437911351CAE14BD3 [36mheight=[0m57 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mE41FD1D3415D22B83340E0F74E0F44054741CDD249DAB85A77BE4D352500A57C
+[90m9:17AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:17AM[0m [32mINF[0m executed block [36mheight=[0m57 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:17AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B323138203430203535203230362031322031343920353320353220313930203138352032303920332036342032303520313137203132362032362038382032343720323130203638203138332032362032332031343320323620323535203232372031303420333720323332203231345D3A33397D
+[90m9:17AM[0m [32mINF[0m committed state [36mapp_hash=[0mDA2837CE0C953534BEB9D10340CD757E1A58F7D244B71A178F1AFFE36825E8D6 [36mheight=[0m57 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:17AM[0m [32mINF[0m indexed block [36mheight=[0m57 [36mmodule=[0mtxindex
+[90m9:17AM[0m [32mINF[0m Timed out [36mdur=[0m4986.348854 [36mheight=[0m58 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:17AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"C406EB6A8E7BC085EDD9E4CF08025E7385B4A191B22089FE454BF868DFDCD7FA","parts":{"hash":"271A64577640DE33FE8161BA8432225165DADB0E34669572647B2684CF46C575","total":1}},"height":58,"pol_round":-1,"round":0,"signature":"yZngGnNKhRomYCpvGhiJiw7PPtPPTdJiP/R1Te3behrxRB84IRQUCU7k2KVbkO4uB3r2C6GziataYQV0Wj0lCw==","timestamp":"2022-09-09T07:17:37.816707179Z"}
+[90m9:17AM[0m [32mINF[0m received complete proposal block [36mhash=[0mC406EB6A8E7BC085EDD9E4CF08025E7385B4A191B22089FE454BF868DFDCD7FA [36mheight=[0m58 [36mmodule=[0mconsensus
+[90m9:17AM[0m [32mINF[0m finalizing commit of block [36mhash=[0mC406EB6A8E7BC085EDD9E4CF08025E7385B4A191B22089FE454BF868DFDCD7FA [36mheight=[0m58 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mDA2837CE0C953534BEB9D10340CD757E1A58F7D244B71A178F1AFFE36825E8D6
+[90m9:17AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:17AM[0m [32mINF[0m executed block [36mheight=[0m58 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:17AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3839203539203639203232322031383120353420323036203420343220313135203136372030203233312032333220323235203920323432203138392031392031323220353820313639203933203235342031353120323035203138342036312035302031323120323134203136335D3A33417D
+[90m9:17AM[0m [32mINF[0m committed state [36mapp_hash=[0m593B45DEB536CE042A73A700E7E8E109F2BD137A3AA95DFE97CDB83D3279D6A3 [36mheight=[0m58 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:17AM[0m [32mINF[0m indexed block [36mheight=[0m58 [36mmodule=[0mtxindex
+[90m9:17AM[0m [32mINF[0m Timed out [36mdur=[0m4986.130215 [36mheight=[0m59 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:17AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"55E15AC605D70190C7B6905728C1C1F352894750DA391EB19A29E0289BFAEFBD","parts":{"hash":"FD81504EC3E380720A2273D57D50086D20CB13551B78430D806AECF30110CCE6","total":1}},"height":59,"pol_round":-1,"round":0,"signature":"XZDYgS4hmBmr25JvNYLV0Wx3r51wYslmjufzdGbXhCcjnt675zeaUOR75/DwtYiYp0jCeRul8duSMzGANo+WAA==","timestamp":"2022-09-09T07:17:42.848324885Z"}
+[90m9:17AM[0m [32mINF[0m received complete proposal block [36mhash=[0m55E15AC605D70190C7B6905728C1C1F352894750DA391EB19A29E0289BFAEFBD [36mheight=[0m59 [36mmodule=[0mconsensus
+[90m9:17AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m55E15AC605D70190C7B6905728C1C1F352894750DA391EB19A29E0289BFAEFBD [36mheight=[0m59 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m593B45DEB536CE042A73A700E7E8E109F2BD137A3AA95DFE97CDB83D3279D6A3
+[90m9:17AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:17AM[0m [32mINF[0m executed block [36mheight=[0m59 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:17AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B333920313635203936203834203137302031343220323330203830203133352032303220323033203133312031323020323139203131372039203232372031383520323133203130203133352032382032323120313438203639203333203131342033322037322031323920323531203230395D3A33427D
+[90m9:17AM[0m [32mINF[0m committed state [36mapp_hash=[0m27A56054AA8EE65087CACB8378DB7509E3B9D50A871CDD94452172204881FBD1 [36mheight=[0m59 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:17AM[0m [32mINF[0m indexed block [36mheight=[0m59 [36mmodule=[0mtxindex
+[90m9:17AM[0m [32mINF[0m Ensure peers [36mmodule=[0mpex [36mnumDialing=[0m0 [36mnumInPeers=[0m0 [36mnumOutPeers=[0m0 [36mnumToDial=[0m10
+[90m9:17AM[0m [32mINF[0m No addresses to dial. Falling back to seeds [36mmodule=[0mpex
+[90m9:17AM[0m [32mINF[0m Timed out [36mdur=[0m4981.539662 [36mheight=[0m60 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:17AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"7D868D63D478774AAFF0333223028BFB748DCE478FC4EF1543F95011FAEC7503","parts":{"hash":"48CD63B5B41FF7C688300A873B0B7B3F267660506873490B77454AE2EBEE8A88","total":1}},"height":60,"pol_round":-1,"round":0,"signature":"PHpECZuwvsJyLlH+MNaMuIv4WKS5Y4Bena3rjKcK7lsh/fV7kCkjwO/R+9CfBZhHWBpl3xslw1BDSXRiYTwdDw==","timestamp":"2022-09-09T07:17:47.880410677Z"}
+[90m9:17AM[0m [32mINF[0m received complete proposal block [36mhash=[0m7D868D63D478774AAFF0333223028BFB748DCE478FC4EF1543F95011FAEC7503 [36mheight=[0m60 [36mmodule=[0mconsensus
+[90m9:17AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m7D868D63D478774AAFF0333223028BFB748DCE478FC4EF1543F95011FAEC7503 [36mheight=[0m60 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m27A56054AA8EE65087CACB8378DB7509E3B9D50A871CDD94452172204881FBD1
+[90m9:17AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:17AM[0m [32mINF[0m executed block [36mheight=[0m60 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:17AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3238203130382031383820313830203136392030203134342031343020313038203135392038322033302032333820323337203234352031362031203334203138203720323535203130372037372035382032323220323433203137342039203731203334203134362039345D3A33437D
+[90m9:17AM[0m [32mINF[0m committed state [36mapp_hash=[0m1C6CBCB4A900908C6C9F521EEEEDF51001221207FF6B4D3ADEF3AE094722925E [36mheight=[0m60 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:17AM[0m [32mINF[0m indexed block [36mheight=[0m60 [36mmodule=[0mtxindex
+[90m9:17AM[0m [32mINF[0m Timed out [36mdur=[0m4986.601067 [36mheight=[0m61 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:17AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"745E9235166F0E43806D26093E943F0D57A9D93DB41E141D616E49964179615C","parts":{"hash":"E5169D0CD6DBD1952C2DBC2C2016718170AC14F7C3A48C4220CD98FBF1768066","total":1}},"height":61,"pol_round":-1,"round":0,"signature":"ilEdO1aGSRDt+quvuUBNSEFbhjKzQH3DJTCtVss10T65NQBSWBAf0QeNKcQL/++TNt+CKEPSNXMr6sP87cX8AA==","timestamp":"2022-09-09T07:17:52.913339298Z"}
+[90m9:17AM[0m [32mINF[0m received complete proposal block [36mhash=[0m745E9235166F0E43806D26093E943F0D57A9D93DB41E141D616E49964179615C [36mheight=[0m61 [36mmodule=[0mconsensus
+[90m9:17AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m745E9235166F0E43806D26093E943F0D57A9D93DB41E141D616E49964179615C [36mheight=[0m61 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m1C6CBCB4A900908C6C9F521EEEEDF51001221207FF6B4D3ADEF3AE094722925E
+[90m9:17AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:17AM[0m [32mINF[0m executed block [36mheight=[0m61 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:17AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3133312032353020313233203137302031323320393420323336203930203834203135203135342031343320313734203135372034312032313720373320323237203739203133312037362031392032303520313135203730203138302034332032333220313330203934203630203233325D3A33447D
+[90m9:17AM[0m [32mINF[0m committed state [36mapp_hash=[0m83FA7BAA7B5EEC5A540F9A8FAE9D29D949E34F834C13CD7346B42BE8825E3CE8 [36mheight=[0m61 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:17AM[0m [32mINF[0m indexed block [36mheight=[0m61 [36mmodule=[0mtxindex
+[90m9:17AM[0m [32mINF[0m Timed out [36mdur=[0m4986.259207 [36mheight=[0m62 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:17AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"3EA0F37C5B244BBCD83F1537BD235DFB2AC7FEB0476AA1CE6A6B2553C45E8850","parts":{"hash":"01EAE5620D81246C590536C660CCB7FF3C73656FF1FAE26DB52B3A175ABE125B","total":1}},"height":62,"pol_round":-1,"round":0,"signature":"Ycyc3Q/rJ4nTTS8rBnhpJfbb9PuWURwI5RpdPvGLK6RFfISUDc5Y7XfmbFKMvhcTeZDl1hD4a1LokojpuSORCw==","timestamp":"2022-09-09T07:17:57.945787071Z"}
+[90m9:17AM[0m [32mINF[0m received complete proposal block [36mhash=[0m3EA0F37C5B244BBCD83F1537BD235DFB2AC7FEB0476AA1CE6A6B2553C45E8850 [36mheight=[0m62 [36mmodule=[0mconsensus
+[90m9:17AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m3EA0F37C5B244BBCD83F1537BD235DFB2AC7FEB0476AA1CE6A6B2553C45E8850 [36mheight=[0m62 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m83FA7BAA7B5EEC5A540F9A8FAE9D29D949E34F834C13CD7346B42BE8825E3CE8
+[90m9:17AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:17AM[0m [32mINF[0m executed block [36mheight=[0m62 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:17AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B31393920323035203234332031343120313935203233332039372031353020313739203231342031392031353420333120313532203230362031333720323132203134372034362031313220363720313231203836203837203230342031353520313532203139392032323820343620353920315D3A33457D
+[90m9:17AM[0m [32mINF[0m committed state [36mapp_hash=[0mC7CDF38DC3E96196B3D6139A1F98CE89D4932E7043795657CC9B98C7E42E3B01 [36mheight=[0m62 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:17AM[0m [32mINF[0m indexed block [36mheight=[0m62 [36mmodule=[0mtxindex
+[90m9:18AM[0m [32mINF[0m Timed out [36mdur=[0m4985.273275 [36mheight=[0m63 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:18AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"5B643570FE843CE7AF91813F66F30DB1F2A2CC1D02E8F42F09C154961832D32D","parts":{"hash":"3050F7776828874305EA718DDEF0C0F8C866F389EEF9E0FB99DBF1132B7A964F","total":1}},"height":63,"pol_round":-1,"round":0,"signature":"vYLPX9lgPjT40bNxXKl2LQgikc8OtOwpU3hOsuyKXr18tMGNn/sNYxp+wbl/KJtAF5gyCInabH2jpgLeHmZYBg==","timestamp":"2022-09-09T07:18:02.979197978Z"}
+[90m9:18AM[0m [32mINF[0m received complete proposal block [36mhash=[0m5B643570FE843CE7AF91813F66F30DB1F2A2CC1D02E8F42F09C154961832D32D [36mheight=[0m63 [36mmodule=[0mconsensus
+[90m9:18AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m5B643570FE843CE7AF91813F66F30DB1F2A2CC1D02E8F42F09C154961832D32D [36mheight=[0m63 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mC7CDF38DC3E96196B3D6139A1F98CE89D4932E7043795657CC9B98C7E42E3B01
+[90m9:18AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:18AM[0m [32mINF[0m executed block [36mheight=[0m63 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:18AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B32313420323236203136312031313420313336203138352034302031303520313836203833203233362031383020323330203232362031353120323220313134203139392031363720333520313332203231392032333420323437203530203734203134203133392032333920313539203736203134325D3A33467D
+[90m9:18AM[0m [32mINF[0m committed state [36mapp_hash=[0mD6E2A17288B92869BA53ECB4E6E2971672C7A72384DBEAF7324A0E8BEF9F4C8E [36mheight=[0m63 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:18AM[0m [32mINF[0m indexed block [36mheight=[0m63 [36mmodule=[0mtxindex
+[90m9:18AM[0m [32mINF[0m Timed out [36mdur=[0m4986.60607 [36mheight=[0m64 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:18AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"85BD84F2C2959E9767633DC31C5F4B328F9DD21F8939DBD11D4B2908FD7BEC96","parts":{"hash":"09B8E781CF88303D63722893DEDBCE3C708670B5B46B0E32749DF400BC80FEF3","total":1}},"height":64,"pol_round":-1,"round":0,"signature":"DBg8EygKbfiKaWywJpMAa+w/nhwMcXZfTX4QAAvKx6b5FtwRpkoV7wpfycGFW1pLFsQEY0lOTqJa7DsZBlpABg==","timestamp":"2022-09-09T07:18:08.004796579Z"}
+[90m9:18AM[0m [32mINF[0m received complete proposal block [36mhash=[0m85BD84F2C2959E9767633DC31C5F4B328F9DD21F8939DBD11D4B2908FD7BEC96 [36mheight=[0m64 [36mmodule=[0mconsensus
+[90m9:18AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m85BD84F2C2959E9767633DC31C5F4B328F9DD21F8939DBD11D4B2908FD7BEC96 [36mheight=[0m64 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0mD6E2A17288B92869BA53ECB4E6E2971672C7A72384DBEAF7324A0E8BEF9F4C8E
+[90m9:18AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:18AM[0m [32mINF[0m executed block [36mheight=[0m64 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:18AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B3736203531203635203233342033352032333920313932203130322032323720343420343920323231203133312031303320363620342032353020373820383620313831203138342031383520353220383520353320313133203738203234372038352031383720323333203130375D3A34307D
+[90m9:18AM[0m [32mINF[0m committed state [36mapp_hash=[0m4C3341EA23EFC066E32C31DD83674204FA4E56B5B8B9345535714EF755BBE96B [36mheight=[0m64 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:18AM[0m [32mINF[0m indexed block [36mheight=[0m64 [36mmodule=[0mtxindex
+[90m9:18AM[0m [32mINF[0m Timed out [36mdur=[0m4984.422425 [36mheight=[0m65 [36mmodule=[0mconsensus [36mround=[0m0 [36mstep=[0m1
+[90m9:18AM[0m [32mINF[0m received proposal [36mmodule=[0mconsensus [36mproposal=[0m{"Type":32,"block_id":{"hash":"046F5FF5717B992B280EEB924F746A4E6C29460DB972CE0E72DD98764D5B421B","parts":{"hash":"34247C0F693397E4FC025783E2773C87FDA945FA37E798DF542C3297F650DBC8","total":1}},"height":65,"pol_round":-1,"round":0,"signature":"hCgXAspLDX6a8eTwFeN/KggOXRUxD7cEaVZKxrOnF1qjEs65fwfgGmI3DiOdi0PWx/TRI9KQ5POUdYSMwzwIDA==","timestamp":"2022-09-09T07:18:13.038605224Z"}
+[90m9:18AM[0m [32mINF[0m received complete proposal block [36mhash=[0m046F5FF5717B992B280EEB924F746A4E6C29460DB972CE0E72DD98764D5B421B [36mheight=[0m65 [36mmodule=[0mconsensus
+[90m9:18AM[0m [32mINF[0m finalizing commit of block [36mhash=[0m046F5FF5717B992B280EEB924F746A4E6C29460DB972CE0E72DD98764D5B421B [36mheight=[0m65 [36mmodule=[0mconsensus [36mnum_txs=[0m0 [36mroot=[0m4C3341EA23EFC066E32C31DD83674204FA4E56B5B8B9345535714EF755BBE96B
+[90m9:18AM[0m [32mINF[0m minted coins from module account [36mamount=[0m416uatom [36mfrom=[0mmint [36mmodule=[0mx/bank
+[90m9:18AM[0m [32mINF[0m executed block [36mheight=[0m65 [36mmodule=[0mstate [36mnum_invalid_txs=[0m0 [36mnum_valid_txs=[0m0
+[90m9:18AM[0m [32mINF[0m commit synced [36mcommit=[0m436F6D6D697449447B5B33203135332032303720313933203135203137372031383820383720362033372031393320313737203636203933203134312033342032353420323120313435203136362038322031313320313032203437203233382032303720313531203937203920313932203639203137375D3A34317D
+[90m9:18AM[0m [32mINF[0m committed state [36mapp_hash=[0m0399CFC10FB1BC570625C1B1425D8D22FE1591A65271662FEECF976109C045B1 [36mheight=[0m65 [36mmodule=[0mstate [36mnum_txs=[0m0
+[90m9:18AM[0m [32mINF[0m indexed block [36mheight=[0m65 [36mmodule=[0mtxindex
+[90m9:18AM[0m [32mINF[0m Stopping Node service [36mimpl=[0m{"Logger":{}}
+[90m9:18AM[0m [32mINF[0m Stopping Node
+[90m9:18AM[0m [32mINF[0m Stopping EventBus service [36mimpl=[0m{"Logger":{}} [36mmodule=[0mevents
+[90m9:18AM[0m [32mINF[0m Stopping PubSub service [36mimpl=[0m{"Logger":{}} [36mmodule=[0mpubsub
+[90m9:18AM[0m [32mINF[0m Stopping IndexerService service [36mimpl=[0m{"Logger":{}} [36mmodule=[0mtxindex
+[90m9:18AM[0m [32mINF[0m Stopping P2P Switch service [36mimpl=[0m{"Logger":{}} [36mmodule=[0mp2p
+[90m9:18AM[0m [32mINF[0m Stopping Consensus service [36mimpl=[0m{"Logger":{},"Metrics":{"BlockIntervalSeconds":{},"BlockParts":{},"BlockSizeBytes":{},"ByzantineValidators":{},"ByzantineValidatorsPower":{},"CommittedHeight":{},"FastSyncing":{},"FullPrevoteMessageDelay":{},"Height":{},"MissingValidators":{},"MissingValidatorsPower":{},"NumTxs":{},"QuorumPrevoteMessageDelay":{},"Rounds":{},"StateSyncing":{},"TotalTxs":{},"ValidatorLastSignedHeight":{},"ValidatorMissedBlocks":{},"ValidatorPower":{},"Validators":{},"ValidatorsPower":{}},"Switch":{"Logger":{}}} [36mmodule=[0mconsensus
+[90m9:18AM[0m [32mINF[0m Stopping State service [36mimpl=[0m{"Logger":{},"commit_round":-1,"commit_time":"2022-09-09T07:18:13.060230178Z","height":66,"last_commit":{"peer_maj_23s":{},"votes":["Vote{0:1A20772735BD 65/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 046F5FF5717B D65200BC94B6 @ 2022-09-09T07:18:13.05425496Z}"],"votes_bit_array":"BA{1:x} 100/100 = 1.00"},"last_validators":{"proposer":{"address":"1A20772735BD5D487B8A041EDB8820756D8873CD","proposer_priority":0,"pub_key":"XEBrbn0mAttDcVrfbMEn3vKs/eJTSSvZO4uPA2W81jk=","voting_power":100},"validators":[{"address":"1A20772735BD5D487B8A041EDB8820756D8873CD","proposer_priority":0,"pub_key":"XEBrbn0mAttDcVrfbMEn3vKs/eJTSSvZO4uPA2W81jk=","voting_power":100}]},"locked_block":null,"locked_block_parts":null,"locked_round":-1,"proposal":null,"proposal_block":null,"proposal_block_parts":null,"round":0,"start_time":"2022-09-09T07:18:18.060230178Z","step":1,"triggered_timeout_precommit":false,"valid_block":null,"valid_block_parts":null,"valid_round":-1,"validators":{"proposer":{"address":"1A20772735BD5D487B8A041EDB8820756D8873CD","proposer_priority":0,"pub_key":"XEBrbn0mAttDcVrfbMEn3vKs/eJTSSvZO4uPA2W81jk=","voting_power":100},"validators":[{"address":"1A20772735BD5D487B8A041EDB8820756D8873CD","proposer_priority":0,"pub_key":"XEBrbn0mAttDcVrfbMEn3vKs/eJTSSvZO4uPA2W81jk=","voting_power":100}]},"votes":[{"precommits":["nil-Vote"],"precommits_bit_array":"BA{1:_} 0/100 = 0.00","prevotes":["nil-Vote"],"prevotes_bit_array":"BA{1:_} 0/100 = 0.00","round":0}]} [36mmodule=[0mconsensus
+[90m9:18AM[0m [32mINF[0m Stopping TimeoutTicker service [36mimpl=[0m{"Logger":{}} [36mmodule=[0mconsensus
+[90m9:18AM[0m [32mINF[0m Stopping baseWAL service [36mimpl=[0m{"Logger":{}} [36mmodule=[0mconsensus [36mwal=[0m/home/laurens/.gaia/data/cs.wal/wal
+[90m9:18AM[0m [32mINF[0m New websocket connection [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m127.0.0.1:50328
+[90m9:18AM[0m [32mINF[0m Starting wsConnection service [36mimpl=[0mwsConnection [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m{"IP":"127.0.0.1","Port":50328,"Zone":""}
+[90m9:18AM[0m [32mINF[0m Client closed the connection [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m{"IP":"127.0.0.1","Port":50164,"Zone":""}
+[90m9:18AM[0m [32mINF[0m Stopping wsConnection service [36mimpl=[0m{"Logger":{}} [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m{"IP":"127.0.0.1","Port":50164,"Zone":""}
+[90m9:18AM[0m [1m[31mERR[0m[0m error while stopping connection [31merror=[0m[31m"already stopped"[0m [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket
+[90m9:18AM[0m [32mINF[0m Subscribe to query [36mmodule=[0mrpc [36mquery=[0m"tm.event = 'NewBlock'" [36mremote=[0m127.0.0.1:50328
+[90m9:18AM[0m [32mINF[0m WSJSONRPC [36mmethod=[0msubscribe [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m{"IP":"127.0.0.1","Port":50328,"Zone":""}
+[90m9:18AM[0m [32mINF[0m Subscribe to query [36mmodule=[0mrpc [36mquery=[0m"message.module = 'ibc_client'" [36mremote=[0m127.0.0.1:50328
+[90m9:18AM[0m [32mINF[0m WSJSONRPC [36mmethod=[0msubscribe [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m{"IP":"127.0.0.1","Port":50328,"Zone":""}
+[90m9:18AM[0m [32mINF[0m Subscribe to query [36mmodule=[0mrpc [36mquery=[0m"message.module = 'ibc_connection'" [36mremote=[0m127.0.0.1:50328
+[90m9:18AM[0m [32mINF[0m WSJSONRPC [36mmethod=[0msubscribe [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m{"IP":"127.0.0.1","Port":50328,"Zone":""}
+[90m9:18AM[0m [32mINF[0m Subscribe to query [36mmodule=[0mrpc [36mquery=[0m"message.module = 'ibc_channel'" [36mremote=[0m127.0.0.1:50328
+[90m9:18AM[0m [32mINF[0m WSJSONRPC [36mmethod=[0msubscribe [36mmodule=[0mrpc-server [36mprotocol=[0mwebsocket [36mremote=[0m{"IP":"127.0.0.1","Port":50328,"Zone":""}
+[90m9:18AM[0m [32mINF[0m Stopping Group service [36mimpl=[0m{"Dir":"/home/laurens/.gaia/data/cs.wal","Head":{"ID":"KZg1UebwGGJR:/home/laurens/.gaia/data/cs.wal/wal","Path":"/home/laurens/.gaia/data/cs.wal/wal"},"ID":"group:KZg1UebwGGJR:/home/laurens/.gaia/data/cs.wal/wal","Logger":{}} [36mmodule=[0mconsensus [36mwal=[0m/home/laurens/.gaia/data/cs.wal/wal
+[90m9:18AM[0m [32mINF[0m Stopping Evidence service [36mimpl=[0m{"Logger":{},"Switch":{"Logger":{}}} [36mmodule=[0mevidence
+[90m9:18AM[0m [32mINF[0m Stopping StateSync service [36mimpl=[0m{"Logger":{},"Switch":{"Logger":{}}} [36mmodule=[0mstatesync
+[90m9:18AM[0m [32mINF[0m Stopping PEX service [36mimpl=[0m{"Logger":{},"Switch":{"Logger":{}}} [36mmodule=[0mpex
+[90m9:18AM[0m [32mINF[0m Stopping AddrBook service [36mbook=[0m/home/laurens/.gaia/config/addrbook.json [36mimpl=[0m{"Logger":{}} [36mmodule=[0mp2p
+[90m9:18AM[0m [32mINF[0m Stopping Mempool service [36mimpl=[0m{"Logger":{},"Switch":{"Logger":{}}} [36mmodule=[0mmempool
+[90m9:18AM[0m [32mINF[0m Saving AddrBook to file [36mbook=[0m/home/laurens/.gaia/config/addrbook.json [36mmodule=[0mp2p [36msize=[0m0
+[90m9:18AM[0m [32mINF[0m Stopping BlockchainReactor service [36mimpl=[0m{"Logger":{},"Switch":{"Logger":{}}} [36mmodule=[0mblockchain
+[90m9:18AM[0m [1m[31mERR[0m[0m Stopped accept routine, as transport is closed [36mmodule=[0mp2p [36mnumPeers=[0m0
+[90m9:18AM[0m [32mINF[0m Closing rpc listener [36mlistener=[0m{"Listener":{}}
+[90m9:18AM[0m [32mINF[0m RPC HTTP server stopped [36merr=[0m"accept tcp 127.0.0.1:26669: use of closed network connection" [36mmodule=[0mrpc-server
+[90m9:18AM[0m [1m[31mERR[0m[0m Error serving server [36merr=[0m"accept tcp 127.0.0.1:26669: use of closed network connection"
+[90m9:18AM[0m [32mINF[0m RPC HTTP server stopped [36merr=[0m"accept tcp [::]:1313: use of closed network connection" [36mmodule=[0mapi-server
+[90m9:18AM[0m [32mINF[0m exiting...
